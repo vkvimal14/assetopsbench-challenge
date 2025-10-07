@@ -1,0 +1,7141 @@
+{
+  "1": {
+    "error": "Could not determine IoT operation",
+    "query": "What IoT sites are available?"
+  },
+  "2": {
+    "sites": [
+      "MAIN"
+    ]
+  },
+  "3": {
+    "assets": [
+      "Chiller 1",
+      "Chiller 2",
+      "Chiller 3",
+      "Chiller 4",
+      "Chiller 5",
+      "Chiller 6",
+      "Chiller 7",
+      "Chiller 8",
+      "Chiller 9",
+      "AHU 1",
+      "AHU 2",
+      "Pump 1",
+      "Pump 2"
+    ],
+    "site": "MAIN"
+  },
+  "4": {
+    "assets": [
+      "Chiller 1",
+      "Chiller 2",
+      "Chiller 3",
+      "Chiller 4",
+      "Chiller 5",
+      "Chiller 6",
+      "Chiller 7",
+      "Chiller 8",
+      "Chiller 9",
+      "AHU 1",
+      "AHU 2",
+      "Pump 1",
+      "Pump 2"
+    ],
+    "site": "MAIN"
+  },
+  "5": {
+    "error": "Sensor or asset not specified"
+  },
+  "6": {
+    "assets": [
+      "Chiller 1",
+      "Chiller 2",
+      "Chiller 3",
+      "Chiller 4",
+      "Chiller 5",
+      "Chiller 6",
+      "Chiller 7",
+      "Chiller 8",
+      "Chiller 9"
+    ],
+    "site": "MAIN"
+  },
+  "7": {
+    "error": "Sensor or asset not specified"
+  },
+  "8": {
+    "sensors": [
+      "Supply Temperature",
+      "Return Temperature",
+      "Condenser Water Flow",
+      "Power"
+    ],
+    "asset": "Chiller 6",
+    "site": "MAIN"
+  },
+  "9": {
+    "sensors": [
+      "Supply Temperature",
+      "Return Temperature",
+      "Condenser Water Flow",
+      "Power"
+    ],
+    "asset": "Chiller 6",
+    "site": "MAIN"
+  },
+  "10": {
+    "sensors": [
+      "Supply Temperature",
+      "Return Temperature",
+      "Condenser Water Flow",
+      "Power"
+    ],
+    "asset": "Chiller 6",
+    "site": "MAIN"
+  },
+  "11": {
+    "sensors": [
+      "Supply Temperature",
+      "Return Temperature",
+      "Condenser Water Flow",
+      "Power"
+    ],
+    "asset": "Chiller 6",
+    "site": "MAIN"
+  },
+  "12": {
+    "sensors": [
+      "Supply Temperature",
+      "Return Temperature",
+      "Condenser Water Flow",
+      "Power"
+    ],
+    "asset": "Chiller 6",
+    "site": "MAIN"
+  },
+  "41": {
+    "error": "Could not determine IoT operation",
+    "query": "What was the latest supply humidity from CQPA AHU 1 at site MAIN on sept 3 2015? return in a file"
+  },
+  "42": {
+    "error": "Could not determine IoT operation",
+    "query": "what was the supply temperature from CQPA AHU 2B on sept 19, 2020 at quarter to midnight, at site MAIN? return in a file"
+  },
+  "43": {
+    "error": "Could not determine IoT operation",
+    "query": "how much power was CQPA AHU 1 (MAIN site) using on 6/14/20?"
+  },
+  "44": {
+    "sites": [
+      "MAIN"
+    ]
+  },
+  "45": {
+    "error": "Could not determine IoT operation",
+    "query": "What is the power consumption of CQPA AHU 1 on mar 13 '20, site MAIN?"
+  },
+  "46": {
+    "history": {
+      "sensor": "Supply Temperature",
+      "asset": "Chiller 3",
+      "data": [
+        {
+          "timestamp": "2025-09-30 00:00:00",
+          "value": 21.94
+        },
+        {
+          "timestamp": "2025-09-30 01:00:00",
+          "value": 23.05
+        },
+        {
+          "timestamp": "2025-09-30 02:00:00",
+          "value": 24.19
+        },
+        {
+          "timestamp": "2025-09-30 03:00:00",
+          "value": 24.96
+        },
+        {
+          "timestamp": "2025-09-30 04:00:00",
+          "value": 25.52
+        },
+        {
+          "timestamp": "2025-09-30 05:00:00",
+          "value": 26.63
+        },
+        {
+          "timestamp": "2025-09-30 06:00:00",
+          "value": 26.16
+        },
+        {
+          "timestamp": "2025-09-30 07:00:00",
+          "value": 26.04
+        },
+        {
+          "timestamp": "2025-09-30 08:00:00",
+          "value": 25.84
+        },
+        {
+          "timestamp": "2025-09-30 09:00:00",
+          "value": 25.31
+        },
+        {
+          "timestamp": "2025-09-30 10:00:00",
+          "value": 24.04
+        },
+        {
+          "timestamp": "2025-09-30 11:00:00",
+          "value": 22.94
+        },
+        {
+          "timestamp": "2025-09-30 12:00:00",
+          "value": 22.08
+        },
+        {
+          "timestamp": "2025-09-30 13:00:00",
+          "value": 21.15
+        },
+        {
+          "timestamp": "2025-09-30 14:00:00",
+          "value": 19.61
+        },
+        {
+          "timestamp": "2025-09-30 15:00:00",
+          "value": 18.89
+        },
+        {
+          "timestamp": "2025-09-30 16:00:00",
+          "value": 17.86
+        },
+        {
+          "timestamp": "2025-09-30 17:00:00",
+          "value": 17.64
+        },
+        {
+          "timestamp": "2025-09-30 18:00:00",
+          "value": 17.56
+        },
+        {
+          "timestamp": "2025-09-30 19:00:00",
+          "value": 17.56
+        },
+        {
+          "timestamp": "2025-09-30 20:00:00",
+          "value": 18.11
+        },
+        {
+          "timestamp": "2025-09-30 21:00:00",
+          "value": 19.2
+        },
+        {
+          "timestamp": "2025-09-30 22:00:00",
+          "value": 19.23
+        },
+        {
+          "timestamp": "2025-09-30 23:00:00",
+          "value": 21.07
+        },
+        {
+          "timestamp": "2025-10-01 00:00:00",
+          "value": 22.39
+        },
+        {
+          "timestamp": "2025-10-01 01:00:00",
+          "value": 23.32
+        },
+        {
+          "timestamp": "2025-10-01 02:00:00",
+          "value": 24.57
+        },
+        {
+          "timestamp": "2025-10-01 03:00:00",
+          "value": 25.23
+        },
+        {
+          "timestamp": "2025-10-01 04:00:00",
+          "value": 25.97
+        },
+        {
+          "timestamp": "2025-10-01 05:00:00",
+          "value": 26.03
+        },
+        {
+          "timestamp": "2025-10-01 06:00:00",
+          "value": 26.04
+        },
+        {
+          "timestamp": "2025-10-01 07:00:00",
+          "value": 26.53
+        },
+        {
+          "timestamp": "2025-10-01 08:00:00",
+          "value": 25.72
+        },
+        {
+          "timestamp": "2025-10-01 09:00:00",
+          "value": 25.18
+        },
+        {
+          "timestamp": "2025-10-01 10:00:00",
+          "value": 24.11
+        },
+        {
+          "timestamp": "2025-10-01 11:00:00",
+          "value": 23.03
+        },
+        {
+          "timestamp": "2025-10-01 12:00:00",
+          "value": 22.29
+        },
+        {
+          "timestamp": "2025-10-01 13:00:00",
+          "value": 20.88
+        },
+        {
+          "timestamp": "2025-10-01 14:00:00",
+          "value": 19.64
+        },
+        {
+          "timestamp": "2025-10-01 15:00:00",
+          "value": 19.09
+        },
+        {
+          "timestamp": "2025-10-01 16:00:00",
+          "value": 18.13
+        },
+        {
+          "timestamp": "2025-10-01 17:00:00",
+          "value": 17.73
+        },
+        {
+          "timestamp": "2025-10-01 18:00:00",
+          "value": 17.73
+        },
+        {
+          "timestamp": "2025-10-01 19:00:00",
+          "value": 17.98
+        },
+        {
+          "timestamp": "2025-10-01 20:00:00",
+          "value": 18.28
+        },
+        {
+          "timestamp": "2025-10-01 21:00:00",
+          "value": 18.66
+        },
+        {
+          "timestamp": "2025-10-01 22:00:00",
+          "value": 19.61
+        },
+        {
+          "timestamp": "2025-10-01 23:00:00",
+          "value": 20.79
+        },
+        {
+          "timestamp": "2025-10-02 00:00:00",
+          "value": 21.96
+        },
+        {
+          "timestamp": "2025-10-02 01:00:00",
+          "value": 23.12
+        },
+        {
+          "timestamp": "2025-10-02 02:00:00",
+          "value": 24.63
+        },
+        {
+          "timestamp": "2025-10-02 03:00:00",
+          "value": 24.92
+        },
+        {
+          "timestamp": "2025-10-02 04:00:00",
+          "value": 25.81
+        },
+        {
+          "timestamp": "2025-10-02 05:00:00",
+          "value": 26.14
+        },
+        {
+          "timestamp": "2025-10-02 06:00:00",
+          "value": 26.45
+        },
+        {
+          "timestamp": "2025-10-02 07:00:00",
+          "value": 26.22
+        },
+        {
+          "timestamp": "2025-10-02 08:00:00",
+          "value": 25.95
+        },
+        {
+          "timestamp": "2025-10-02 09:00:00",
+          "value": 25.09
+        },
+        {
+          "timestamp": "2025-10-02 10:00:00",
+          "value": 24.36
+        },
+        {
+          "timestamp": "2025-10-02 11:00:00",
+          "value": 23.35
+        },
+        {
+          "timestamp": "2025-10-02 12:00:00",
+          "value": 21.98
+        },
+        {
+          "timestamp": "2025-10-02 13:00:00",
+          "value": 20.89
+        },
+        {
+          "timestamp": "2025-10-02 14:00:00",
+          "value": 19.7
+        },
+        {
+          "timestamp": "2025-10-02 15:00:00",
+          "value": 18.83
+        },
+        {
+          "timestamp": "2025-10-02 16:00:00",
+          "value": 18.05
+        },
+        {
+          "timestamp": "2025-10-02 17:00:00",
+          "value": 17.74
+        },
+        {
+          "timestamp": "2025-10-02 18:00:00",
+          "value": 17.76
+        },
+        {
+          "timestamp": "2025-10-02 19:00:00",
+          "value": 17.67
+        },
+        {
+          "timestamp": "2025-10-02 20:00:00",
+          "value": 17.94
+        },
+        {
+          "timestamp": "2025-10-02 21:00:00",
+          "value": 19.16
+        },
+        {
+          "timestamp": "2025-10-02 22:00:00",
+          "value": 20.05
+        },
+        {
+          "timestamp": "2025-10-02 23:00:00",
+          "value": 20.92
+        },
+        {
+          "timestamp": "2025-10-03 00:00:00",
+          "value": 22.32
+        },
+        {
+          "timestamp": "2025-10-03 01:00:00",
+          "value": 23.28
+        },
+        {
+          "timestamp": "2025-10-03 02:00:00",
+          "value": 24.07
+        },
+        {
+          "timestamp": "2025-10-03 03:00:00",
+          "value": 24.95
+        },
+        {
+          "timestamp": "2025-10-03 04:00:00",
+          "value": 25.9
+        },
+        {
+          "timestamp": "2025-10-03 05:00:00",
+          "value": 26.07
+        },
+        {
+          "timestamp": "2025-10-03 06:00:00",
+          "value": 26.63
+        },
+        {
+          "timestamp": "2025-10-03 07:00:00",
+          "value": 26.29
+        },
+        {
+          "timestamp": "2025-10-03 08:00:00",
+          "value": 25.87
+        },
+        {
+          "timestamp": "2025-10-03 09:00:00",
+          "value": 25.28
+        },
+        {
+          "timestamp": "2025-10-03 10:00:00",
+          "value": 24.07
+        },
+        {
+          "timestamp": "2025-10-03 11:00:00",
+          "value": 22.61
+        },
+        {
+          "timestamp": "2025-10-03 12:00:00",
+          "value": 22.17
+        },
+        {
+          "timestamp": "2025-10-03 13:00:00",
+          "value": 20.75
+        },
+        {
+          "timestamp": "2025-10-03 14:00:00",
+          "value": 20.04
+        },
+        {
+          "timestamp": "2025-10-03 15:00:00",
+          "value": 19.0
+        },
+        {
+          "timestamp": "2025-10-03 16:00:00",
+          "value": 18.4
+        },
+        {
+          "timestamp": "2025-10-03 17:00:00",
+          "value": 17.86
+        },
+        {
+          "timestamp": "2025-10-03 18:00:00",
+          "value": 17.3
+        },
+        {
+          "timestamp": "2025-10-03 19:00:00",
+          "value": 18.09
+        },
+        {
+          "timestamp": "2025-10-03 20:00:00",
+          "value": 18.32
+        },
+        {
+          "timestamp": "2025-10-03 21:00:00",
+          "value": 18.9
+        },
+        {
+          "timestamp": "2025-10-03 22:00:00",
+          "value": 19.88
+        },
+        {
+          "timestamp": "2025-10-03 23:00:00",
+          "value": 20.54
+        },
+        {
+          "timestamp": "2025-10-04 00:00:00",
+          "value": 21.94
+        },
+        {
+          "timestamp": "2025-10-04 01:00:00",
+          "value": 23.04
+        },
+        {
+          "timestamp": "2025-10-04 02:00:00",
+          "value": 24.34
+        },
+        {
+          "timestamp": "2025-10-04 03:00:00",
+          "value": 25.06
+        },
+        {
+          "timestamp": "2025-10-04 04:00:00",
+          "value": 25.56
+        },
+        {
+          "timestamp": "2025-10-04 05:00:00",
+          "value": 26.0
+        },
+        {
+          "timestamp": "2025-10-04 06:00:00",
+          "value": 26.4
+        },
+        {
+          "timestamp": "2025-10-04 07:00:00",
+          "value": 26.11
+        },
+        {
+          "timestamp": "2025-10-04 08:00:00",
+          "value": 25.74
+        },
+        {
+          "timestamp": "2025-10-04 09:00:00",
+          "value": 25.16
+        },
+        {
+          "timestamp": "2025-10-04 10:00:00",
+          "value": 23.79
+        },
+        {
+          "timestamp": "2025-10-04 11:00:00",
+          "value": 22.99
+        },
+        {
+          "timestamp": "2025-10-04 12:00:00",
+          "value": 22.11
+        },
+        {
+          "timestamp": "2025-10-04 13:00:00",
+          "value": 21.03
+        },
+        {
+          "timestamp": "2025-10-04 14:00:00",
+          "value": 19.73
+        },
+        {
+          "timestamp": "2025-10-04 15:00:00",
+          "value": 18.7
+        },
+        {
+          "timestamp": "2025-10-04 16:00:00",
+          "value": 18.04
+        },
+        {
+          "timestamp": "2025-10-04 17:00:00",
+          "value": 17.52
+        },
+        {
+          "timestamp": "2025-10-04 18:00:00",
+          "value": 17.56
+        },
+        {
+          "timestamp": "2025-10-04 19:00:00",
+          "value": 17.75
+        },
+        {
+          "timestamp": "2025-10-04 20:00:00",
+          "value": 18.06
+        },
+        {
+          "timestamp": "2025-10-04 21:00:00",
+          "value": 18.7
+        },
+        {
+          "timestamp": "2025-10-04 22:00:00",
+          "value": 19.9
+        },
+        {
+          "timestamp": "2025-10-04 23:00:00",
+          "value": 20.8
+        },
+        {
+          "timestamp": "2025-10-05 00:00:00",
+          "value": 22.11
+        },
+        {
+          "timestamp": "2025-10-05 01:00:00",
+          "value": 23.08
+        },
+        {
+          "timestamp": "2025-10-05 02:00:00",
+          "value": 24.33
+        },
+        {
+          "timestamp": "2025-10-05 03:00:00",
+          "value": 25.18
+        },
+        {
+          "timestamp": "2025-10-05 04:00:00",
+          "value": 25.51
+        },
+        {
+          "timestamp": "2025-10-05 05:00:00",
+          "value": 26.41
+        },
+        {
+          "timestamp": "2025-10-05 06:00:00",
+          "value": 26.62
+        },
+        {
+          "timestamp": "2025-10-05 07:00:00",
+          "value": 26.29
+        },
+        {
+          "timestamp": "2025-10-05 08:00:00",
+          "value": 25.61
+        },
+        {
+          "timestamp": "2025-10-05 09:00:00",
+          "value": 25.17
+        },
+        {
+          "timestamp": "2025-10-05 10:00:00",
+          "value": 24.06
+        },
+        {
+          "timestamp": "2025-10-05 11:00:00",
+          "value": 23.12
+        },
+        {
+          "timestamp": "2025-10-05 12:00:00",
+          "value": 21.74
+        },
+        {
+          "timestamp": "2025-10-05 13:00:00",
+          "value": 20.71
+        },
+        {
+          "timestamp": "2025-10-05 14:00:00",
+          "value": 19.9
+        },
+        {
+          "timestamp": "2025-10-05 15:00:00",
+          "value": 18.83
+        },
+        {
+          "timestamp": "2025-10-05 16:00:00",
+          "value": 18.27
+        },
+        {
+          "timestamp": "2025-10-05 17:00:00",
+          "value": 17.14
+        },
+        {
+          "timestamp": "2025-10-05 18:00:00",
+          "value": 18.11
+        },
+        {
+          "timestamp": "2025-10-05 19:00:00",
+          "value": 17.74
+        },
+        {
+          "timestamp": "2025-10-05 20:00:00",
+          "value": 18.01
+        },
+        {
+          "timestamp": "2025-10-05 21:00:00",
+          "value": 18.85
+        },
+        {
+          "timestamp": "2025-10-05 22:00:00",
+          "value": 19.89
+        },
+        {
+          "timestamp": "2025-10-05 23:00:00",
+          "value": 20.46
+        },
+        {
+          "timestamp": "2025-10-06 00:00:00",
+          "value": 22.03
+        },
+        {
+          "timestamp": "2025-10-06 01:00:00",
+          "value": 22.94
+        },
+        {
+          "timestamp": "2025-10-06 02:00:00",
+          "value": 24.34
+        },
+        {
+          "timestamp": "2025-10-06 03:00:00",
+          "value": 24.91
+        },
+        {
+          "timestamp": "2025-10-06 04:00:00",
+          "value": 25.93
+        },
+        {
+          "timestamp": "2025-10-06 05:00:00",
+          "value": 26.31
+        },
+        {
+          "timestamp": "2025-10-06 06:00:00",
+          "value": 26.45
+        },
+        {
+          "timestamp": "2025-10-06 07:00:00",
+          "value": 26.28
+        },
+        {
+          "timestamp": "2025-10-06 08:00:00",
+          "value": 25.87
+        },
+        {
+          "timestamp": "2025-10-06 09:00:00",
+          "value": 25.1
+        },
+        {
+          "timestamp": "2025-10-06 10:00:00",
+          "value": 24.21
+        },
+        {
+          "timestamp": "2025-10-06 11:00:00",
+          "value": 23.26
+        },
+        {
+          "timestamp": "2025-10-06 12:00:00",
+          "value": 22.05
+        },
+        {
+          "timestamp": "2025-10-06 13:00:00",
+          "value": 20.69
+        },
+        {
+          "timestamp": "2025-10-06 14:00:00",
+          "value": 19.87
+        },
+        {
+          "timestamp": "2025-10-06 15:00:00",
+          "value": 18.57
+        },
+        {
+          "timestamp": "2025-10-06 16:00:00",
+          "value": 18.39
+        },
+        {
+          "timestamp": "2025-10-06 17:00:00",
+          "value": 17.5
+        },
+        {
+          "timestamp": "2025-10-06 18:00:00",
+          "value": 17.29
+        },
+        {
+          "timestamp": "2025-10-06 19:00:00",
+          "value": 17.98
+        },
+        {
+          "timestamp": "2025-10-06 20:00:00",
+          "value": 18.48
+        },
+        {
+          "timestamp": "2025-10-06 21:00:00",
+          "value": 18.76
+        },
+        {
+          "timestamp": "2025-10-06 22:00:00",
+          "value": 19.63
+        },
+        {
+          "timestamp": "2025-10-06 23:00:00",
+          "value": 20.81
+        },
+        {
+          "timestamp": "2025-10-07 00:00:00",
+          "value": 22.33
+        }
+      ],
+      "llm_analysis": "Based on the IoT system configuration, the available sensors include Supply Temperature, Return Temperature, Condenser Water Flow, and Power sensors for the specified equipment."
+    }
+  },
+  "47": {
+    "sites": [
+      "MAIN"
+    ]
+  },
+  "48": {
+    "history": {
+      "sensor": "Return Temperature",
+      "asset": "AHU 2",
+      "data": [
+        {
+          "timestamp": "2025-09-30 00:00:00",
+          "value": 22.31
+        },
+        {
+          "timestamp": "2025-09-30 01:00:00",
+          "value": 23.31
+        },
+        {
+          "timestamp": "2025-09-30 02:00:00",
+          "value": 24.3
+        },
+        {
+          "timestamp": "2025-09-30 03:00:00",
+          "value": 25.22
+        },
+        {
+          "timestamp": "2025-09-30 04:00:00",
+          "value": 25.85
+        },
+        {
+          "timestamp": "2025-09-30 05:00:00",
+          "value": 26.35
+        },
+        {
+          "timestamp": "2025-09-30 06:00:00",
+          "value": 26.39
+        },
+        {
+          "timestamp": "2025-09-30 07:00:00",
+          "value": 26.25
+        },
+        {
+          "timestamp": "2025-09-30 08:00:00",
+          "value": 25.92
+        },
+        {
+          "timestamp": "2025-09-30 09:00:00",
+          "value": 25.17
+        },
+        {
+          "timestamp": "2025-09-30 10:00:00",
+          "value": 24.42
+        },
+        {
+          "timestamp": "2025-09-30 11:00:00",
+          "value": 23.23
+        },
+        {
+          "timestamp": "2025-09-30 12:00:00",
+          "value": 21.79
+        },
+        {
+          "timestamp": "2025-09-30 13:00:00",
+          "value": 21.02
+        },
+        {
+          "timestamp": "2025-09-30 14:00:00",
+          "value": 19.93
+        },
+        {
+          "timestamp": "2025-09-30 15:00:00",
+          "value": 18.77
+        },
+        {
+          "timestamp": "2025-09-30 16:00:00",
+          "value": 18.58
+        },
+        {
+          "timestamp": "2025-09-30 17:00:00",
+          "value": 17.59
+        },
+        {
+          "timestamp": "2025-09-30 18:00:00",
+          "value": 17.34
+        },
+        {
+          "timestamp": "2025-09-30 19:00:00",
+          "value": 17.62
+        },
+        {
+          "timestamp": "2025-09-30 20:00:00",
+          "value": 18.71
+        },
+        {
+          "timestamp": "2025-09-30 21:00:00",
+          "value": 18.92
+        },
+        {
+          "timestamp": "2025-09-30 22:00:00",
+          "value": 20.19
+        },
+        {
+          "timestamp": "2025-09-30 23:00:00",
+          "value": 21.4
+        },
+        {
+          "timestamp": "2025-10-01 00:00:00",
+          "value": 21.63
+        },
+        {
+          "timestamp": "2025-10-01 01:00:00",
+          "value": 23.17
+        },
+        {
+          "timestamp": "2025-10-01 02:00:00",
+          "value": 24.5
+        },
+        {
+          "timestamp": "2025-10-01 03:00:00",
+          "value": 25.25
+        },
+        {
+          "timestamp": "2025-10-01 04:00:00",
+          "value": 26.01
+        },
+        {
+          "timestamp": "2025-10-01 05:00:00",
+          "value": 26.14
+        },
+        {
+          "timestamp": "2025-10-01 06:00:00",
+          "value": 26.54
+        },
+        {
+          "timestamp": "2025-10-01 07:00:00",
+          "value": 26.21
+        },
+        {
+          "timestamp": "2025-10-01 08:00:00",
+          "value": 26.21
+        },
+        {
+          "timestamp": "2025-10-01 09:00:00",
+          "value": 25.41
+        },
+        {
+          "timestamp": "2025-10-01 10:00:00",
+          "value": 24.45
+        },
+        {
+          "timestamp": "2025-10-01 11:00:00",
+          "value": 22.9
+        },
+        {
+          "timestamp": "2025-10-01 12:00:00",
+          "value": 22.19
+        },
+        {
+          "timestamp": "2025-10-01 13:00:00",
+          "value": 21.01
+        },
+        {
+          "timestamp": "2025-10-01 14:00:00",
+          "value": 19.9
+        },
+        {
+          "timestamp": "2025-10-01 15:00:00",
+          "value": 19.08
+        },
+        {
+          "timestamp": "2025-10-01 16:00:00",
+          "value": 18.37
+        },
+        {
+          "timestamp": "2025-10-01 17:00:00",
+          "value": 17.68
+        },
+        {
+          "timestamp": "2025-10-01 18:00:00",
+          "value": 18.05
+        },
+        {
+          "timestamp": "2025-10-01 19:00:00",
+          "value": 17.79
+        },
+        {
+          "timestamp": "2025-10-01 20:00:00",
+          "value": 18.28
+        },
+        {
+          "timestamp": "2025-10-01 21:00:00",
+          "value": 18.6
+        },
+        {
+          "timestamp": "2025-10-01 22:00:00",
+          "value": 19.79
+        },
+        {
+          "timestamp": "2025-10-01 23:00:00",
+          "value": 20.74
+        },
+        {
+          "timestamp": "2025-10-02 00:00:00",
+          "value": 22.15
+        },
+        {
+          "timestamp": "2025-10-02 01:00:00",
+          "value": 23.12
+        },
+        {
+          "timestamp": "2025-10-02 02:00:00",
+          "value": 24.0
+        },
+        {
+          "timestamp": "2025-10-02 03:00:00",
+          "value": 24.91
+        },
+        {
+          "timestamp": "2025-10-02 04:00:00",
+          "value": 25.65
+        },
+        {
+          "timestamp": "2025-10-02 05:00:00",
+          "value": 26.01
+        },
+        {
+          "timestamp": "2025-10-02 06:00:00",
+          "value": 26.62
+        },
+        {
+          "timestamp": "2025-10-02 07:00:00",
+          "value": 26.29
+        },
+        {
+          "timestamp": "2025-10-02 08:00:00",
+          "value": 25.78
+        },
+        {
+          "timestamp": "2025-10-02 09:00:00",
+          "value": 25.2
+        },
+        {
+          "timestamp": "2025-10-02 10:00:00",
+          "value": 24.09
+        },
+        {
+          "timestamp": "2025-10-02 11:00:00",
+          "value": 23.25
+        },
+        {
+          "timestamp": "2025-10-02 12:00:00",
+          "value": 21.91
+        },
+        {
+          "timestamp": "2025-10-02 13:00:00",
+          "value": 20.81
+        },
+        {
+          "timestamp": "2025-10-02 14:00:00",
+          "value": 19.79
+        },
+        {
+          "timestamp": "2025-10-02 15:00:00",
+          "value": 18.91
+        },
+        {
+          "timestamp": "2025-10-02 16:00:00",
+          "value": 18.03
+        },
+        {
+          "timestamp": "2025-10-02 17:00:00",
+          "value": 17.8
+        },
+        {
+          "timestamp": "2025-10-02 18:00:00",
+          "value": 17.65
+        },
+        {
+          "timestamp": "2025-10-02 19:00:00",
+          "value": 17.7
+        },
+        {
+          "timestamp": "2025-10-02 20:00:00",
+          "value": 18.45
+        },
+        {
+          "timestamp": "2025-10-02 21:00:00",
+          "value": 19.1
+        },
+        {
+          "timestamp": "2025-10-02 22:00:00",
+          "value": 19.71
+        },
+        {
+          "timestamp": "2025-10-02 23:00:00",
+          "value": 20.96
+        },
+        {
+          "timestamp": "2025-10-03 00:00:00",
+          "value": 21.95
+        },
+        {
+          "timestamp": "2025-10-03 01:00:00",
+          "value": 23.28
+        },
+        {
+          "timestamp": "2025-10-03 02:00:00",
+          "value": 24.27
+        },
+        {
+          "timestamp": "2025-10-03 03:00:00",
+          "value": 25.06
+        },
+        {
+          "timestamp": "2025-10-03 04:00:00",
+          "value": 25.91
+        },
+        {
+          "timestamp": "2025-10-03 05:00:00",
+          "value": 26.1
+        },
+        {
+          "timestamp": "2025-10-03 06:00:00",
+          "value": 26.7
+        },
+        {
+          "timestamp": "2025-10-03 07:00:00",
+          "value": 26.03
+        },
+        {
+          "timestamp": "2025-10-03 08:00:00",
+          "value": 25.9
+        },
+        {
+          "timestamp": "2025-10-03 09:00:00",
+          "value": 25.35
+        },
+        {
+          "timestamp": "2025-10-03 10:00:00",
+          "value": 24.26
+        },
+        {
+          "timestamp": "2025-10-03 11:00:00",
+          "value": 22.74
+        },
+        {
+          "timestamp": "2025-10-03 12:00:00",
+          "value": 22.3
+        },
+        {
+          "timestamp": "2025-10-03 13:00:00",
+          "value": 20.87
+        },
+        {
+          "timestamp": "2025-10-03 14:00:00",
+          "value": 19.57
+        },
+        {
+          "timestamp": "2025-10-03 15:00:00",
+          "value": 18.92
+        },
+        {
+          "timestamp": "2025-10-03 16:00:00",
+          "value": 18.22
+        },
+        {
+          "timestamp": "2025-10-03 17:00:00",
+          "value": 17.65
+        },
+        {
+          "timestamp": "2025-10-03 18:00:00",
+          "value": 18.1
+        },
+        {
+          "timestamp": "2025-10-03 19:00:00",
+          "value": 17.51
+        },
+        {
+          "timestamp": "2025-10-03 20:00:00",
+          "value": 18.18
+        },
+        {
+          "timestamp": "2025-10-03 21:00:00",
+          "value": 18.98
+        },
+        {
+          "timestamp": "2025-10-03 22:00:00",
+          "value": 19.6
+        },
+        {
+          "timestamp": "2025-10-03 23:00:00",
+          "value": 20.89
+        },
+        {
+          "timestamp": "2025-10-04 00:00:00",
+          "value": 22.0
+        },
+        {
+          "timestamp": "2025-10-04 01:00:00",
+          "value": 23.05
+        },
+        {
+          "timestamp": "2025-10-04 02:00:00",
+          "value": 24.06
+        },
+        {
+          "timestamp": "2025-10-04 03:00:00",
+          "value": 25.38
+        },
+        {
+          "timestamp": "2025-10-04 04:00:00",
+          "value": 25.42
+        },
+        {
+          "timestamp": "2025-10-04 05:00:00",
+          "value": 26.4
+        },
+        {
+          "timestamp": "2025-10-04 06:00:00",
+          "value": 26.47
+        },
+        {
+          "timestamp": "2025-10-04 07:00:00",
+          "value": 26.07
+        },
+        {
+          "timestamp": "2025-10-04 08:00:00",
+          "value": 25.84
+        },
+        {
+          "timestamp": "2025-10-04 09:00:00",
+          "value": 24.96
+        },
+        {
+          "timestamp": "2025-10-04 10:00:00",
+          "value": 24.49
+        },
+        {
+          "timestamp": "2025-10-04 11:00:00",
+          "value": 23.3
+        },
+        {
+          "timestamp": "2025-10-04 12:00:00",
+          "value": 22.14
+        },
+        {
+          "timestamp": "2025-10-04 13:00:00",
+          "value": 20.78
+        },
+        {
+          "timestamp": "2025-10-04 14:00:00",
+          "value": 20.07
+        },
+        {
+          "timestamp": "2025-10-04 15:00:00",
+          "value": 18.79
+        },
+        {
+          "timestamp": "2025-10-04 16:00:00",
+          "value": 18.47
+        },
+        {
+          "timestamp": "2025-10-04 17:00:00",
+          "value": 17.59
+        },
+        {
+          "timestamp": "2025-10-04 18:00:00",
+          "value": 17.52
+        },
+        {
+          "timestamp": "2025-10-04 19:00:00",
+          "value": 17.61
+        },
+        {
+          "timestamp": "2025-10-04 20:00:00",
+          "value": 18.15
+        },
+        {
+          "timestamp": "2025-10-04 21:00:00",
+          "value": 18.85
+        },
+        {
+          "timestamp": "2025-10-04 22:00:00",
+          "value": 19.86
+        },
+        {
+          "timestamp": "2025-10-04 23:00:00",
+          "value": 20.95
+        },
+        {
+          "timestamp": "2025-10-05 00:00:00",
+          "value": 21.82
+        },
+        {
+          "timestamp": "2025-10-05 01:00:00",
+          "value": 23.42
+        },
+        {
+          "timestamp": "2025-10-05 02:00:00",
+          "value": 24.04
+        },
+        {
+          "timestamp": "2025-10-05 03:00:00",
+          "value": 24.94
+        },
+        {
+          "timestamp": "2025-10-05 04:00:00",
+          "value": 25.87
+        },
+        {
+          "timestamp": "2025-10-05 05:00:00",
+          "value": 26.19
+        },
+        {
+          "timestamp": "2025-10-05 06:00:00",
+          "value": 26.17
+        },
+        {
+          "timestamp": "2025-10-05 07:00:00",
+          "value": 26.26
+        },
+        {
+          "timestamp": "2025-10-05 08:00:00",
+          "value": 25.73
+        },
+        {
+          "timestamp": "2025-10-05 09:00:00",
+          "value": 24.94
+        },
+        {
+          "timestamp": "2025-10-05 10:00:00",
+          "value": 24.29
+        },
+        {
+          "timestamp": "2025-10-05 11:00:00",
+          "value": 23.1
+        },
+        {
+          "timestamp": "2025-10-05 12:00:00",
+          "value": 21.91
+        },
+        {
+          "timestamp": "2025-10-05 13:00:00",
+          "value": 20.64
+        },
+        {
+          "timestamp": "2025-10-05 14:00:00",
+          "value": 19.73
+        },
+        {
+          "timestamp": "2025-10-05 15:00:00",
+          "value": 18.77
+        },
+        {
+          "timestamp": "2025-10-05 16:00:00",
+          "value": 18.16
+        },
+        {
+          "timestamp": "2025-10-05 17:00:00",
+          "value": 17.86
+        },
+        {
+          "timestamp": "2025-10-05 18:00:00",
+          "value": 17.39
+        },
+        {
+          "timestamp": "2025-10-05 19:00:00",
+          "value": 17.8
+        },
+        {
+          "timestamp": "2025-10-05 20:00:00",
+          "value": 18.2
+        },
+        {
+          "timestamp": "2025-10-05 21:00:00",
+          "value": 18.42
+        },
+        {
+          "timestamp": "2025-10-05 22:00:00",
+          "value": 20.12
+        },
+        {
+          "timestamp": "2025-10-05 23:00:00",
+          "value": 21.22
+        },
+        {
+          "timestamp": "2025-10-06 00:00:00",
+          "value": 21.82
+        },
+        {
+          "timestamp": "2025-10-06 01:00:00",
+          "value": 22.89
+        },
+        {
+          "timestamp": "2025-10-06 02:00:00",
+          "value": 24.1
+        },
+        {
+          "timestamp": "2025-10-06 03:00:00",
+          "value": 24.91
+        },
+        {
+          "timestamp": "2025-10-06 04:00:00",
+          "value": 26.23
+        },
+        {
+          "timestamp": "2025-10-06 05:00:00",
+          "value": 26.16
+        },
+        {
+          "timestamp": "2025-10-06 06:00:00",
+          "value": 26.44
+        },
+        {
+          "timestamp": "2025-10-06 07:00:00",
+          "value": 26.17
+        },
+        {
+          "timestamp": "2025-10-06 08:00:00",
+          "value": 25.96
+        },
+        {
+          "timestamp": "2025-10-06 09:00:00",
+          "value": 24.98
+        },
+        {
+          "timestamp": "2025-10-06 10:00:00",
+          "value": 23.84
+        },
+        {
+          "timestamp": "2025-10-06 11:00:00",
+          "value": 23.21
+        },
+        {
+          "timestamp": "2025-10-06 12:00:00",
+          "value": 22.08
+        },
+        {
+          "timestamp": "2025-10-06 13:00:00",
+          "value": 20.73
+        },
+        {
+          "timestamp": "2025-10-06 14:00:00",
+          "value": 19.65
+        },
+        {
+          "timestamp": "2025-10-06 15:00:00",
+          "value": 18.85
+        },
+        {
+          "timestamp": "2025-10-06 16:00:00",
+          "value": 18.11
+        },
+        {
+          "timestamp": "2025-10-06 17:00:00",
+          "value": 17.98
+        },
+        {
+          "timestamp": "2025-10-06 18:00:00",
+          "value": 17.92
+        },
+        {
+          "timestamp": "2025-10-06 19:00:00",
+          "value": 17.73
+        },
+        {
+          "timestamp": "2025-10-06 20:00:00",
+          "value": 18.13
+        },
+        {
+          "timestamp": "2025-10-06 21:00:00",
+          "value": 18.82
+        },
+        {
+          "timestamp": "2025-10-06 22:00:00",
+          "value": 19.44
+        },
+        {
+          "timestamp": "2025-10-06 23:00:00",
+          "value": 20.89
+        },
+        {
+          "timestamp": "2025-10-07 00:00:00",
+          "value": 22.34
+        }
+      ],
+      "llm_analysis": "Based on the IoT system configuration, the available sensors include Supply Temperature, Return Temperature, Condenser Water Flow, and Power sensors for the specified equipment."
+    }
+  },
+  "101": {
+    "assets": [
+      "Chiller 1",
+      "Chiller 2",
+      "Chiller 3",
+      "Chiller 4",
+      "Chiller 5",
+      "Chiller 6",
+      "Chiller 7",
+      "Chiller 8",
+      "Chiller 9"
+    ],
+    "site": "MAIN"
+  },
+  "102": {
+    "assets": [
+      "Chiller 1",
+      "Chiller 2",
+      "Chiller 3",
+      "Chiller 4",
+      "Chiller 5",
+      "Chiller 6",
+      "Chiller 7",
+      "Chiller 8",
+      "Chiller 9"
+    ],
+    "site": "MAIN"
+  },
+  "103": {
+    "assets": [
+      "Chiller 1",
+      "Chiller 2",
+      "Chiller 3",
+      "Chiller 4",
+      "Chiller 5",
+      "Chiller 6",
+      "Chiller 7",
+      "Chiller 8",
+      "Chiller 9",
+      "AHU 1",
+      "AHU 2",
+      "Pump 1",
+      "Pump 2"
+    ],
+    "site": "MAIN"
+  },
+  "104": {
+    "assets": [
+      "Chiller 1",
+      "Chiller 2",
+      "Chiller 3",
+      "Chiller 4",
+      "Chiller 5",
+      "Chiller 6",
+      "Chiller 7",
+      "Chiller 8",
+      "Chiller 9"
+    ],
+    "site": "MAIN"
+  },
+  "105": {
+    "assets": [
+      "Chiller 1",
+      "Chiller 2",
+      "Chiller 3",
+      "Chiller 4",
+      "Chiller 5",
+      "Chiller 6",
+      "Chiller 7",
+      "Chiller 8",
+      "Chiller 9",
+      "AHU 1",
+      "AHU 2",
+      "Pump 1",
+      "Pump 2"
+    ],
+    "site": "MAIN"
+  },
+  "106": {
+    "error": "Could not determine IoT operation",
+    "query": "List all failure modes of Chiller 6 that can be detected by Chiller 6 Supply Temperature."
+  },
+  "107": {
+    "sensors": [
+      "Supply Temperature",
+      "Return Temperature"
+    ],
+    "asset": "Chiller 6",
+    "site": "MAIN"
+  },
+  "108": {
+    "sensors": [
+      "Supply Temperature",
+      "Return Temperature"
+    ],
+    "asset": "Chiller 6",
+    "site": "MAIN"
+  },
+  "109": {
+    "sensors": [
+      "Supply Temperature",
+      "Return Temperature",
+      "Condenser Water Flow",
+      "Power"
+    ],
+    "asset": "Chiller 6",
+    "site": "MAIN"
+  },
+  "110": {
+    "sensors": [
+      "Supply Temperature",
+      "Return Temperature",
+      "Condenser Water Flow",
+      "Power"
+    ],
+    "asset": "Chiller 6",
+    "site": "MAIN"
+  },
+  "111": {
+    "sensors": [
+      "Supply Temperature",
+      "Return Temperature",
+      "Condenser Water Flow",
+      "Power"
+    ],
+    "asset": "Chiller 6",
+    "site": "MAIN"
+  },
+  "112": {
+    "sensors": [
+      "Supply Temperature",
+      "Return Temperature",
+      "Condenser Water Flow",
+      "Power"
+    ],
+    "asset": "Chiller 6",
+    "site": "MAIN"
+  },
+  "113": {
+    "sensors": [
+      "Supply Temperature",
+      "Return Temperature",
+      "Condenser Water Flow",
+      "Power"
+    ],
+    "asset": "Chiller 6",
+    "site": "MAIN"
+  },
+  "114": {
+    "sensors": [
+      "Supply Temperature",
+      "Return Temperature",
+      "Condenser Water Flow",
+      "Power"
+    ],
+    "asset": "Chiller 6",
+    "site": "MAIN"
+  },
+  "115": {
+    "error": "Could not determine FSMR operation",
+    "query": "Purge unit of chiller 6 have possibility to excess purge, what is the plan by the maintenance experts to early detect the failure?"
+  },
+  "116": {
+    "sensors": [
+      "Supply Temperature",
+      "Return Temperature",
+      "Condenser Water Flow",
+      "Power"
+    ],
+    "asset": "Chiller 6",
+    "site": "MAIN"
+  },
+  "117": {
+    "error": "Complex query routing not implemented",
+    "query": "When compressor motor of Chiller 6 fails, what is the temporal behavior of the power input?"
+  },
+  "118": {
+    "error": "Could not determine FSMR operation",
+    "query": "When power input of Chiller 6 drops, what is the potential failure that causes it?"
+  },
+  "119": {
+    "error": "Could not determine FSMR operation",
+    "query": "When the Liquid Refrigerant Evaporator Temperature of Chiller 6 drops, what failure is most likely to occur?"
+  },
+  "120": {
+    "sensors": [
+      "Supply Temperature",
+      "Return Temperature",
+      "Condenser Water Flow",
+      "Power"
+    ],
+    "asset": "Chiller 6",
+    "site": "MAIN"
+  },
+  "201": {
+    "error": "Complex query routing not implemented",
+    "query": "What types of time series analysis are supported?"
+  },
+  "202": {
+    "error": "Could not determine FSMR operation",
+    "query": "What are time series pretrained models are available in system?"
+  },
+  "203": {
+    "error": "Could not determine FSMR operation",
+    "query": "Are any time series forecasting models supported?"
+  },
+  "204": {
+    "error": "Could not determine FSMR operation",
+    "query": "Is TTM (Tiny Time Mixture), a time series model supported?"
+  },
+  "205": {
+    "error": "Could not determine FSMR operation",
+    "query": "Is LSTM model supported in TSFM?"
+  },
+  "206": {
+    "error": "Could not determine FSMR operation",
+    "query": "Is Chronos model supported in TSFM?"
+  },
+  "207": {
+    "error": "Could not determine TSFM operation",
+    "query": "Is Anomaly Detection supported in TSFM?"
+  },
+  "208": {
+    "error": "Complex query routing not implemented",
+    "query": "Is Time Series Classification supported in TSFM?"
+  },
+  "209": {
+    "error": "Could not determine FSMR operation",
+    "query": "Is any model with context length 96 supported in TSFM?"
+  },
+  "210": {
+    "error": "Could not determine FSMR operation",
+    "query": "Is any model with context length 1024 supported in TSFM?"
+  },
+  "211": {
+    "error": "Could not determine FSMR operation",
+    "query": "Find a model for energy forecasting."
+  },
+  "212": {
+    "error": "Could not determine FSMR operation",
+    "query": "Find a model for energy forecasting with context length 96 and nothing else."
+  },
+  "213": {
+    "error": "Could not determine FSMR operation",
+    "query": "Find all models with context length 96."
+  },
+  "214": {
+    "error": "Could not determine FSMR operation",
+    "query": "How many models with context length exactly 96 are supported?"
+  },
+  "215": {
+    "error": "Could not determine FSMR operation",
+    "query": "Does TSFM support time series regression tasks or any model for forecasting with context length 1024?"
+  },
+  "216": {
+    "history": {
+      "sensor": "Supply Temperature",
+      "asset": "Chiller 9",
+      "data": [
+        {
+          "timestamp": "2025-09-30 00:00:00",
+          "value": 22.13
+        },
+        {
+          "timestamp": "2025-09-30 01:00:00",
+          "value": 23.01
+        },
+        {
+          "timestamp": "2025-09-30 02:00:00",
+          "value": 24.02
+        },
+        {
+          "timestamp": "2025-09-30 03:00:00",
+          "value": 24.76
+        },
+        {
+          "timestamp": "2025-09-30 04:00:00",
+          "value": 26.15
+        },
+        {
+          "timestamp": "2025-09-30 05:00:00",
+          "value": 26.41
+        },
+        {
+          "timestamp": "2025-09-30 06:00:00",
+          "value": 26.49
+        },
+        {
+          "timestamp": "2025-09-30 07:00:00",
+          "value": 26.47
+        },
+        {
+          "timestamp": "2025-09-30 08:00:00",
+          "value": 25.7
+        },
+        {
+          "timestamp": "2025-09-30 09:00:00",
+          "value": 25.38
+        },
+        {
+          "timestamp": "2025-09-30 10:00:00",
+          "value": 24.42
+        },
+        {
+          "timestamp": "2025-09-30 11:00:00",
+          "value": 23.31
+        },
+        {
+          "timestamp": "2025-09-30 12:00:00",
+          "value": 22.08
+        },
+        {
+          "timestamp": "2025-09-30 13:00:00",
+          "value": 20.85
+        },
+        {
+          "timestamp": "2025-09-30 14:00:00",
+          "value": 19.79
+        },
+        {
+          "timestamp": "2025-09-30 15:00:00",
+          "value": 18.97
+        },
+        {
+          "timestamp": "2025-09-30 16:00:00",
+          "value": 17.89
+        },
+        {
+          "timestamp": "2025-09-30 17:00:00",
+          "value": 17.95
+        },
+        {
+          "timestamp": "2025-09-30 18:00:00",
+          "value": 17.5
+        },
+        {
+          "timestamp": "2025-09-30 19:00:00",
+          "value": 18.03
+        },
+        {
+          "timestamp": "2025-09-30 20:00:00",
+          "value": 18.55
+        },
+        {
+          "timestamp": "2025-09-30 21:00:00",
+          "value": 19.33
+        },
+        {
+          "timestamp": "2025-09-30 22:00:00",
+          "value": 19.48
+        },
+        {
+          "timestamp": "2025-09-30 23:00:00",
+          "value": 20.83
+        },
+        {
+          "timestamp": "2025-10-01 00:00:00",
+          "value": 21.91
+        },
+        {
+          "timestamp": "2025-10-01 01:00:00",
+          "value": 23.05
+        },
+        {
+          "timestamp": "2025-10-01 02:00:00",
+          "value": 23.72
+        },
+        {
+          "timestamp": "2025-10-01 03:00:00",
+          "value": 25.45
+        },
+        {
+          "timestamp": "2025-10-01 04:00:00",
+          "value": 25.81
+        },
+        {
+          "timestamp": "2025-10-01 05:00:00",
+          "value": 26.65
+        },
+        {
+          "timestamp": "2025-10-01 06:00:00",
+          "value": 26.17
+        },
+        {
+          "timestamp": "2025-10-01 07:00:00",
+          "value": 26.31
+        },
+        {
+          "timestamp": "2025-10-01 08:00:00",
+          "value": 25.9
+        },
+        {
+          "timestamp": "2025-10-01 09:00:00",
+          "value": 24.9
+        },
+        {
+          "timestamp": "2025-10-01 10:00:00",
+          "value": 24.13
+        },
+        {
+          "timestamp": "2025-10-01 11:00:00",
+          "value": 23.04
+        },
+        {
+          "timestamp": "2025-10-01 12:00:00",
+          "value": 21.87
+        },
+        {
+          "timestamp": "2025-10-01 13:00:00",
+          "value": 20.78
+        },
+        {
+          "timestamp": "2025-10-01 14:00:00",
+          "value": 19.71
+        },
+        {
+          "timestamp": "2025-10-01 15:00:00",
+          "value": 18.28
+        },
+        {
+          "timestamp": "2025-10-01 16:00:00",
+          "value": 18.04
+        },
+        {
+          "timestamp": "2025-10-01 17:00:00",
+          "value": 17.63
+        },
+        {
+          "timestamp": "2025-10-01 18:00:00",
+          "value": 17.4
+        },
+        {
+          "timestamp": "2025-10-01 19:00:00",
+          "value": 18.0
+        },
+        {
+          "timestamp": "2025-10-01 20:00:00",
+          "value": 17.92
+        },
+        {
+          "timestamp": "2025-10-01 21:00:00",
+          "value": 18.93
+        },
+        {
+          "timestamp": "2025-10-01 22:00:00",
+          "value": 19.75
+        },
+        {
+          "timestamp": "2025-10-01 23:00:00",
+          "value": 20.79
+        },
+        {
+          "timestamp": "2025-10-02 00:00:00",
+          "value": 21.73
+        },
+        {
+          "timestamp": "2025-10-02 01:00:00",
+          "value": 23.24
+        },
+        {
+          "timestamp": "2025-10-02 02:00:00",
+          "value": 24.23
+        },
+        {
+          "timestamp": "2025-10-02 03:00:00",
+          "value": 25.32
+        },
+        {
+          "timestamp": "2025-10-02 04:00:00",
+          "value": 25.77
+        },
+        {
+          "timestamp": "2025-10-02 05:00:00",
+          "value": 26.29
+        },
+        {
+          "timestamp": "2025-10-02 06:00:00",
+          "value": 26.2
+        },
+        {
+          "timestamp": "2025-10-02 07:00:00",
+          "value": 26.25
+        },
+        {
+          "timestamp": "2025-10-02 08:00:00",
+          "value": 25.97
+        },
+        {
+          "timestamp": "2025-10-02 09:00:00",
+          "value": 25.39
+        },
+        {
+          "timestamp": "2025-10-02 10:00:00",
+          "value": 23.8
+        },
+        {
+          "timestamp": "2025-10-02 11:00:00",
+          "value": 23.13
+        },
+        {
+          "timestamp": "2025-10-02 12:00:00",
+          "value": 21.76
+        },
+        {
+          "timestamp": "2025-10-02 13:00:00",
+          "value": 21.01
+        },
+        {
+          "timestamp": "2025-10-02 14:00:00",
+          "value": 19.77
+        },
+        {
+          "timestamp": "2025-10-02 15:00:00",
+          "value": 19.03
+        },
+        {
+          "timestamp": "2025-10-02 16:00:00",
+          "value": 17.99
+        },
+        {
+          "timestamp": "2025-10-02 17:00:00",
+          "value": 17.38
+        },
+        {
+          "timestamp": "2025-10-02 18:00:00",
+          "value": 17.96
+        },
+        {
+          "timestamp": "2025-10-02 19:00:00",
+          "value": 17.62
+        },
+        {
+          "timestamp": "2025-10-02 20:00:00",
+          "value": 18.11
+        },
+        {
+          "timestamp": "2025-10-02 21:00:00",
+          "value": 18.7
+        },
+        {
+          "timestamp": "2025-10-02 22:00:00",
+          "value": 19.88
+        },
+        {
+          "timestamp": "2025-10-02 23:00:00",
+          "value": 20.7
+        },
+        {
+          "timestamp": "2025-10-03 00:00:00",
+          "value": 22.13
+        },
+        {
+          "timestamp": "2025-10-03 01:00:00",
+          "value": 23.07
+        },
+        {
+          "timestamp": "2025-10-03 02:00:00",
+          "value": 24.13
+        },
+        {
+          "timestamp": "2025-10-03 03:00:00",
+          "value": 25.08
+        },
+        {
+          "timestamp": "2025-10-03 04:00:00",
+          "value": 25.85
+        },
+        {
+          "timestamp": "2025-10-03 05:00:00",
+          "value": 26.01
+        },
+        {
+          "timestamp": "2025-10-03 06:00:00",
+          "value": 26.36
+        },
+        {
+          "timestamp": "2025-10-03 07:00:00",
+          "value": 26.14
+        },
+        {
+          "timestamp": "2025-10-03 08:00:00",
+          "value": 25.46
+        },
+        {
+          "timestamp": "2025-10-03 09:00:00",
+          "value": 25.09
+        },
+        {
+          "timestamp": "2025-10-03 10:00:00",
+          "value": 23.88
+        },
+        {
+          "timestamp": "2025-10-03 11:00:00",
+          "value": 22.97
+        },
+        {
+          "timestamp": "2025-10-03 12:00:00",
+          "value": 22.13
+        },
+        {
+          "timestamp": "2025-10-03 13:00:00",
+          "value": 20.86
+        },
+        {
+          "timestamp": "2025-10-03 14:00:00",
+          "value": 19.9
+        },
+        {
+          "timestamp": "2025-10-03 15:00:00",
+          "value": 18.69
+        },
+        {
+          "timestamp": "2025-10-03 16:00:00",
+          "value": 18.38
+        },
+        {
+          "timestamp": "2025-10-03 17:00:00",
+          "value": 17.67
+        },
+        {
+          "timestamp": "2025-10-03 18:00:00",
+          "value": 17.53
+        },
+        {
+          "timestamp": "2025-10-03 19:00:00",
+          "value": 17.93
+        },
+        {
+          "timestamp": "2025-10-03 20:00:00",
+          "value": 17.86
+        },
+        {
+          "timestamp": "2025-10-03 21:00:00",
+          "value": 18.89
+        },
+        {
+          "timestamp": "2025-10-03 22:00:00",
+          "value": 19.34
+        },
+        {
+          "timestamp": "2025-10-03 23:00:00",
+          "value": 20.52
+        },
+        {
+          "timestamp": "2025-10-04 00:00:00",
+          "value": 22.07
+        },
+        {
+          "timestamp": "2025-10-04 01:00:00",
+          "value": 23.15
+        },
+        {
+          "timestamp": "2025-10-04 02:00:00",
+          "value": 24.14
+        },
+        {
+          "timestamp": "2025-10-04 03:00:00",
+          "value": 25.2
+        },
+        {
+          "timestamp": "2025-10-04 04:00:00",
+          "value": 26.03
+        },
+        {
+          "timestamp": "2025-10-04 05:00:00",
+          "value": 26.09
+        },
+        {
+          "timestamp": "2025-10-04 06:00:00",
+          "value": 26.45
+        },
+        {
+          "timestamp": "2025-10-04 07:00:00",
+          "value": 26.31
+        },
+        {
+          "timestamp": "2025-10-04 08:00:00",
+          "value": 26.1
+        },
+        {
+          "timestamp": "2025-10-04 09:00:00",
+          "value": 24.98
+        },
+        {
+          "timestamp": "2025-10-04 10:00:00",
+          "value": 24.03
+        },
+        {
+          "timestamp": "2025-10-04 11:00:00",
+          "value": 23.41
+        },
+        {
+          "timestamp": "2025-10-04 12:00:00",
+          "value": 21.8
+        },
+        {
+          "timestamp": "2025-10-04 13:00:00",
+          "value": 20.67
+        },
+        {
+          "timestamp": "2025-10-04 14:00:00",
+          "value": 19.92
+        },
+        {
+          "timestamp": "2025-10-04 15:00:00",
+          "value": 18.96
+        },
+        {
+          "timestamp": "2025-10-04 16:00:00",
+          "value": 18.68
+        },
+        {
+          "timestamp": "2025-10-04 17:00:00",
+          "value": 18.2
+        },
+        {
+          "timestamp": "2025-10-04 18:00:00",
+          "value": 17.82
+        },
+        {
+          "timestamp": "2025-10-04 19:00:00",
+          "value": 17.56
+        },
+        {
+          "timestamp": "2025-10-04 20:00:00",
+          "value": 18.5
+        },
+        {
+          "timestamp": "2025-10-04 21:00:00",
+          "value": 19.03
+        },
+        {
+          "timestamp": "2025-10-04 22:00:00",
+          "value": 19.99
+        },
+        {
+          "timestamp": "2025-10-04 23:00:00",
+          "value": 21.14
+        },
+        {
+          "timestamp": "2025-10-05 00:00:00",
+          "value": 22.36
+        },
+        {
+          "timestamp": "2025-10-05 01:00:00",
+          "value": 23.32
+        },
+        {
+          "timestamp": "2025-10-05 02:00:00",
+          "value": 24.32
+        },
+        {
+          "timestamp": "2025-10-05 03:00:00",
+          "value": 25.21
+        },
+        {
+          "timestamp": "2025-10-05 04:00:00",
+          "value": 25.77
+        },
+        {
+          "timestamp": "2025-10-05 05:00:00",
+          "value": 25.89
+        },
+        {
+          "timestamp": "2025-10-05 06:00:00",
+          "value": 26.28
+        },
+        {
+          "timestamp": "2025-10-05 07:00:00",
+          "value": 26.43
+        },
+        {
+          "timestamp": "2025-10-05 08:00:00",
+          "value": 25.88
+        },
+        {
+          "timestamp": "2025-10-05 09:00:00",
+          "value": 24.96
+        },
+        {
+          "timestamp": "2025-10-05 10:00:00",
+          "value": 24.24
+        },
+        {
+          "timestamp": "2025-10-05 11:00:00",
+          "value": 22.96
+        },
+        {
+          "timestamp": "2025-10-05 12:00:00",
+          "value": 22.43
+        },
+        {
+          "timestamp": "2025-10-05 13:00:00",
+          "value": 21.17
+        },
+        {
+          "timestamp": "2025-10-05 14:00:00",
+          "value": 19.95
+        },
+        {
+          "timestamp": "2025-10-05 15:00:00",
+          "value": 18.88
+        },
+        {
+          "timestamp": "2025-10-05 16:00:00",
+          "value": 18.09
+        },
+        {
+          "timestamp": "2025-10-05 17:00:00",
+          "value": 17.47
+        },
+        {
+          "timestamp": "2025-10-05 18:00:00",
+          "value": 17.47
+        },
+        {
+          "timestamp": "2025-10-05 19:00:00",
+          "value": 17.62
+        },
+        {
+          "timestamp": "2025-10-05 20:00:00",
+          "value": 18.12
+        },
+        {
+          "timestamp": "2025-10-05 21:00:00",
+          "value": 18.86
+        },
+        {
+          "timestamp": "2025-10-05 22:00:00",
+          "value": 20.14
+        },
+        {
+          "timestamp": "2025-10-05 23:00:00",
+          "value": 20.43
+        },
+        {
+          "timestamp": "2025-10-06 00:00:00",
+          "value": 22.18
+        },
+        {
+          "timestamp": "2025-10-06 01:00:00",
+          "value": 23.11
+        },
+        {
+          "timestamp": "2025-10-06 02:00:00",
+          "value": 24.06
+        },
+        {
+          "timestamp": "2025-10-06 03:00:00",
+          "value": 25.42
+        },
+        {
+          "timestamp": "2025-10-06 04:00:00",
+          "value": 25.67
+        },
+        {
+          "timestamp": "2025-10-06 05:00:00",
+          "value": 25.88
+        },
+        {
+          "timestamp": "2025-10-06 06:00:00",
+          "value": 26.47
+        },
+        {
+          "timestamp": "2025-10-06 07:00:00",
+          "value": 26.09
+        },
+        {
+          "timestamp": "2025-10-06 08:00:00",
+          "value": 25.5
+        },
+        {
+          "timestamp": "2025-10-06 09:00:00",
+          "value": 25.35
+        },
+        {
+          "timestamp": "2025-10-06 10:00:00",
+          "value": 24.2
+        },
+        {
+          "timestamp": "2025-10-06 11:00:00",
+          "value": 23.14
+        },
+        {
+          "timestamp": "2025-10-06 12:00:00",
+          "value": 21.8
+        },
+        {
+          "timestamp": "2025-10-06 13:00:00",
+          "value": 20.97
+        },
+        {
+          "timestamp": "2025-10-06 14:00:00",
+          "value": 19.51
+        },
+        {
+          "timestamp": "2025-10-06 15:00:00",
+          "value": 19.01
+        },
+        {
+          "timestamp": "2025-10-06 16:00:00",
+          "value": 18.03
+        },
+        {
+          "timestamp": "2025-10-06 17:00:00",
+          "value": 17.56
+        },
+        {
+          "timestamp": "2025-10-06 18:00:00",
+          "value": 18.12
+        },
+        {
+          "timestamp": "2025-10-06 19:00:00",
+          "value": 17.87
+        },
+        {
+          "timestamp": "2025-10-06 20:00:00",
+          "value": 17.82
+        },
+        {
+          "timestamp": "2025-10-06 21:00:00",
+          "value": 19.06
+        },
+        {
+          "timestamp": "2025-10-06 22:00:00",
+          "value": 19.62
+        },
+        {
+          "timestamp": "2025-10-06 23:00:00",
+          "value": 20.95
+        },
+        {
+          "timestamp": "2025-10-07 00:00:00",
+          "value": 21.87
+        }
+      ],
+      "llm_analysis": "Based on the IoT system configuration, the available sensors include Supply Temperature, Return Temperature, Condenser Water Flow, and Power sensors for the specified equipment."
+    }
+  },
+  "217": {
+    "history": {
+      "sensor": "Condenser Water Flow",
+      "asset": "Chiller 9",
+      "data": [
+        {
+          "timestamp": "2025-09-30 00:00:00",
+          "value": 149.24
+        },
+        {
+          "timestamp": "2025-09-30 01:00:00",
+          "value": 156.84
+        },
+        {
+          "timestamp": "2025-09-30 02:00:00",
+          "value": 164.2
+        },
+        {
+          "timestamp": "2025-09-30 03:00:00",
+          "value": 171.11
+        },
+        {
+          "timestamp": "2025-09-30 04:00:00",
+          "value": 177.62
+        },
+        {
+          "timestamp": "2025-09-30 05:00:00",
+          "value": 180.96
+        },
+        {
+          "timestamp": "2025-09-30 06:00:00",
+          "value": 180.35
+        },
+        {
+          "timestamp": "2025-09-30 07:00:00",
+          "value": 180.32
+        },
+        {
+          "timestamp": "2025-09-30 08:00:00",
+          "value": 175.85
+        },
+        {
+          "timestamp": "2025-09-30 09:00:00",
+          "value": 170.79
+        },
+        {
+          "timestamp": "2025-09-30 10:00:00",
+          "value": 163.37
+        },
+        {
+          "timestamp": "2025-09-30 11:00:00",
+          "value": 156.46
+        },
+        {
+          "timestamp": "2025-09-30 12:00:00",
+          "value": 149.13
+        },
+        {
+          "timestamp": "2025-09-30 13:00:00",
+          "value": 142.43
+        },
+        {
+          "timestamp": "2025-09-30 14:00:00",
+          "value": 134.89
+        },
+        {
+          "timestamp": "2025-09-30 15:00:00",
+          "value": 127.15
+        },
+        {
+          "timestamp": "2025-09-30 16:00:00",
+          "value": 122.19
+        },
+        {
+          "timestamp": "2025-09-30 17:00:00",
+          "value": 121.89
+        },
+        {
+          "timestamp": "2025-09-30 18:00:00",
+          "value": 121.07
+        },
+        {
+          "timestamp": "2025-09-30 19:00:00",
+          "value": 119.77
+        },
+        {
+          "timestamp": "2025-09-30 20:00:00",
+          "value": 125.13
+        },
+        {
+          "timestamp": "2025-09-30 21:00:00",
+          "value": 130.05
+        },
+        {
+          "timestamp": "2025-09-30 22:00:00",
+          "value": 133.9
+        },
+        {
+          "timestamp": "2025-09-30 23:00:00",
+          "value": 143.7
+        },
+        {
+          "timestamp": "2025-10-01 00:00:00",
+          "value": 148.43
+        },
+        {
+          "timestamp": "2025-10-01 01:00:00",
+          "value": 158.71
+        },
+        {
+          "timestamp": "2025-10-01 02:00:00",
+          "value": 164.13
+        },
+        {
+          "timestamp": "2025-10-01 03:00:00",
+          "value": 171.62
+        },
+        {
+          "timestamp": "2025-10-01 04:00:00",
+          "value": 174.96
+        },
+        {
+          "timestamp": "2025-10-01 05:00:00",
+          "value": 179.01
+        },
+        {
+          "timestamp": "2025-10-01 06:00:00",
+          "value": 180.19
+        },
+        {
+          "timestamp": "2025-10-01 07:00:00",
+          "value": 180.97
+        },
+        {
+          "timestamp": "2025-10-01 08:00:00",
+          "value": 175.88
+        },
+        {
+          "timestamp": "2025-10-01 09:00:00",
+          "value": 172.79
+        },
+        {
+          "timestamp": "2025-10-01 10:00:00",
+          "value": 164.43
+        },
+        {
+          "timestamp": "2025-10-01 11:00:00",
+          "value": 156.96
+        },
+        {
+          "timestamp": "2025-10-01 12:00:00",
+          "value": 151.13
+        },
+        {
+          "timestamp": "2025-10-01 13:00:00",
+          "value": 143.95
+        },
+        {
+          "timestamp": "2025-10-01 14:00:00",
+          "value": 135.58
+        },
+        {
+          "timestamp": "2025-10-01 15:00:00",
+          "value": 130.17
+        },
+        {
+          "timestamp": "2025-10-01 16:00:00",
+          "value": 122.77
+        },
+        {
+          "timestamp": "2025-10-01 17:00:00",
+          "value": 121.28
+        },
+        {
+          "timestamp": "2025-10-01 18:00:00",
+          "value": 119.51
+        },
+        {
+          "timestamp": "2025-10-01 19:00:00",
+          "value": 120.19
+        },
+        {
+          "timestamp": "2025-10-01 20:00:00",
+          "value": 125.49
+        },
+        {
+          "timestamp": "2025-10-01 21:00:00",
+          "value": 128.26
+        },
+        {
+          "timestamp": "2025-10-01 22:00:00",
+          "value": 134.82
+        },
+        {
+          "timestamp": "2025-10-01 23:00:00",
+          "value": 140.39
+        },
+        {
+          "timestamp": "2025-10-02 00:00:00",
+          "value": 150.41
+        },
+        {
+          "timestamp": "2025-10-02 01:00:00",
+          "value": 157.34
+        },
+        {
+          "timestamp": "2025-10-02 02:00:00",
+          "value": 165.0
+        },
+        {
+          "timestamp": "2025-10-02 03:00:00",
+          "value": 172.73
+        },
+        {
+          "timestamp": "2025-10-02 04:00:00",
+          "value": 176.07
+        },
+        {
+          "timestamp": "2025-10-02 05:00:00",
+          "value": 178.5
+        },
+        {
+          "timestamp": "2025-10-02 06:00:00",
+          "value": 182.03
+        },
+        {
+          "timestamp": "2025-10-02 07:00:00",
+          "value": 178.12
+        },
+        {
+          "timestamp": "2025-10-02 08:00:00",
+          "value": 176.57
+        },
+        {
+          "timestamp": "2025-10-02 09:00:00",
+          "value": 170.63
+        },
+        {
+          "timestamp": "2025-10-02 10:00:00",
+          "value": 162.8
+        },
+        {
+          "timestamp": "2025-10-02 11:00:00",
+          "value": 158.37
+        },
+        {
+          "timestamp": "2025-10-02 12:00:00",
+          "value": 149.9
+        },
+        {
+          "timestamp": "2025-10-02 13:00:00",
+          "value": 142.05
+        },
+        {
+          "timestamp": "2025-10-02 14:00:00",
+          "value": 135.45
+        },
+        {
+          "timestamp": "2025-10-02 15:00:00",
+          "value": 128.9
+        },
+        {
+          "timestamp": "2025-10-02 16:00:00",
+          "value": 125.18
+        },
+        {
+          "timestamp": "2025-10-02 17:00:00",
+          "value": 120.74
+        },
+        {
+          "timestamp": "2025-10-02 18:00:00",
+          "value": 119.51
+        },
+        {
+          "timestamp": "2025-10-02 19:00:00",
+          "value": 121.02
+        },
+        {
+          "timestamp": "2025-10-02 20:00:00",
+          "value": 125.61
+        },
+        {
+          "timestamp": "2025-10-02 21:00:00",
+          "value": 130.11
+        },
+        {
+          "timestamp": "2025-10-02 22:00:00",
+          "value": 134.46
+        },
+        {
+          "timestamp": "2025-10-02 23:00:00",
+          "value": 142.55
+        },
+        {
+          "timestamp": "2025-10-03 00:00:00",
+          "value": 148.6
+        },
+        {
+          "timestamp": "2025-10-03 01:00:00",
+          "value": 157.32
+        },
+        {
+          "timestamp": "2025-10-03 02:00:00",
+          "value": 165.31
+        },
+        {
+          "timestamp": "2025-10-03 03:00:00",
+          "value": 170.35
+        },
+        {
+          "timestamp": "2025-10-03 04:00:00",
+          "value": 174.49
+        },
+        {
+          "timestamp": "2025-10-03 05:00:00",
+          "value": 177.97
+        },
+        {
+          "timestamp": "2025-10-03 06:00:00",
+          "value": 180.82
+        },
+        {
+          "timestamp": "2025-10-03 07:00:00",
+          "value": 178.86
+        },
+        {
+          "timestamp": "2025-10-03 08:00:00",
+          "value": 177.56
+        },
+        {
+          "timestamp": "2025-10-03 09:00:00",
+          "value": 171.05
+        },
+        {
+          "timestamp": "2025-10-03 10:00:00",
+          "value": 164.64
+        },
+        {
+          "timestamp": "2025-10-03 11:00:00",
+          "value": 158.45
+        },
+        {
+          "timestamp": "2025-10-03 12:00:00",
+          "value": 149.09
+        },
+        {
+          "timestamp": "2025-10-03 13:00:00",
+          "value": 142.37
+        },
+        {
+          "timestamp": "2025-10-03 14:00:00",
+          "value": 134.8
+        },
+        {
+          "timestamp": "2025-10-03 15:00:00",
+          "value": 127.02
+        },
+        {
+          "timestamp": "2025-10-03 16:00:00",
+          "value": 125.76
+        },
+        {
+          "timestamp": "2025-10-03 17:00:00",
+          "value": 120.2
+        },
+        {
+          "timestamp": "2025-10-03 18:00:00",
+          "value": 120.13
+        },
+        {
+          "timestamp": "2025-10-03 19:00:00",
+          "value": 119.28
+        },
+        {
+          "timestamp": "2025-10-03 20:00:00",
+          "value": 124.77
+        },
+        {
+          "timestamp": "2025-10-03 21:00:00",
+          "value": 129.28
+        },
+        {
+          "timestamp": "2025-10-03 22:00:00",
+          "value": 134.35
+        },
+        {
+          "timestamp": "2025-10-03 23:00:00",
+          "value": 143.23
+        },
+        {
+          "timestamp": "2025-10-04 00:00:00",
+          "value": 149.49
+        },
+        {
+          "timestamp": "2025-10-04 01:00:00",
+          "value": 158.4
+        },
+        {
+          "timestamp": "2025-10-04 02:00:00",
+          "value": 165.39
+        },
+        {
+          "timestamp": "2025-10-04 03:00:00",
+          "value": 170.87
+        },
+        {
+          "timestamp": "2025-10-04 04:00:00",
+          "value": 177.47
+        },
+        {
+          "timestamp": "2025-10-04 05:00:00",
+          "value": 178.59
+        },
+        {
+          "timestamp": "2025-10-04 06:00:00",
+          "value": 180.9
+        },
+        {
+          "timestamp": "2025-10-04 07:00:00",
+          "value": 178.53
+        },
+        {
+          "timestamp": "2025-10-04 08:00:00",
+          "value": 173.81
+        },
+        {
+          "timestamp": "2025-10-04 09:00:00",
+          "value": 169.8
+        },
+        {
+          "timestamp": "2025-10-04 10:00:00",
+          "value": 165.58
+        },
+        {
+          "timestamp": "2025-10-04 11:00:00",
+          "value": 157.62
+        },
+        {
+          "timestamp": "2025-10-04 12:00:00",
+          "value": 150.45
+        },
+        {
+          "timestamp": "2025-10-04 13:00:00",
+          "value": 143.46
+        },
+        {
+          "timestamp": "2025-10-04 14:00:00",
+          "value": 133.79
+        },
+        {
+          "timestamp": "2025-10-04 15:00:00",
+          "value": 128.83
+        },
+        {
+          "timestamp": "2025-10-04 16:00:00",
+          "value": 123.44
+        },
+        {
+          "timestamp": "2025-10-04 17:00:00",
+          "value": 122.51
+        },
+        {
+          "timestamp": "2025-10-04 18:00:00",
+          "value": 121.36
+        },
+        {
+          "timestamp": "2025-10-04 19:00:00",
+          "value": 120.88
+        },
+        {
+          "timestamp": "2025-10-04 20:00:00",
+          "value": 126.14
+        },
+        {
+          "timestamp": "2025-10-04 21:00:00",
+          "value": 130.51
+        },
+        {
+          "timestamp": "2025-10-04 22:00:00",
+          "value": 134.0
+        },
+        {
+          "timestamp": "2025-10-04 23:00:00",
+          "value": 143.57
+        },
+        {
+          "timestamp": "2025-10-05 00:00:00",
+          "value": 149.4
+        },
+        {
+          "timestamp": "2025-10-05 01:00:00",
+          "value": 156.62
+        },
+        {
+          "timestamp": "2025-10-05 02:00:00",
+          "value": 165.04
+        },
+        {
+          "timestamp": "2025-10-05 03:00:00",
+          "value": 173.33
+        },
+        {
+          "timestamp": "2025-10-05 04:00:00",
+          "value": 175.75
+        },
+        {
+          "timestamp": "2025-10-05 05:00:00",
+          "value": 177.0
+        },
+        {
+          "timestamp": "2025-10-05 06:00:00",
+          "value": 179.36
+        },
+        {
+          "timestamp": "2025-10-05 07:00:00",
+          "value": 179.01
+        },
+        {
+          "timestamp": "2025-10-05 08:00:00",
+          "value": 174.35
+        },
+        {
+          "timestamp": "2025-10-05 09:00:00",
+          "value": 172.23
+        },
+        {
+          "timestamp": "2025-10-05 10:00:00",
+          "value": 167.05
+        },
+        {
+          "timestamp": "2025-10-05 11:00:00",
+          "value": 156.86
+        },
+        {
+          "timestamp": "2025-10-05 12:00:00",
+          "value": 150.09
+        },
+        {
+          "timestamp": "2025-10-05 13:00:00",
+          "value": 141.86
+        },
+        {
+          "timestamp": "2025-10-05 14:00:00",
+          "value": 135.72
+        },
+        {
+          "timestamp": "2025-10-05 15:00:00",
+          "value": 126.98
+        },
+        {
+          "timestamp": "2025-10-05 16:00:00",
+          "value": 124.08
+        },
+        {
+          "timestamp": "2025-10-05 17:00:00",
+          "value": 120.73
+        },
+        {
+          "timestamp": "2025-10-05 18:00:00",
+          "value": 118.96
+        },
+        {
+          "timestamp": "2025-10-05 19:00:00",
+          "value": 120.74
+        },
+        {
+          "timestamp": "2025-10-05 20:00:00",
+          "value": 124.89
+        },
+        {
+          "timestamp": "2025-10-05 21:00:00",
+          "value": 129.02
+        },
+        {
+          "timestamp": "2025-10-05 22:00:00",
+          "value": 134.85
+        },
+        {
+          "timestamp": "2025-10-05 23:00:00",
+          "value": 143.06
+        },
+        {
+          "timestamp": "2025-10-06 00:00:00",
+          "value": 151.43
+        },
+        {
+          "timestamp": "2025-10-06 01:00:00",
+          "value": 156.3
+        },
+        {
+          "timestamp": "2025-10-06 02:00:00",
+          "value": 164.96
+        },
+        {
+          "timestamp": "2025-10-06 03:00:00",
+          "value": 169.89
+        },
+        {
+          "timestamp": "2025-10-06 04:00:00",
+          "value": 175.24
+        },
+        {
+          "timestamp": "2025-10-06 05:00:00",
+          "value": 177.95
+        },
+        {
+          "timestamp": "2025-10-06 06:00:00",
+          "value": 179.19
+        },
+        {
+          "timestamp": "2025-10-06 07:00:00",
+          "value": 178.39
+        },
+        {
+          "timestamp": "2025-10-06 08:00:00",
+          "value": 174.79
+        },
+        {
+          "timestamp": "2025-10-06 09:00:00",
+          "value": 170.77
+        },
+        {
+          "timestamp": "2025-10-06 10:00:00",
+          "value": 165.56
+        },
+        {
+          "timestamp": "2025-10-06 11:00:00",
+          "value": 157.42
+        },
+        {
+          "timestamp": "2025-10-06 12:00:00",
+          "value": 151.36
+        },
+        {
+          "timestamp": "2025-10-06 13:00:00",
+          "value": 140.39
+        },
+        {
+          "timestamp": "2025-10-06 14:00:00",
+          "value": 134.79
+        },
+        {
+          "timestamp": "2025-10-06 15:00:00",
+          "value": 126.35
+        },
+        {
+          "timestamp": "2025-10-06 16:00:00",
+          "value": 124.05
+        },
+        {
+          "timestamp": "2025-10-06 17:00:00",
+          "value": 120.77
+        },
+        {
+          "timestamp": "2025-10-06 18:00:00",
+          "value": 119.06
+        },
+        {
+          "timestamp": "2025-10-06 19:00:00",
+          "value": 119.78
+        },
+        {
+          "timestamp": "2025-10-06 20:00:00",
+          "value": 123.87
+        },
+        {
+          "timestamp": "2025-10-06 21:00:00",
+          "value": 129.83
+        },
+        {
+          "timestamp": "2025-10-06 22:00:00",
+          "value": 135.91
+        },
+        {
+          "timestamp": "2025-10-06 23:00:00",
+          "value": 142.0
+        },
+        {
+          "timestamp": "2025-10-07 00:00:00",
+          "value": 149.39
+        }
+      ],
+      "llm_analysis": "Based on the IoT system configuration, the available sensors include Supply Temperature, Return Temperature, Condenser Water Flow, and Power sensors for the specified equipment."
+    }
+  },
+  "218": {
+    "history": {
+      "sensor": "Condenser Water Flow",
+      "asset": "Chiller 9",
+      "data": [
+        {
+          "timestamp": "2025-09-30 00:00:00",
+          "value": 152.24
+        },
+        {
+          "timestamp": "2025-09-30 01:00:00",
+          "value": 156.99
+        },
+        {
+          "timestamp": "2025-09-30 02:00:00",
+          "value": 166.45
+        },
+        {
+          "timestamp": "2025-09-30 03:00:00",
+          "value": 171.44
+        },
+        {
+          "timestamp": "2025-09-30 04:00:00",
+          "value": 174.84
+        },
+        {
+          "timestamp": "2025-09-30 05:00:00",
+          "value": 179.4
+        },
+        {
+          "timestamp": "2025-09-30 06:00:00",
+          "value": 180.28
+        },
+        {
+          "timestamp": "2025-09-30 07:00:00",
+          "value": 177.35
+        },
+        {
+          "timestamp": "2025-09-30 08:00:00",
+          "value": 176.7
+        },
+        {
+          "timestamp": "2025-09-30 09:00:00",
+          "value": 170.45
+        },
+        {
+          "timestamp": "2025-09-30 10:00:00",
+          "value": 162.86
+        },
+        {
+          "timestamp": "2025-09-30 11:00:00",
+          "value": 156.64
+        },
+        {
+          "timestamp": "2025-09-30 12:00:00",
+          "value": 150.21
+        },
+        {
+          "timestamp": "2025-09-30 13:00:00",
+          "value": 142.26
+        },
+        {
+          "timestamp": "2025-09-30 14:00:00",
+          "value": 134.24
+        },
+        {
+          "timestamp": "2025-09-30 15:00:00",
+          "value": 127.87
+        },
+        {
+          "timestamp": "2025-09-30 16:00:00",
+          "value": 122.84
+        },
+        {
+          "timestamp": "2025-09-30 17:00:00",
+          "value": 121.24
+        },
+        {
+          "timestamp": "2025-09-30 18:00:00",
+          "value": 121.77
+        },
+        {
+          "timestamp": "2025-09-30 19:00:00",
+          "value": 121.9
+        },
+        {
+          "timestamp": "2025-09-30 20:00:00",
+          "value": 121.61
+        },
+        {
+          "timestamp": "2025-09-30 21:00:00",
+          "value": 128.73
+        },
+        {
+          "timestamp": "2025-09-30 22:00:00",
+          "value": 134.76
+        },
+        {
+          "timestamp": "2025-09-30 23:00:00",
+          "value": 141.56
+        },
+        {
+          "timestamp": "2025-10-01 00:00:00",
+          "value": 150.77
+        },
+        {
+          "timestamp": "2025-10-01 01:00:00",
+          "value": 158.9
+        },
+        {
+          "timestamp": "2025-10-01 02:00:00",
+          "value": 162.65
+        },
+        {
+          "timestamp": "2025-10-01 03:00:00",
+          "value": 170.44
+        },
+        {
+          "timestamp": "2025-10-01 04:00:00",
+          "value": 174.88
+        },
+        {
+          "timestamp": "2025-10-01 05:00:00",
+          "value": 180.25
+        },
+        {
+          "timestamp": "2025-10-01 06:00:00",
+          "value": 179.53
+        },
+        {
+          "timestamp": "2025-10-01 07:00:00",
+          "value": 177.22
+        },
+        {
+          "timestamp": "2025-10-01 08:00:00",
+          "value": 176.51
+        },
+        {
+          "timestamp": "2025-10-01 09:00:00",
+          "value": 171.12
+        },
+        {
+          "timestamp": "2025-10-01 10:00:00",
+          "value": 164.97
+        },
+        {
+          "timestamp": "2025-10-01 11:00:00",
+          "value": 157.04
+        },
+        {
+          "timestamp": "2025-10-01 12:00:00",
+          "value": 148.93
+        },
+        {
+          "timestamp": "2025-10-01 13:00:00",
+          "value": 142.46
+        },
+        {
+          "timestamp": "2025-10-01 14:00:00",
+          "value": 133.53
+        },
+        {
+          "timestamp": "2025-10-01 15:00:00",
+          "value": 128.63
+        },
+        {
+          "timestamp": "2025-10-01 16:00:00",
+          "value": 122.97
+        },
+        {
+          "timestamp": "2025-10-01 17:00:00",
+          "value": 118.92
+        },
+        {
+          "timestamp": "2025-10-01 18:00:00",
+          "value": 120.86
+        },
+        {
+          "timestamp": "2025-10-01 19:00:00",
+          "value": 121.33
+        },
+        {
+          "timestamp": "2025-10-01 20:00:00",
+          "value": 124.9
+        },
+        {
+          "timestamp": "2025-10-01 21:00:00",
+          "value": 127.79
+        },
+        {
+          "timestamp": "2025-10-01 22:00:00",
+          "value": 134.73
+        },
+        {
+          "timestamp": "2025-10-01 23:00:00",
+          "value": 141.11
+        },
+        {
+          "timestamp": "2025-10-02 00:00:00",
+          "value": 150.63
+        },
+        {
+          "timestamp": "2025-10-02 01:00:00",
+          "value": 157.57
+        },
+        {
+          "timestamp": "2025-10-02 02:00:00",
+          "value": 164.03
+        },
+        {
+          "timestamp": "2025-10-02 03:00:00",
+          "value": 168.22
+        },
+        {
+          "timestamp": "2025-10-02 04:00:00",
+          "value": 174.57
+        },
+        {
+          "timestamp": "2025-10-02 05:00:00",
+          "value": 177.8
+        },
+        {
+          "timestamp": "2025-10-02 06:00:00",
+          "value": 177.77
+        },
+        {
+          "timestamp": "2025-10-02 07:00:00",
+          "value": 179.53
+        },
+        {
+          "timestamp": "2025-10-02 08:00:00",
+          "value": 176.56
+        },
+        {
+          "timestamp": "2025-10-02 09:00:00",
+          "value": 171.26
+        },
+        {
+          "timestamp": "2025-10-02 10:00:00",
+          "value": 163.33
+        },
+        {
+          "timestamp": "2025-10-02 11:00:00",
+          "value": 157.97
+        },
+        {
+          "timestamp": "2025-10-02 12:00:00",
+          "value": 148.37
+        },
+        {
+          "timestamp": "2025-10-02 13:00:00",
+          "value": 142.01
+        },
+        {
+          "timestamp": "2025-10-02 14:00:00",
+          "value": 135.36
+        },
+        {
+          "timestamp": "2025-10-02 15:00:00",
+          "value": 128.76
+        },
+        {
+          "timestamp": "2025-10-02 16:00:00",
+          "value": 123.95
+        },
+        {
+          "timestamp": "2025-10-02 17:00:00",
+          "value": 119.18
+        },
+        {
+          "timestamp": "2025-10-02 18:00:00",
+          "value": 117.14
+        },
+        {
+          "timestamp": "2025-10-02 19:00:00",
+          "value": 119.89
+        },
+        {
+          "timestamp": "2025-10-02 20:00:00",
+          "value": 123.42
+        },
+        {
+          "timestamp": "2025-10-02 21:00:00",
+          "value": 128.98
+        },
+        {
+          "timestamp": "2025-10-02 22:00:00",
+          "value": 134.14
+        },
+        {
+          "timestamp": "2025-10-02 23:00:00",
+          "value": 143.04
+        },
+        {
+          "timestamp": "2025-10-03 00:00:00",
+          "value": 150.12
+        },
+        {
+          "timestamp": "2025-10-03 01:00:00",
+          "value": 157.12
+        },
+        {
+          "timestamp": "2025-10-03 02:00:00",
+          "value": 165.55
+        },
+        {
+          "timestamp": "2025-10-03 03:00:00",
+          "value": 171.98
+        },
+        {
+          "timestamp": "2025-10-03 04:00:00",
+          "value": 175.48
+        },
+        {
+          "timestamp": "2025-10-03 05:00:00",
+          "value": 179.5
+        },
+        {
+          "timestamp": "2025-10-03 06:00:00",
+          "value": 179.52
+        },
+        {
+          "timestamp": "2025-10-03 07:00:00",
+          "value": 179.97
+        },
+        {
+          "timestamp": "2025-10-03 08:00:00",
+          "value": 175.48
+        },
+        {
+          "timestamp": "2025-10-03 09:00:00",
+          "value": 171.65
+        },
+        {
+          "timestamp": "2025-10-03 10:00:00",
+          "value": 166.34
+        },
+        {
+          "timestamp": "2025-10-03 11:00:00",
+          "value": 157.78
+        },
+        {
+          "timestamp": "2025-10-03 12:00:00",
+          "value": 149.04
+        },
+        {
+          "timestamp": "2025-10-03 13:00:00",
+          "value": 142.35
+        },
+        {
+          "timestamp": "2025-10-03 14:00:00",
+          "value": 132.91
+        },
+        {
+          "timestamp": "2025-10-03 15:00:00",
+          "value": 129.07
+        },
+        {
+          "timestamp": "2025-10-03 16:00:00",
+          "value": 124.63
+        },
+        {
+          "timestamp": "2025-10-03 17:00:00",
+          "value": 120.13
+        },
+        {
+          "timestamp": "2025-10-03 18:00:00",
+          "value": 121.14
+        },
+        {
+          "timestamp": "2025-10-03 19:00:00",
+          "value": 121.14
+        },
+        {
+          "timestamp": "2025-10-03 20:00:00",
+          "value": 123.96
+        },
+        {
+          "timestamp": "2025-10-03 21:00:00",
+          "value": 129.65
+        },
+        {
+          "timestamp": "2025-10-03 22:00:00",
+          "value": 135.55
+        },
+        {
+          "timestamp": "2025-10-03 23:00:00",
+          "value": 141.15
+        },
+        {
+          "timestamp": "2025-10-04 00:00:00",
+          "value": 148.41
+        },
+        {
+          "timestamp": "2025-10-04 01:00:00",
+          "value": 157.89
+        },
+        {
+          "timestamp": "2025-10-04 02:00:00",
+          "value": 165.69
+        },
+        {
+          "timestamp": "2025-10-04 03:00:00",
+          "value": 172.14
+        },
+        {
+          "timestamp": "2025-10-04 04:00:00",
+          "value": 176.21
+        },
+        {
+          "timestamp": "2025-10-04 05:00:00",
+          "value": 179.43
+        },
+        {
+          "timestamp": "2025-10-04 06:00:00",
+          "value": 180.53
+        },
+        {
+          "timestamp": "2025-10-04 07:00:00",
+          "value": 178.21
+        },
+        {
+          "timestamp": "2025-10-04 08:00:00",
+          "value": 176.66
+        },
+        {
+          "timestamp": "2025-10-04 09:00:00",
+          "value": 169.83
+        },
+        {
+          "timestamp": "2025-10-04 10:00:00",
+          "value": 165.44
+        },
+        {
+          "timestamp": "2025-10-04 11:00:00",
+          "value": 158.23
+        },
+        {
+          "timestamp": "2025-10-04 12:00:00",
+          "value": 149.64
+        },
+        {
+          "timestamp": "2025-10-04 13:00:00",
+          "value": 140.4
+        },
+        {
+          "timestamp": "2025-10-04 14:00:00",
+          "value": 135.19
+        },
+        {
+          "timestamp": "2025-10-04 15:00:00",
+          "value": 128.84
+        },
+        {
+          "timestamp": "2025-10-04 16:00:00",
+          "value": 123.09
+        },
+        {
+          "timestamp": "2025-10-04 17:00:00",
+          "value": 121.92
+        },
+        {
+          "timestamp": "2025-10-04 18:00:00",
+          "value": 119.18
+        },
+        {
+          "timestamp": "2025-10-04 19:00:00",
+          "value": 121.69
+        },
+        {
+          "timestamp": "2025-10-04 20:00:00",
+          "value": 125.06
+        },
+        {
+          "timestamp": "2025-10-04 21:00:00",
+          "value": 130.02
+        },
+        {
+          "timestamp": "2025-10-04 22:00:00",
+          "value": 134.84
+        },
+        {
+          "timestamp": "2025-10-04 23:00:00",
+          "value": 142.22
+        },
+        {
+          "timestamp": "2025-10-05 00:00:00",
+          "value": 150.24
+        },
+        {
+          "timestamp": "2025-10-05 01:00:00",
+          "value": 159.52
+        },
+        {
+          "timestamp": "2025-10-05 02:00:00",
+          "value": 164.52
+        },
+        {
+          "timestamp": "2025-10-05 03:00:00",
+          "value": 170.98
+        },
+        {
+          "timestamp": "2025-10-05 04:00:00",
+          "value": 175.44
+        },
+        {
+          "timestamp": "2025-10-05 05:00:00",
+          "value": 179.82
+        },
+        {
+          "timestamp": "2025-10-05 06:00:00",
+          "value": 179.32
+        },
+        {
+          "timestamp": "2025-10-05 07:00:00",
+          "value": 179.3
+        },
+        {
+          "timestamp": "2025-10-05 08:00:00",
+          "value": 175.46
+        },
+        {
+          "timestamp": "2025-10-05 09:00:00",
+          "value": 170.18
+        },
+        {
+          "timestamp": "2025-10-05 10:00:00",
+          "value": 165.64
+        },
+        {
+          "timestamp": "2025-10-05 11:00:00",
+          "value": 158.72
+        },
+        {
+          "timestamp": "2025-10-05 12:00:00",
+          "value": 148.99
+        },
+        {
+          "timestamp": "2025-10-05 13:00:00",
+          "value": 141.01
+        },
+        {
+          "timestamp": "2025-10-05 14:00:00",
+          "value": 135.6
+        },
+        {
+          "timestamp": "2025-10-05 15:00:00",
+          "value": 127.49
+        },
+        {
+          "timestamp": "2025-10-05 16:00:00",
+          "value": 124.02
+        },
+        {
+          "timestamp": "2025-10-05 17:00:00",
+          "value": 120.57
+        },
+        {
+          "timestamp": "2025-10-05 18:00:00",
+          "value": 120.44
+        },
+        {
+          "timestamp": "2025-10-05 19:00:00",
+          "value": 121.4
+        },
+        {
+          "timestamp": "2025-10-05 20:00:00",
+          "value": 123.33
+        },
+        {
+          "timestamp": "2025-10-05 21:00:00",
+          "value": 128.77
+        },
+        {
+          "timestamp": "2025-10-05 22:00:00",
+          "value": 136.85
+        },
+        {
+          "timestamp": "2025-10-05 23:00:00",
+          "value": 139.71
+        },
+        {
+          "timestamp": "2025-10-06 00:00:00",
+          "value": 149.88
+        },
+        {
+          "timestamp": "2025-10-06 01:00:00",
+          "value": 158.09
+        },
+        {
+          "timestamp": "2025-10-06 02:00:00",
+          "value": 165.09
+        },
+        {
+          "timestamp": "2025-10-06 03:00:00",
+          "value": 171.36
+        },
+        {
+          "timestamp": "2025-10-06 04:00:00",
+          "value": 175.18
+        },
+        {
+          "timestamp": "2025-10-06 05:00:00",
+          "value": 179.67
+        },
+        {
+          "timestamp": "2025-10-06 06:00:00",
+          "value": 179.0
+        },
+        {
+          "timestamp": "2025-10-06 07:00:00",
+          "value": 179.6
+        },
+        {
+          "timestamp": "2025-10-06 08:00:00",
+          "value": 176.39
+        },
+        {
+          "timestamp": "2025-10-06 09:00:00",
+          "value": 172.23
+        },
+        {
+          "timestamp": "2025-10-06 10:00:00",
+          "value": 165.16
+        },
+        {
+          "timestamp": "2025-10-06 11:00:00",
+          "value": 157.76
+        },
+        {
+          "timestamp": "2025-10-06 12:00:00",
+          "value": 150.92
+        },
+        {
+          "timestamp": "2025-10-06 13:00:00",
+          "value": 140.52
+        },
+        {
+          "timestamp": "2025-10-06 14:00:00",
+          "value": 136.77
+        },
+        {
+          "timestamp": "2025-10-06 15:00:00",
+          "value": 128.45
+        },
+        {
+          "timestamp": "2025-10-06 16:00:00",
+          "value": 121.47
+        },
+        {
+          "timestamp": "2025-10-06 17:00:00",
+          "value": 120.18
+        },
+        {
+          "timestamp": "2025-10-06 18:00:00",
+          "value": 120.08
+        },
+        {
+          "timestamp": "2025-10-06 19:00:00",
+          "value": 120.64
+        },
+        {
+          "timestamp": "2025-10-06 20:00:00",
+          "value": 125.98
+        },
+        {
+          "timestamp": "2025-10-06 21:00:00",
+          "value": 128.65
+        },
+        {
+          "timestamp": "2025-10-06 22:00:00",
+          "value": 135.35
+        },
+        {
+          "timestamp": "2025-10-06 23:00:00",
+          "value": 141.67
+        },
+        {
+          "timestamp": "2025-10-07 00:00:00",
+          "value": 150.48
+        }
+      ],
+      "llm_analysis": "Based on the IoT system configuration, the available sensors include Supply Temperature, Return Temperature, Condenser Water Flow, and Power sensors for the specified equipment."
+    }
+  },
+  "219": {
+    "history": {
+      "sensor": "Supply Temperature",
+      "asset": "Chiller 9",
+      "data": [
+        {
+          "timestamp": "2025-09-30 00:00:00",
+          "value": 21.96
+        },
+        {
+          "timestamp": "2025-09-30 01:00:00",
+          "value": 22.85
+        },
+        {
+          "timestamp": "2025-09-30 02:00:00",
+          "value": 24.33
+        },
+        {
+          "timestamp": "2025-09-30 03:00:00",
+          "value": 24.68
+        },
+        {
+          "timestamp": "2025-09-30 04:00:00",
+          "value": 25.82
+        },
+        {
+          "timestamp": "2025-09-30 05:00:00",
+          "value": 26.22
+        },
+        {
+          "timestamp": "2025-09-30 06:00:00",
+          "value": 26.36
+        },
+        {
+          "timestamp": "2025-09-30 07:00:00",
+          "value": 26.37
+        },
+        {
+          "timestamp": "2025-09-30 08:00:00",
+          "value": 26.2
+        },
+        {
+          "timestamp": "2025-09-30 09:00:00",
+          "value": 25.12
+        },
+        {
+          "timestamp": "2025-09-30 10:00:00",
+          "value": 23.91
+        },
+        {
+          "timestamp": "2025-09-30 11:00:00",
+          "value": 23.18
+        },
+        {
+          "timestamp": "2025-09-30 12:00:00",
+          "value": 22.09
+        },
+        {
+          "timestamp": "2025-09-30 13:00:00",
+          "value": 20.62
+        },
+        {
+          "timestamp": "2025-09-30 14:00:00",
+          "value": 20.25
+        },
+        {
+          "timestamp": "2025-09-30 15:00:00",
+          "value": 18.48
+        },
+        {
+          "timestamp": "2025-09-30 16:00:00",
+          "value": 18.32
+        },
+        {
+          "timestamp": "2025-09-30 17:00:00",
+          "value": 17.83
+        },
+        {
+          "timestamp": "2025-09-30 18:00:00",
+          "value": 17.77
+        },
+        {
+          "timestamp": "2025-09-30 19:00:00",
+          "value": 17.89
+        },
+        {
+          "timestamp": "2025-09-30 20:00:00",
+          "value": 18.5
+        },
+        {
+          "timestamp": "2025-09-30 21:00:00",
+          "value": 19.0
+        },
+        {
+          "timestamp": "2025-09-30 22:00:00",
+          "value": 19.78
+        },
+        {
+          "timestamp": "2025-09-30 23:00:00",
+          "value": 20.66
+        },
+        {
+          "timestamp": "2025-10-01 00:00:00",
+          "value": 22.0
+        },
+        {
+          "timestamp": "2025-10-01 01:00:00",
+          "value": 22.97
+        },
+        {
+          "timestamp": "2025-10-01 02:00:00",
+          "value": 24.58
+        },
+        {
+          "timestamp": "2025-10-01 03:00:00",
+          "value": 25.25
+        },
+        {
+          "timestamp": "2025-10-01 04:00:00",
+          "value": 25.63
+        },
+        {
+          "timestamp": "2025-10-01 05:00:00",
+          "value": 25.97
+        },
+        {
+          "timestamp": "2025-10-01 06:00:00",
+          "value": 26.53
+        },
+        {
+          "timestamp": "2025-10-01 07:00:00",
+          "value": 26.43
+        },
+        {
+          "timestamp": "2025-10-01 08:00:00",
+          "value": 25.71
+        },
+        {
+          "timestamp": "2025-10-01 09:00:00",
+          "value": 25.04
+        },
+        {
+          "timestamp": "2025-10-01 10:00:00",
+          "value": 24.13
+        },
+        {
+          "timestamp": "2025-10-01 11:00:00",
+          "value": 23.33
+        },
+        {
+          "timestamp": "2025-10-01 12:00:00",
+          "value": 22.36
+        },
+        {
+          "timestamp": "2025-10-01 13:00:00",
+          "value": 20.65
+        },
+        {
+          "timestamp": "2025-10-01 14:00:00",
+          "value": 20.03
+        },
+        {
+          "timestamp": "2025-10-01 15:00:00",
+          "value": 18.82
+        },
+        {
+          "timestamp": "2025-10-01 16:00:00",
+          "value": 18.05
+        },
+        {
+          "timestamp": "2025-10-01 17:00:00",
+          "value": 17.98
+        },
+        {
+          "timestamp": "2025-10-01 18:00:00",
+          "value": 17.76
+        },
+        {
+          "timestamp": "2025-10-01 19:00:00",
+          "value": 18.3
+        },
+        {
+          "timestamp": "2025-10-01 20:00:00",
+          "value": 18.06
+        },
+        {
+          "timestamp": "2025-10-01 21:00:00",
+          "value": 18.72
+        },
+        {
+          "timestamp": "2025-10-01 22:00:00",
+          "value": 19.73
+        },
+        {
+          "timestamp": "2025-10-01 23:00:00",
+          "value": 20.5
+        },
+        {
+          "timestamp": "2025-10-02 00:00:00",
+          "value": 22.01
+        },
+        {
+          "timestamp": "2025-10-02 01:00:00",
+          "value": 22.86
+        },
+        {
+          "timestamp": "2025-10-02 02:00:00",
+          "value": 24.25
+        },
+        {
+          "timestamp": "2025-10-02 03:00:00",
+          "value": 25.29
+        },
+        {
+          "timestamp": "2025-10-02 04:00:00",
+          "value": 25.91
+        },
+        {
+          "timestamp": "2025-10-02 05:00:00",
+          "value": 26.2
+        },
+        {
+          "timestamp": "2025-10-02 06:00:00",
+          "value": 26.57
+        },
+        {
+          "timestamp": "2025-10-02 07:00:00",
+          "value": 26.27
+        },
+        {
+          "timestamp": "2025-10-02 08:00:00",
+          "value": 25.26
+        },
+        {
+          "timestamp": "2025-10-02 09:00:00",
+          "value": 24.79
+        },
+        {
+          "timestamp": "2025-10-02 10:00:00",
+          "value": 24.39
+        },
+        {
+          "timestamp": "2025-10-02 11:00:00",
+          "value": 22.93
+        },
+        {
+          "timestamp": "2025-10-02 12:00:00",
+          "value": 21.8
+        },
+        {
+          "timestamp": "2025-10-02 13:00:00",
+          "value": 20.94
+        },
+        {
+          "timestamp": "2025-10-02 14:00:00",
+          "value": 19.68
+        },
+        {
+          "timestamp": "2025-10-02 15:00:00",
+          "value": 19.1
+        },
+        {
+          "timestamp": "2025-10-02 16:00:00",
+          "value": 18.2
+        },
+        {
+          "timestamp": "2025-10-02 17:00:00",
+          "value": 17.74
+        },
+        {
+          "timestamp": "2025-10-02 18:00:00",
+          "value": 17.64
+        },
+        {
+          "timestamp": "2025-10-02 19:00:00",
+          "value": 17.87
+        },
+        {
+          "timestamp": "2025-10-02 20:00:00",
+          "value": 18.55
+        },
+        {
+          "timestamp": "2025-10-02 21:00:00",
+          "value": 18.87
+        },
+        {
+          "timestamp": "2025-10-02 22:00:00",
+          "value": 20.0
+        },
+        {
+          "timestamp": "2025-10-02 23:00:00",
+          "value": 21.07
+        },
+        {
+          "timestamp": "2025-10-03 00:00:00",
+          "value": 21.96
+        },
+        {
+          "timestamp": "2025-10-03 01:00:00",
+          "value": 23.05
+        },
+        {
+          "timestamp": "2025-10-03 02:00:00",
+          "value": 24.49
+        },
+        {
+          "timestamp": "2025-10-03 03:00:00",
+          "value": 25.55
+        },
+        {
+          "timestamp": "2025-10-03 04:00:00",
+          "value": 25.94
+        },
+        {
+          "timestamp": "2025-10-03 05:00:00",
+          "value": 26.64
+        },
+        {
+          "timestamp": "2025-10-03 06:00:00",
+          "value": 26.08
+        },
+        {
+          "timestamp": "2025-10-03 07:00:00",
+          "value": 26.37
+        },
+        {
+          "timestamp": "2025-10-03 08:00:00",
+          "value": 25.67
+        },
+        {
+          "timestamp": "2025-10-03 09:00:00",
+          "value": 24.76
+        },
+        {
+          "timestamp": "2025-10-03 10:00:00",
+          "value": 24.2
+        },
+        {
+          "timestamp": "2025-10-03 11:00:00",
+          "value": 23.14
+        },
+        {
+          "timestamp": "2025-10-03 12:00:00",
+          "value": 22.01
+        },
+        {
+          "timestamp": "2025-10-03 13:00:00",
+          "value": 21.11
+        },
+        {
+          "timestamp": "2025-10-03 14:00:00",
+          "value": 19.47
+        },
+        {
+          "timestamp": "2025-10-03 15:00:00",
+          "value": 18.87
+        },
+        {
+          "timestamp": "2025-10-03 16:00:00",
+          "value": 18.03
+        },
+        {
+          "timestamp": "2025-10-03 17:00:00",
+          "value": 17.91
+        },
+        {
+          "timestamp": "2025-10-03 18:00:00",
+          "value": 17.59
+        },
+        {
+          "timestamp": "2025-10-03 19:00:00",
+          "value": 17.25
+        },
+        {
+          "timestamp": "2025-10-03 20:00:00",
+          "value": 17.86
+        },
+        {
+          "timestamp": "2025-10-03 21:00:00",
+          "value": 18.83
+        },
+        {
+          "timestamp": "2025-10-03 22:00:00",
+          "value": 19.4
+        },
+        {
+          "timestamp": "2025-10-03 23:00:00",
+          "value": 20.85
+        },
+        {
+          "timestamp": "2025-10-04 00:00:00",
+          "value": 22.34
+        },
+        {
+          "timestamp": "2025-10-04 01:00:00",
+          "value": 23.21
+        },
+        {
+          "timestamp": "2025-10-04 02:00:00",
+          "value": 24.41
+        },
+        {
+          "timestamp": "2025-10-04 03:00:00",
+          "value": 25.09
+        },
+        {
+          "timestamp": "2025-10-04 04:00:00",
+          "value": 25.86
+        },
+        {
+          "timestamp": "2025-10-04 05:00:00",
+          "value": 26.56
+        },
+        {
+          "timestamp": "2025-10-04 06:00:00",
+          "value": 26.48
+        },
+        {
+          "timestamp": "2025-10-04 07:00:00",
+          "value": 26.2
+        },
+        {
+          "timestamp": "2025-10-04 08:00:00",
+          "value": 25.6
+        },
+        {
+          "timestamp": "2025-10-04 09:00:00",
+          "value": 24.93
+        },
+        {
+          "timestamp": "2025-10-04 10:00:00",
+          "value": 24.34
+        },
+        {
+          "timestamp": "2025-10-04 11:00:00",
+          "value": 22.9
+        },
+        {
+          "timestamp": "2025-10-04 12:00:00",
+          "value": 22.01
+        },
+        {
+          "timestamp": "2025-10-04 13:00:00",
+          "value": 21.07
+        },
+        {
+          "timestamp": "2025-10-04 14:00:00",
+          "value": 19.58
+        },
+        {
+          "timestamp": "2025-10-04 15:00:00",
+          "value": 19.14
+        },
+        {
+          "timestamp": "2025-10-04 16:00:00",
+          "value": 18.26
+        },
+        {
+          "timestamp": "2025-10-04 17:00:00",
+          "value": 17.72
+        },
+        {
+          "timestamp": "2025-10-04 18:00:00",
+          "value": 17.55
+        },
+        {
+          "timestamp": "2025-10-04 19:00:00",
+          "value": 17.81
+        },
+        {
+          "timestamp": "2025-10-04 20:00:00",
+          "value": 18.0
+        },
+        {
+          "timestamp": "2025-10-04 21:00:00",
+          "value": 18.91
+        },
+        {
+          "timestamp": "2025-10-04 22:00:00",
+          "value": 20.18
+        },
+        {
+          "timestamp": "2025-10-04 23:00:00",
+          "value": 20.69
+        },
+        {
+          "timestamp": "2025-10-05 00:00:00",
+          "value": 22.07
+        },
+        {
+          "timestamp": "2025-10-05 01:00:00",
+          "value": 23.28
+        },
+        {
+          "timestamp": "2025-10-05 02:00:00",
+          "value": 24.26
+        },
+        {
+          "timestamp": "2025-10-05 03:00:00",
+          "value": 25.29
+        },
+        {
+          "timestamp": "2025-10-05 04:00:00",
+          "value": 25.71
+        },
+        {
+          "timestamp": "2025-10-05 05:00:00",
+          "value": 26.1
+        },
+        {
+          "timestamp": "2025-10-05 06:00:00",
+          "value": 26.71
+        },
+        {
+          "timestamp": "2025-10-05 07:00:00",
+          "value": 25.99
+        },
+        {
+          "timestamp": "2025-10-05 08:00:00",
+          "value": 25.42
+        },
+        {
+          "timestamp": "2025-10-05 09:00:00",
+          "value": 24.48
+        },
+        {
+          "timestamp": "2025-10-05 10:00:00",
+          "value": 24.38
+        },
+        {
+          "timestamp": "2025-10-05 11:00:00",
+          "value": 22.45
+        },
+        {
+          "timestamp": "2025-10-05 12:00:00",
+          "value": 22.08
+        },
+        {
+          "timestamp": "2025-10-05 13:00:00",
+          "value": 20.63
+        },
+        {
+          "timestamp": "2025-10-05 14:00:00",
+          "value": 19.76
+        },
+        {
+          "timestamp": "2025-10-05 15:00:00",
+          "value": 19.08
+        },
+        {
+          "timestamp": "2025-10-05 16:00:00",
+          "value": 18.14
+        },
+        {
+          "timestamp": "2025-10-05 17:00:00",
+          "value": 17.73
+        },
+        {
+          "timestamp": "2025-10-05 18:00:00",
+          "value": 17.5
+        },
+        {
+          "timestamp": "2025-10-05 19:00:00",
+          "value": 17.5
+        },
+        {
+          "timestamp": "2025-10-05 20:00:00",
+          "value": 18.24
+        },
+        {
+          "timestamp": "2025-10-05 21:00:00",
+          "value": 18.92
+        },
+        {
+          "timestamp": "2025-10-05 22:00:00",
+          "value": 20.09
+        },
+        {
+          "timestamp": "2025-10-05 23:00:00",
+          "value": 20.89
+        },
+        {
+          "timestamp": "2025-10-06 00:00:00",
+          "value": 21.77
+        },
+        {
+          "timestamp": "2025-10-06 01:00:00",
+          "value": 23.24
+        },
+        {
+          "timestamp": "2025-10-06 02:00:00",
+          "value": 24.17
+        },
+        {
+          "timestamp": "2025-10-06 03:00:00",
+          "value": 24.71
+        },
+        {
+          "timestamp": "2025-10-06 04:00:00",
+          "value": 25.84
+        },
+        {
+          "timestamp": "2025-10-06 05:00:00",
+          "value": 26.27
+        },
+        {
+          "timestamp": "2025-10-06 06:00:00",
+          "value": 26.56
+        },
+        {
+          "timestamp": "2025-10-06 07:00:00",
+          "value": 26.34
+        },
+        {
+          "timestamp": "2025-10-06 08:00:00",
+          "value": 25.72
+        },
+        {
+          "timestamp": "2025-10-06 09:00:00",
+          "value": 24.97
+        },
+        {
+          "timestamp": "2025-10-06 10:00:00",
+          "value": 24.32
+        },
+        {
+          "timestamp": "2025-10-06 11:00:00",
+          "value": 22.97
+        },
+        {
+          "timestamp": "2025-10-06 12:00:00",
+          "value": 21.62
+        },
+        {
+          "timestamp": "2025-10-06 13:00:00",
+          "value": 20.97
+        },
+        {
+          "timestamp": "2025-10-06 14:00:00",
+          "value": 20.02
+        },
+        {
+          "timestamp": "2025-10-06 15:00:00",
+          "value": 19.2
+        },
+        {
+          "timestamp": "2025-10-06 16:00:00",
+          "value": 18.31
+        },
+        {
+          "timestamp": "2025-10-06 17:00:00",
+          "value": 17.61
+        },
+        {
+          "timestamp": "2025-10-06 18:00:00",
+          "value": 17.51
+        },
+        {
+          "timestamp": "2025-10-06 19:00:00",
+          "value": 17.9
+        },
+        {
+          "timestamp": "2025-10-06 20:00:00",
+          "value": 18.09
+        },
+        {
+          "timestamp": "2025-10-06 21:00:00",
+          "value": 18.69
+        },
+        {
+          "timestamp": "2025-10-06 22:00:00",
+          "value": 19.86
+        },
+        {
+          "timestamp": "2025-10-06 23:00:00",
+          "value": 20.57
+        },
+        {
+          "timestamp": "2025-10-07 00:00:00",
+          "value": 21.77
+        }
+      ],
+      "llm_analysis": "Based on the IoT system configuration, the available sensors include Supply Temperature, Return Temperature, Condenser Water Flow, and Power sensors for the specified equipment."
+    }
+  },
+  "220": {
+    "history": {
+      "sensor": "Condenser Water Flow",
+      "asset": "Chiller 9",
+      "data": [
+        {
+          "timestamp": "2025-09-30 00:00:00",
+          "value": 149.35
+        },
+        {
+          "timestamp": "2025-09-30 01:00:00",
+          "value": 157.05
+        },
+        {
+          "timestamp": "2025-09-30 02:00:00",
+          "value": 163.65
+        },
+        {
+          "timestamp": "2025-09-30 03:00:00",
+          "value": 173.02
+        },
+        {
+          "timestamp": "2025-09-30 04:00:00",
+          "value": 175.18
+        },
+        {
+          "timestamp": "2025-09-30 05:00:00",
+          "value": 179.04
+        },
+        {
+          "timestamp": "2025-09-30 06:00:00",
+          "value": 180.92
+        },
+        {
+          "timestamp": "2025-09-30 07:00:00",
+          "value": 179.27
+        },
+        {
+          "timestamp": "2025-09-30 08:00:00",
+          "value": 176.64
+        },
+        {
+          "timestamp": "2025-09-30 09:00:00",
+          "value": 171.15
+        },
+        {
+          "timestamp": "2025-09-30 10:00:00",
+          "value": 165.81
+        },
+        {
+          "timestamp": "2025-09-30 11:00:00",
+          "value": 157.07
+        },
+        {
+          "timestamp": "2025-09-30 12:00:00",
+          "value": 149.75
+        },
+        {
+          "timestamp": "2025-09-30 13:00:00",
+          "value": 143.61
+        },
+        {
+          "timestamp": "2025-09-30 14:00:00",
+          "value": 134.4
+        },
+        {
+          "timestamp": "2025-09-30 15:00:00",
+          "value": 129.59
+        },
+        {
+          "timestamp": "2025-09-30 16:00:00",
+          "value": 122.28
+        },
+        {
+          "timestamp": "2025-09-30 17:00:00",
+          "value": 120.67
+        },
+        {
+          "timestamp": "2025-09-30 18:00:00",
+          "value": 120.4
+        },
+        {
+          "timestamp": "2025-09-30 19:00:00",
+          "value": 121.49
+        },
+        {
+          "timestamp": "2025-09-30 20:00:00",
+          "value": 123.89
+        },
+        {
+          "timestamp": "2025-09-30 21:00:00",
+          "value": 128.71
+        },
+        {
+          "timestamp": "2025-09-30 22:00:00",
+          "value": 134.62
+        },
+        {
+          "timestamp": "2025-09-30 23:00:00",
+          "value": 141.54
+        },
+        {
+          "timestamp": "2025-10-01 00:00:00",
+          "value": 149.07
+        },
+        {
+          "timestamp": "2025-10-01 01:00:00",
+          "value": 158.91
+        },
+        {
+          "timestamp": "2025-10-01 02:00:00",
+          "value": 165.16
+        },
+        {
+          "timestamp": "2025-10-01 03:00:00",
+          "value": 171.2
+        },
+        {
+          "timestamp": "2025-10-01 04:00:00",
+          "value": 175.94
+        },
+        {
+          "timestamp": "2025-10-01 05:00:00",
+          "value": 179.85
+        },
+        {
+          "timestamp": "2025-10-01 06:00:00",
+          "value": 179.47
+        },
+        {
+          "timestamp": "2025-10-01 07:00:00",
+          "value": 179.54
+        },
+        {
+          "timestamp": "2025-10-01 08:00:00",
+          "value": 176.78
+        },
+        {
+          "timestamp": "2025-10-01 09:00:00",
+          "value": 172.29
+        },
+        {
+          "timestamp": "2025-10-01 10:00:00",
+          "value": 165.1
+        },
+        {
+          "timestamp": "2025-10-01 11:00:00",
+          "value": 157.29
+        },
+        {
+          "timestamp": "2025-10-01 12:00:00",
+          "value": 150.81
+        },
+        {
+          "timestamp": "2025-10-01 13:00:00",
+          "value": 142.81
+        },
+        {
+          "timestamp": "2025-10-01 14:00:00",
+          "value": 134.79
+        },
+        {
+          "timestamp": "2025-10-01 15:00:00",
+          "value": 129.14
+        },
+        {
+          "timestamp": "2025-10-01 16:00:00",
+          "value": 125.3
+        },
+        {
+          "timestamp": "2025-10-01 17:00:00",
+          "value": 122.4
+        },
+        {
+          "timestamp": "2025-10-01 18:00:00",
+          "value": 119.74
+        },
+        {
+          "timestamp": "2025-10-01 19:00:00",
+          "value": 121.5
+        },
+        {
+          "timestamp": "2025-10-01 20:00:00",
+          "value": 123.13
+        },
+        {
+          "timestamp": "2025-10-01 21:00:00",
+          "value": 127.73
+        },
+        {
+          "timestamp": "2025-10-01 22:00:00",
+          "value": 133.08
+        },
+        {
+          "timestamp": "2025-10-01 23:00:00",
+          "value": 142.62
+        },
+        {
+          "timestamp": "2025-10-02 00:00:00",
+          "value": 147.53
+        },
+        {
+          "timestamp": "2025-10-02 01:00:00",
+          "value": 158.34
+        },
+        {
+          "timestamp": "2025-10-02 02:00:00",
+          "value": 163.27
+        },
+        {
+          "timestamp": "2025-10-02 03:00:00",
+          "value": 169.89
+        },
+        {
+          "timestamp": "2025-10-02 04:00:00",
+          "value": 175.65
+        },
+        {
+          "timestamp": "2025-10-02 05:00:00",
+          "value": 178.6
+        },
+        {
+          "timestamp": "2025-10-02 06:00:00",
+          "value": 178.76
+        },
+        {
+          "timestamp": "2025-10-02 07:00:00",
+          "value": 179.08
+        },
+        {
+          "timestamp": "2025-10-02 08:00:00",
+          "value": 177.97
+        },
+        {
+          "timestamp": "2025-10-02 09:00:00",
+          "value": 171.86
+        },
+        {
+          "timestamp": "2025-10-02 10:00:00",
+          "value": 164.76
+        },
+        {
+          "timestamp": "2025-10-02 11:00:00",
+          "value": 157.9
+        },
+        {
+          "timestamp": "2025-10-02 12:00:00",
+          "value": 152.11
+        },
+        {
+          "timestamp": "2025-10-02 13:00:00",
+          "value": 140.81
+        },
+        {
+          "timestamp": "2025-10-02 14:00:00",
+          "value": 136.2
+        },
+        {
+          "timestamp": "2025-10-02 15:00:00",
+          "value": 127.36
+        },
+        {
+          "timestamp": "2025-10-02 16:00:00",
+          "value": 124.63
+        },
+        {
+          "timestamp": "2025-10-02 17:00:00",
+          "value": 118.6
+        },
+        {
+          "timestamp": "2025-10-02 18:00:00",
+          "value": 119.26
+        },
+        {
+          "timestamp": "2025-10-02 19:00:00",
+          "value": 121.3
+        },
+        {
+          "timestamp": "2025-10-02 20:00:00",
+          "value": 122.92
+        },
+        {
+          "timestamp": "2025-10-02 21:00:00",
+          "value": 129.17
+        },
+        {
+          "timestamp": "2025-10-02 22:00:00",
+          "value": 134.23
+        },
+        {
+          "timestamp": "2025-10-02 23:00:00",
+          "value": 142.71
+        },
+        {
+          "timestamp": "2025-10-03 00:00:00",
+          "value": 149.32
+        },
+        {
+          "timestamp": "2025-10-03 01:00:00",
+          "value": 159.36
+        },
+        {
+          "timestamp": "2025-10-03 02:00:00",
+          "value": 165.31
+        },
+        {
+          "timestamp": "2025-10-03 03:00:00",
+          "value": 171.96
+        },
+        {
+          "timestamp": "2025-10-03 04:00:00",
+          "value": 177.18
+        },
+        {
+          "timestamp": "2025-10-03 05:00:00",
+          "value": 179.4
+        },
+        {
+          "timestamp": "2025-10-03 06:00:00",
+          "value": 179.64
+        },
+        {
+          "timestamp": "2025-10-03 07:00:00",
+          "value": 178.28
+        },
+        {
+          "timestamp": "2025-10-03 08:00:00",
+          "value": 176.36
+        },
+        {
+          "timestamp": "2025-10-03 09:00:00",
+          "value": 170.65
+        },
+        {
+          "timestamp": "2025-10-03 10:00:00",
+          "value": 164.85
+        },
+        {
+          "timestamp": "2025-10-03 11:00:00",
+          "value": 159.23
+        },
+        {
+          "timestamp": "2025-10-03 12:00:00",
+          "value": 150.09
+        },
+        {
+          "timestamp": "2025-10-03 13:00:00",
+          "value": 141.03
+        },
+        {
+          "timestamp": "2025-10-03 14:00:00",
+          "value": 134.18
+        },
+        {
+          "timestamp": "2025-10-03 15:00:00",
+          "value": 128.56
+        },
+        {
+          "timestamp": "2025-10-03 16:00:00",
+          "value": 123.25
+        },
+        {
+          "timestamp": "2025-10-03 17:00:00",
+          "value": 121.34
+        },
+        {
+          "timestamp": "2025-10-03 18:00:00",
+          "value": 118.66
+        },
+        {
+          "timestamp": "2025-10-03 19:00:00",
+          "value": 120.73
+        },
+        {
+          "timestamp": "2025-10-03 20:00:00",
+          "value": 123.77
+        },
+        {
+          "timestamp": "2025-10-03 21:00:00",
+          "value": 127.74
+        },
+        {
+          "timestamp": "2025-10-03 22:00:00",
+          "value": 133.08
+        },
+        {
+          "timestamp": "2025-10-03 23:00:00",
+          "value": 140.96
+        },
+        {
+          "timestamp": "2025-10-04 00:00:00",
+          "value": 151.08
+        },
+        {
+          "timestamp": "2025-10-04 01:00:00",
+          "value": 156.42
+        },
+        {
+          "timestamp": "2025-10-04 02:00:00",
+          "value": 165.19
+        },
+        {
+          "timestamp": "2025-10-04 03:00:00",
+          "value": 171.28
+        },
+        {
+          "timestamp": "2025-10-04 04:00:00",
+          "value": 174.61
+        },
+        {
+          "timestamp": "2025-10-04 05:00:00",
+          "value": 178.21
+        },
+        {
+          "timestamp": "2025-10-04 06:00:00",
+          "value": 180.15
+        },
+        {
+          "timestamp": "2025-10-04 07:00:00",
+          "value": 178.64
+        },
+        {
+          "timestamp": "2025-10-04 08:00:00",
+          "value": 175.8
+        },
+        {
+          "timestamp": "2025-10-04 09:00:00",
+          "value": 171.21
+        },
+        {
+          "timestamp": "2025-10-04 10:00:00",
+          "value": 165.35
+        },
+        {
+          "timestamp": "2025-10-04 11:00:00",
+          "value": 157.62
+        },
+        {
+          "timestamp": "2025-10-04 12:00:00",
+          "value": 149.24
+        },
+        {
+          "timestamp": "2025-10-04 13:00:00",
+          "value": 142.69
+        },
+        {
+          "timestamp": "2025-10-04 14:00:00",
+          "value": 133.72
+        },
+        {
+          "timestamp": "2025-10-04 15:00:00",
+          "value": 128.69
+        },
+        {
+          "timestamp": "2025-10-04 16:00:00",
+          "value": 123.9
+        },
+        {
+          "timestamp": "2025-10-04 17:00:00",
+          "value": 120.54
+        },
+        {
+          "timestamp": "2025-10-04 18:00:00",
+          "value": 119.43
+        },
+        {
+          "timestamp": "2025-10-04 19:00:00",
+          "value": 121.33
+        },
+        {
+          "timestamp": "2025-10-04 20:00:00",
+          "value": 123.71
+        },
+        {
+          "timestamp": "2025-10-04 21:00:00",
+          "value": 125.65
+        },
+        {
+          "timestamp": "2025-10-04 22:00:00",
+          "value": 134.74
+        },
+        {
+          "timestamp": "2025-10-04 23:00:00",
+          "value": 142.09
+        },
+        {
+          "timestamp": "2025-10-05 00:00:00",
+          "value": 148.67
+        },
+        {
+          "timestamp": "2025-10-05 01:00:00",
+          "value": 156.47
+        },
+        {
+          "timestamp": "2025-10-05 02:00:00",
+          "value": 165.99
+        },
+        {
+          "timestamp": "2025-10-05 03:00:00",
+          "value": 171.44
+        },
+        {
+          "timestamp": "2025-10-05 04:00:00",
+          "value": 174.21
+        },
+        {
+          "timestamp": "2025-10-05 05:00:00",
+          "value": 178.92
+        },
+        {
+          "timestamp": "2025-10-05 06:00:00",
+          "value": 179.52
+        },
+        {
+          "timestamp": "2025-10-05 07:00:00",
+          "value": 178.24
+        },
+        {
+          "timestamp": "2025-10-05 08:00:00",
+          "value": 176.24
+        },
+        {
+          "timestamp": "2025-10-05 09:00:00",
+          "value": 172.27
+        },
+        {
+          "timestamp": "2025-10-05 10:00:00",
+          "value": 164.29
+        },
+        {
+          "timestamp": "2025-10-05 11:00:00",
+          "value": 158.02
+        },
+        {
+          "timestamp": "2025-10-05 12:00:00",
+          "value": 150.56
+        },
+        {
+          "timestamp": "2025-10-05 13:00:00",
+          "value": 141.59
+        },
+        {
+          "timestamp": "2025-10-05 14:00:00",
+          "value": 135.69
+        },
+        {
+          "timestamp": "2025-10-05 15:00:00",
+          "value": 129.27
+        },
+        {
+          "timestamp": "2025-10-05 16:00:00",
+          "value": 124.99
+        },
+        {
+          "timestamp": "2025-10-05 17:00:00",
+          "value": 121.8
+        },
+        {
+          "timestamp": "2025-10-05 18:00:00",
+          "value": 120.57
+        },
+        {
+          "timestamp": "2025-10-05 19:00:00",
+          "value": 121.13
+        },
+        {
+          "timestamp": "2025-10-05 20:00:00",
+          "value": 123.74
+        },
+        {
+          "timestamp": "2025-10-05 21:00:00",
+          "value": 128.76
+        },
+        {
+          "timestamp": "2025-10-05 22:00:00",
+          "value": 136.21
+        },
+        {
+          "timestamp": "2025-10-05 23:00:00",
+          "value": 143.84
+        },
+        {
+          "timestamp": "2025-10-06 00:00:00",
+          "value": 149.27
+        },
+        {
+          "timestamp": "2025-10-06 01:00:00",
+          "value": 158.71
+        },
+        {
+          "timestamp": "2025-10-06 02:00:00",
+          "value": 165.12
+        },
+        {
+          "timestamp": "2025-10-06 03:00:00",
+          "value": 173.45
+        },
+        {
+          "timestamp": "2025-10-06 04:00:00",
+          "value": 176.34
+        },
+        {
+          "timestamp": "2025-10-06 05:00:00",
+          "value": 176.23
+        },
+        {
+          "timestamp": "2025-10-06 06:00:00",
+          "value": 180.59
+        },
+        {
+          "timestamp": "2025-10-06 07:00:00",
+          "value": 177.77
+        },
+        {
+          "timestamp": "2025-10-06 08:00:00",
+          "value": 176.56
+        },
+        {
+          "timestamp": "2025-10-06 09:00:00",
+          "value": 171.18
+        },
+        {
+          "timestamp": "2025-10-06 10:00:00",
+          "value": 164.59
+        },
+        {
+          "timestamp": "2025-10-06 11:00:00",
+          "value": 156.72
+        },
+        {
+          "timestamp": "2025-10-06 12:00:00",
+          "value": 150.25
+        },
+        {
+          "timestamp": "2025-10-06 13:00:00",
+          "value": 143.27
+        },
+        {
+          "timestamp": "2025-10-06 14:00:00",
+          "value": 135.14
+        },
+        {
+          "timestamp": "2025-10-06 15:00:00",
+          "value": 127.76
+        },
+        {
+          "timestamp": "2025-10-06 16:00:00",
+          "value": 124.1
+        },
+        {
+          "timestamp": "2025-10-06 17:00:00",
+          "value": 121.48
+        },
+        {
+          "timestamp": "2025-10-06 18:00:00",
+          "value": 120.86
+        },
+        {
+          "timestamp": "2025-10-06 19:00:00",
+          "value": 122.09
+        },
+        {
+          "timestamp": "2025-10-06 20:00:00",
+          "value": 123.18
+        },
+        {
+          "timestamp": "2025-10-06 21:00:00",
+          "value": 129.71
+        },
+        {
+          "timestamp": "2025-10-06 22:00:00",
+          "value": 133.74
+        },
+        {
+          "timestamp": "2025-10-06 23:00:00",
+          "value": 143.56
+        },
+        {
+          "timestamp": "2025-10-07 00:00:00",
+          "value": 149.4
+        }
+      ],
+      "llm_analysis": "Based on the IoT system configuration, the available sensors include Supply Temperature, Return Temperature, Condenser Water Flow, and Power sensors for the specified equipment."
+    }
+  },
+  "221": {
+    "history": {
+      "sensor": "Condenser Water Flow",
+      "asset": "Chiller 9",
+      "data": [
+        {
+          "timestamp": "2025-09-30 00:00:00",
+          "value": 151.65
+        },
+        {
+          "timestamp": "2025-09-30 01:00:00",
+          "value": 160.37
+        },
+        {
+          "timestamp": "2025-09-30 02:00:00",
+          "value": 165.94
+        },
+        {
+          "timestamp": "2025-09-30 03:00:00",
+          "value": 169.83
+        },
+        {
+          "timestamp": "2025-09-30 04:00:00",
+          "value": 176.77
+        },
+        {
+          "timestamp": "2025-09-30 05:00:00",
+          "value": 179.26
+        },
+        {
+          "timestamp": "2025-09-30 06:00:00",
+          "value": 179.38
+        },
+        {
+          "timestamp": "2025-09-30 07:00:00",
+          "value": 178.15
+        },
+        {
+          "timestamp": "2025-09-30 08:00:00",
+          "value": 172.99
+        },
+        {
+          "timestamp": "2025-09-30 09:00:00",
+          "value": 171.67
+        },
+        {
+          "timestamp": "2025-09-30 10:00:00",
+          "value": 164.35
+        },
+        {
+          "timestamp": "2025-09-30 11:00:00",
+          "value": 158.27
+        },
+        {
+          "timestamp": "2025-09-30 12:00:00",
+          "value": 150.56
+        },
+        {
+          "timestamp": "2025-09-30 13:00:00",
+          "value": 141.85
+        },
+        {
+          "timestamp": "2025-09-30 14:00:00",
+          "value": 136.23
+        },
+        {
+          "timestamp": "2025-09-30 15:00:00",
+          "value": 128.52
+        },
+        {
+          "timestamp": "2025-09-30 16:00:00",
+          "value": 124.17
+        },
+        {
+          "timestamp": "2025-09-30 17:00:00",
+          "value": 121.13
+        },
+        {
+          "timestamp": "2025-09-30 18:00:00",
+          "value": 119.46
+        },
+        {
+          "timestamp": "2025-09-30 19:00:00",
+          "value": 120.43
+        },
+        {
+          "timestamp": "2025-09-30 20:00:00",
+          "value": 124.33
+        },
+        {
+          "timestamp": "2025-09-30 21:00:00",
+          "value": 129.34
+        },
+        {
+          "timestamp": "2025-09-30 22:00:00",
+          "value": 134.94
+        },
+        {
+          "timestamp": "2025-09-30 23:00:00",
+          "value": 142.35
+        },
+        {
+          "timestamp": "2025-10-01 00:00:00",
+          "value": 151.2
+        },
+        {
+          "timestamp": "2025-10-01 01:00:00",
+          "value": 159.66
+        },
+        {
+          "timestamp": "2025-10-01 02:00:00",
+          "value": 164.32
+        },
+        {
+          "timestamp": "2025-10-01 03:00:00",
+          "value": 170.51
+        },
+        {
+          "timestamp": "2025-10-01 04:00:00",
+          "value": 177.67
+        },
+        {
+          "timestamp": "2025-10-01 05:00:00",
+          "value": 177.34
+        },
+        {
+          "timestamp": "2025-10-01 06:00:00",
+          "value": 179.54
+        },
+        {
+          "timestamp": "2025-10-01 07:00:00",
+          "value": 177.61
+        },
+        {
+          "timestamp": "2025-10-01 08:00:00",
+          "value": 176.71
+        },
+        {
+          "timestamp": "2025-10-01 09:00:00",
+          "value": 171.06
+        },
+        {
+          "timestamp": "2025-10-01 10:00:00",
+          "value": 162.44
+        },
+        {
+          "timestamp": "2025-10-01 11:00:00",
+          "value": 157.3
+        },
+        {
+          "timestamp": "2025-10-01 12:00:00",
+          "value": 148.62
+        },
+        {
+          "timestamp": "2025-10-01 13:00:00",
+          "value": 142.93
+        },
+        {
+          "timestamp": "2025-10-01 14:00:00",
+          "value": 134.87
+        },
+        {
+          "timestamp": "2025-10-01 15:00:00",
+          "value": 128.27
+        },
+        {
+          "timestamp": "2025-10-01 16:00:00",
+          "value": 123.13
+        },
+        {
+          "timestamp": "2025-10-01 17:00:00",
+          "value": 118.96
+        },
+        {
+          "timestamp": "2025-10-01 18:00:00",
+          "value": 121.4
+        },
+        {
+          "timestamp": "2025-10-01 19:00:00",
+          "value": 121.49
+        },
+        {
+          "timestamp": "2025-10-01 20:00:00",
+          "value": 124.93
+        },
+        {
+          "timestamp": "2025-10-01 21:00:00",
+          "value": 129.78
+        },
+        {
+          "timestamp": "2025-10-01 22:00:00",
+          "value": 135.21
+        },
+        {
+          "timestamp": "2025-10-01 23:00:00",
+          "value": 143.1
+        },
+        {
+          "timestamp": "2025-10-02 00:00:00",
+          "value": 149.39
+        },
+        {
+          "timestamp": "2025-10-02 01:00:00",
+          "value": 157.63
+        },
+        {
+          "timestamp": "2025-10-02 02:00:00",
+          "value": 164.6
+        },
+        {
+          "timestamp": "2025-10-02 03:00:00",
+          "value": 170.0
+        },
+        {
+          "timestamp": "2025-10-02 04:00:00",
+          "value": 176.38
+        },
+        {
+          "timestamp": "2025-10-02 05:00:00",
+          "value": 178.03
+        },
+        {
+          "timestamp": "2025-10-02 06:00:00",
+          "value": 178.45
+        },
+        {
+          "timestamp": "2025-10-02 07:00:00",
+          "value": 178.55
+        },
+        {
+          "timestamp": "2025-10-02 08:00:00",
+          "value": 177.02
+        },
+        {
+          "timestamp": "2025-10-02 09:00:00",
+          "value": 171.89
+        },
+        {
+          "timestamp": "2025-10-02 10:00:00",
+          "value": 167.13
+        },
+        {
+          "timestamp": "2025-10-02 11:00:00",
+          "value": 157.99
+        },
+        {
+          "timestamp": "2025-10-02 12:00:00",
+          "value": 149.49
+        },
+        {
+          "timestamp": "2025-10-02 13:00:00",
+          "value": 140.8
+        },
+        {
+          "timestamp": "2025-10-02 14:00:00",
+          "value": 135.64
+        },
+        {
+          "timestamp": "2025-10-02 15:00:00",
+          "value": 127.66
+        },
+        {
+          "timestamp": "2025-10-02 16:00:00",
+          "value": 123.59
+        },
+        {
+          "timestamp": "2025-10-02 17:00:00",
+          "value": 123.1
+        },
+        {
+          "timestamp": "2025-10-02 18:00:00",
+          "value": 120.46
+        },
+        {
+          "timestamp": "2025-10-02 19:00:00",
+          "value": 121.67
+        },
+        {
+          "timestamp": "2025-10-02 20:00:00",
+          "value": 124.94
+        },
+        {
+          "timestamp": "2025-10-02 21:00:00",
+          "value": 128.02
+        },
+        {
+          "timestamp": "2025-10-02 22:00:00",
+          "value": 134.66
+        },
+        {
+          "timestamp": "2025-10-02 23:00:00",
+          "value": 144.0
+        },
+        {
+          "timestamp": "2025-10-03 00:00:00",
+          "value": 151.44
+        },
+        {
+          "timestamp": "2025-10-03 01:00:00",
+          "value": 157.94
+        },
+        {
+          "timestamp": "2025-10-03 02:00:00",
+          "value": 166.24
+        },
+        {
+          "timestamp": "2025-10-03 03:00:00",
+          "value": 172.17
+        },
+        {
+          "timestamp": "2025-10-03 04:00:00",
+          "value": 176.61
+        },
+        {
+          "timestamp": "2025-10-03 05:00:00",
+          "value": 179.78
+        },
+        {
+          "timestamp": "2025-10-03 06:00:00",
+          "value": 178.88
+        },
+        {
+          "timestamp": "2025-10-03 07:00:00",
+          "value": 179.65
+        },
+        {
+          "timestamp": "2025-10-03 08:00:00",
+          "value": 176.04
+        },
+        {
+          "timestamp": "2025-10-03 09:00:00",
+          "value": 171.18
+        },
+        {
+          "timestamp": "2025-10-03 10:00:00",
+          "value": 164.75
+        },
+        {
+          "timestamp": "2025-10-03 11:00:00",
+          "value": 157.82
+        },
+        {
+          "timestamp": "2025-10-03 12:00:00",
+          "value": 150.12
+        },
+        {
+          "timestamp": "2025-10-03 13:00:00",
+          "value": 143.44
+        },
+        {
+          "timestamp": "2025-10-03 14:00:00",
+          "value": 133.57
+        },
+        {
+          "timestamp": "2025-10-03 15:00:00",
+          "value": 128.32
+        },
+        {
+          "timestamp": "2025-10-03 16:00:00",
+          "value": 122.72
+        },
+        {
+          "timestamp": "2025-10-03 17:00:00",
+          "value": 120.08
+        },
+        {
+          "timestamp": "2025-10-03 18:00:00",
+          "value": 119.02
+        },
+        {
+          "timestamp": "2025-10-03 19:00:00",
+          "value": 119.86
+        },
+        {
+          "timestamp": "2025-10-03 20:00:00",
+          "value": 121.83
+        },
+        {
+          "timestamp": "2025-10-03 21:00:00",
+          "value": 128.83
+        },
+        {
+          "timestamp": "2025-10-03 22:00:00",
+          "value": 135.71
+        },
+        {
+          "timestamp": "2025-10-03 23:00:00",
+          "value": 143.0
+        },
+        {
+          "timestamp": "2025-10-04 00:00:00",
+          "value": 149.68
+        },
+        {
+          "timestamp": "2025-10-04 01:00:00",
+          "value": 158.16
+        },
+        {
+          "timestamp": "2025-10-04 02:00:00",
+          "value": 164.64
+        },
+        {
+          "timestamp": "2025-10-04 03:00:00",
+          "value": 171.26
+        },
+        {
+          "timestamp": "2025-10-04 04:00:00",
+          "value": 176.39
+        },
+        {
+          "timestamp": "2025-10-04 05:00:00",
+          "value": 178.13
+        },
+        {
+          "timestamp": "2025-10-04 06:00:00",
+          "value": 179.68
+        },
+        {
+          "timestamp": "2025-10-04 07:00:00",
+          "value": 179.56
+        },
+        {
+          "timestamp": "2025-10-04 08:00:00",
+          "value": 175.76
+        },
+        {
+          "timestamp": "2025-10-04 09:00:00",
+          "value": 172.13
+        },
+        {
+          "timestamp": "2025-10-04 10:00:00",
+          "value": 163.65
+        },
+        {
+          "timestamp": "2025-10-04 11:00:00",
+          "value": 157.81
+        },
+        {
+          "timestamp": "2025-10-04 12:00:00",
+          "value": 148.91
+        },
+        {
+          "timestamp": "2025-10-04 13:00:00",
+          "value": 144.44
+        },
+        {
+          "timestamp": "2025-10-04 14:00:00",
+          "value": 134.53
+        },
+        {
+          "timestamp": "2025-10-04 15:00:00",
+          "value": 129.1
+        },
+        {
+          "timestamp": "2025-10-04 16:00:00",
+          "value": 123.78
+        },
+        {
+          "timestamp": "2025-10-04 17:00:00",
+          "value": 119.45
+        },
+        {
+          "timestamp": "2025-10-04 18:00:00",
+          "value": 118.81
+        },
+        {
+          "timestamp": "2025-10-04 19:00:00",
+          "value": 121.62
+        },
+        {
+          "timestamp": "2025-10-04 20:00:00",
+          "value": 124.97
+        },
+        {
+          "timestamp": "2025-10-04 21:00:00",
+          "value": 128.89
+        },
+        {
+          "timestamp": "2025-10-04 22:00:00",
+          "value": 137.12
+        },
+        {
+          "timestamp": "2025-10-04 23:00:00",
+          "value": 140.71
+        },
+        {
+          "timestamp": "2025-10-05 00:00:00",
+          "value": 148.97
+        },
+        {
+          "timestamp": "2025-10-05 01:00:00",
+          "value": 156.59
+        },
+        {
+          "timestamp": "2025-10-05 02:00:00",
+          "value": 166.56
+        },
+        {
+          "timestamp": "2025-10-05 03:00:00",
+          "value": 170.68
+        },
+        {
+          "timestamp": "2025-10-05 04:00:00",
+          "value": 173.64
+        },
+        {
+          "timestamp": "2025-10-05 05:00:00",
+          "value": 179.0
+        },
+        {
+          "timestamp": "2025-10-05 06:00:00",
+          "value": 178.98
+        },
+        {
+          "timestamp": "2025-10-05 07:00:00",
+          "value": 180.18
+        },
+        {
+          "timestamp": "2025-10-05 08:00:00",
+          "value": 176.01
+        },
+        {
+          "timestamp": "2025-10-05 09:00:00",
+          "value": 170.34
+        },
+        {
+          "timestamp": "2025-10-05 10:00:00",
+          "value": 165.48
+        },
+        {
+          "timestamp": "2025-10-05 11:00:00",
+          "value": 156.92
+        },
+        {
+          "timestamp": "2025-10-05 12:00:00",
+          "value": 150.31
+        },
+        {
+          "timestamp": "2025-10-05 13:00:00",
+          "value": 142.71
+        },
+        {
+          "timestamp": "2025-10-05 14:00:00",
+          "value": 134.43
+        },
+        {
+          "timestamp": "2025-10-05 15:00:00",
+          "value": 129.32
+        },
+        {
+          "timestamp": "2025-10-05 16:00:00",
+          "value": 123.91
+        },
+        {
+          "timestamp": "2025-10-05 17:00:00",
+          "value": 122.91
+        },
+        {
+          "timestamp": "2025-10-05 18:00:00",
+          "value": 118.62
+        },
+        {
+          "timestamp": "2025-10-05 19:00:00",
+          "value": 121.62
+        },
+        {
+          "timestamp": "2025-10-05 20:00:00",
+          "value": 123.33
+        },
+        {
+          "timestamp": "2025-10-05 21:00:00",
+          "value": 129.67
+        },
+        {
+          "timestamp": "2025-10-05 22:00:00",
+          "value": 135.63
+        },
+        {
+          "timestamp": "2025-10-05 23:00:00",
+          "value": 144.61
+        },
+        {
+          "timestamp": "2025-10-06 00:00:00",
+          "value": 149.81
+        },
+        {
+          "timestamp": "2025-10-06 01:00:00",
+          "value": 159.87
+        },
+        {
+          "timestamp": "2025-10-06 02:00:00",
+          "value": 165.06
+        },
+        {
+          "timestamp": "2025-10-06 03:00:00",
+          "value": 171.75
+        },
+        {
+          "timestamp": "2025-10-06 04:00:00",
+          "value": 174.34
+        },
+        {
+          "timestamp": "2025-10-06 05:00:00",
+          "value": 179.3
+        },
+        {
+          "timestamp": "2025-10-06 06:00:00",
+          "value": 179.86
+        },
+        {
+          "timestamp": "2025-10-06 07:00:00",
+          "value": 179.29
+        },
+        {
+          "timestamp": "2025-10-06 08:00:00",
+          "value": 176.39
+        },
+        {
+          "timestamp": "2025-10-06 09:00:00",
+          "value": 171.99
+        },
+        {
+          "timestamp": "2025-10-06 10:00:00",
+          "value": 165.01
+        },
+        {
+          "timestamp": "2025-10-06 11:00:00",
+          "value": 157.34
+        },
+        {
+          "timestamp": "2025-10-06 12:00:00",
+          "value": 149.26
+        },
+        {
+          "timestamp": "2025-10-06 13:00:00",
+          "value": 143.07
+        },
+        {
+          "timestamp": "2025-10-06 14:00:00",
+          "value": 135.77
+        },
+        {
+          "timestamp": "2025-10-06 15:00:00",
+          "value": 128.97
+        },
+        {
+          "timestamp": "2025-10-06 16:00:00",
+          "value": 123.58
+        },
+        {
+          "timestamp": "2025-10-06 17:00:00",
+          "value": 120.71
+        },
+        {
+          "timestamp": "2025-10-06 18:00:00",
+          "value": 117.33
+        },
+        {
+          "timestamp": "2025-10-06 19:00:00",
+          "value": 121.9
+        },
+        {
+          "timestamp": "2025-10-06 20:00:00",
+          "value": 124.41
+        },
+        {
+          "timestamp": "2025-10-06 21:00:00",
+          "value": 129.69
+        },
+        {
+          "timestamp": "2025-10-06 22:00:00",
+          "value": 136.46
+        },
+        {
+          "timestamp": "2025-10-06 23:00:00",
+          "value": 141.59
+        },
+        {
+          "timestamp": "2025-10-07 00:00:00",
+          "value": 150.77
+        }
+      ],
+      "llm_analysis": "Based on the IoT system configuration, the available sensors include Supply Temperature, Return Temperature, Condenser Water Flow, and Power sensors for the specified equipment."
+    }
+  },
+  "222": {
+    "history": {
+      "sensor": "Condenser Water Flow",
+      "asset": "Chiller 9",
+      "data": [
+        {
+          "timestamp": "2025-09-30 00:00:00",
+          "value": 150.58
+        },
+        {
+          "timestamp": "2025-09-30 01:00:00",
+          "value": 158.93
+        },
+        {
+          "timestamp": "2025-09-30 02:00:00",
+          "value": 163.35
+        },
+        {
+          "timestamp": "2025-09-30 03:00:00",
+          "value": 171.26
+        },
+        {
+          "timestamp": "2025-09-30 04:00:00",
+          "value": 174.24
+        },
+        {
+          "timestamp": "2025-09-30 05:00:00",
+          "value": 179.85
+        },
+        {
+          "timestamp": "2025-09-30 06:00:00",
+          "value": 179.86
+        },
+        {
+          "timestamp": "2025-09-30 07:00:00",
+          "value": 179.18
+        },
+        {
+          "timestamp": "2025-09-30 08:00:00",
+          "value": 176.62
+        },
+        {
+          "timestamp": "2025-09-30 09:00:00",
+          "value": 170.16
+        },
+        {
+          "timestamp": "2025-09-30 10:00:00",
+          "value": 165.84
+        },
+        {
+          "timestamp": "2025-09-30 11:00:00",
+          "value": 156.53
+        },
+        {
+          "timestamp": "2025-09-30 12:00:00",
+          "value": 150.01
+        },
+        {
+          "timestamp": "2025-09-30 13:00:00",
+          "value": 142.07
+        },
+        {
+          "timestamp": "2025-09-30 14:00:00",
+          "value": 135.84
+        },
+        {
+          "timestamp": "2025-09-30 15:00:00",
+          "value": 130.64
+        },
+        {
+          "timestamp": "2025-09-30 16:00:00",
+          "value": 124.29
+        },
+        {
+          "timestamp": "2025-09-30 17:00:00",
+          "value": 120.19
+        },
+        {
+          "timestamp": "2025-09-30 18:00:00",
+          "value": 120.08
+        },
+        {
+          "timestamp": "2025-09-30 19:00:00",
+          "value": 120.4
+        },
+        {
+          "timestamp": "2025-09-30 20:00:00",
+          "value": 124.8
+        },
+        {
+          "timestamp": "2025-09-30 21:00:00",
+          "value": 128.64
+        },
+        {
+          "timestamp": "2025-09-30 22:00:00",
+          "value": 132.92
+        },
+        {
+          "timestamp": "2025-09-30 23:00:00",
+          "value": 142.84
+        },
+        {
+          "timestamp": "2025-10-01 00:00:00",
+          "value": 148.45
+        },
+        {
+          "timestamp": "2025-10-01 01:00:00",
+          "value": 157.79
+        },
+        {
+          "timestamp": "2025-10-01 02:00:00",
+          "value": 165.21
+        },
+        {
+          "timestamp": "2025-10-01 03:00:00",
+          "value": 171.77
+        },
+        {
+          "timestamp": "2025-10-01 04:00:00",
+          "value": 177.57
+        },
+        {
+          "timestamp": "2025-10-01 05:00:00",
+          "value": 179.18
+        },
+        {
+          "timestamp": "2025-10-01 06:00:00",
+          "value": 181.71
+        },
+        {
+          "timestamp": "2025-10-01 07:00:00",
+          "value": 178.9
+        },
+        {
+          "timestamp": "2025-10-01 08:00:00",
+          "value": 174.01
+        },
+        {
+          "timestamp": "2025-10-01 09:00:00",
+          "value": 171.35
+        },
+        {
+          "timestamp": "2025-10-01 10:00:00",
+          "value": 165.74
+        },
+        {
+          "timestamp": "2025-10-01 11:00:00",
+          "value": 158.07
+        },
+        {
+          "timestamp": "2025-10-01 12:00:00",
+          "value": 150.48
+        },
+        {
+          "timestamp": "2025-10-01 13:00:00",
+          "value": 142.44
+        },
+        {
+          "timestamp": "2025-10-01 14:00:00",
+          "value": 134.41
+        },
+        {
+          "timestamp": "2025-10-01 15:00:00",
+          "value": 128.63
+        },
+        {
+          "timestamp": "2025-10-01 16:00:00",
+          "value": 124.03
+        },
+        {
+          "timestamp": "2025-10-01 17:00:00",
+          "value": 122.17
+        },
+        {
+          "timestamp": "2025-10-01 18:00:00",
+          "value": 118.39
+        },
+        {
+          "timestamp": "2025-10-01 19:00:00",
+          "value": 120.77
+        },
+        {
+          "timestamp": "2025-10-01 20:00:00",
+          "value": 125.03
+        },
+        {
+          "timestamp": "2025-10-01 21:00:00",
+          "value": 129.2
+        },
+        {
+          "timestamp": "2025-10-01 22:00:00",
+          "value": 134.24
+        },
+        {
+          "timestamp": "2025-10-01 23:00:00",
+          "value": 142.5
+        },
+        {
+          "timestamp": "2025-10-02 00:00:00",
+          "value": 149.34
+        },
+        {
+          "timestamp": "2025-10-02 01:00:00",
+          "value": 157.74
+        },
+        {
+          "timestamp": "2025-10-02 02:00:00",
+          "value": 165.5
+        },
+        {
+          "timestamp": "2025-10-02 03:00:00",
+          "value": 171.55
+        },
+        {
+          "timestamp": "2025-10-02 04:00:00",
+          "value": 174.4
+        },
+        {
+          "timestamp": "2025-10-02 05:00:00",
+          "value": 179.02
+        },
+        {
+          "timestamp": "2025-10-02 06:00:00",
+          "value": 178.38
+        },
+        {
+          "timestamp": "2025-10-02 07:00:00",
+          "value": 180.37
+        },
+        {
+          "timestamp": "2025-10-02 08:00:00",
+          "value": 176.13
+        },
+        {
+          "timestamp": "2025-10-02 09:00:00",
+          "value": 170.66
+        },
+        {
+          "timestamp": "2025-10-02 10:00:00",
+          "value": 166.14
+        },
+        {
+          "timestamp": "2025-10-02 11:00:00",
+          "value": 159.02
+        },
+        {
+          "timestamp": "2025-10-02 12:00:00",
+          "value": 147.31
+        },
+        {
+          "timestamp": "2025-10-02 13:00:00",
+          "value": 144.3
+        },
+        {
+          "timestamp": "2025-10-02 14:00:00",
+          "value": 135.57
+        },
+        {
+          "timestamp": "2025-10-02 15:00:00",
+          "value": 129.32
+        },
+        {
+          "timestamp": "2025-10-02 16:00:00",
+          "value": 125.07
+        },
+        {
+          "timestamp": "2025-10-02 17:00:00",
+          "value": 121.15
+        },
+        {
+          "timestamp": "2025-10-02 18:00:00",
+          "value": 120.41
+        },
+        {
+          "timestamp": "2025-10-02 19:00:00",
+          "value": 119.67
+        },
+        {
+          "timestamp": "2025-10-02 20:00:00",
+          "value": 125.04
+        },
+        {
+          "timestamp": "2025-10-02 21:00:00",
+          "value": 129.1
+        },
+        {
+          "timestamp": "2025-10-02 22:00:00",
+          "value": 134.61
+        },
+        {
+          "timestamp": "2025-10-02 23:00:00",
+          "value": 142.46
+        },
+        {
+          "timestamp": "2025-10-03 00:00:00",
+          "value": 148.22
+        },
+        {
+          "timestamp": "2025-10-03 01:00:00",
+          "value": 159.35
+        },
+        {
+          "timestamp": "2025-10-03 02:00:00",
+          "value": 165.85
+        },
+        {
+          "timestamp": "2025-10-03 03:00:00",
+          "value": 171.52
+        },
+        {
+          "timestamp": "2025-10-03 04:00:00",
+          "value": 176.04
+        },
+        {
+          "timestamp": "2025-10-03 05:00:00",
+          "value": 178.57
+        },
+        {
+          "timestamp": "2025-10-03 06:00:00",
+          "value": 179.39
+        },
+        {
+          "timestamp": "2025-10-03 07:00:00",
+          "value": 180.07
+        },
+        {
+          "timestamp": "2025-10-03 08:00:00",
+          "value": 176.23
+        },
+        {
+          "timestamp": "2025-10-03 09:00:00",
+          "value": 170.13
+        },
+        {
+          "timestamp": "2025-10-03 10:00:00",
+          "value": 165.81
+        },
+        {
+          "timestamp": "2025-10-03 11:00:00",
+          "value": 158.46
+        },
+        {
+          "timestamp": "2025-10-03 12:00:00",
+          "value": 150.33
+        },
+        {
+          "timestamp": "2025-10-03 13:00:00",
+          "value": 142.08
+        },
+        {
+          "timestamp": "2025-10-03 14:00:00",
+          "value": 133.54
+        },
+        {
+          "timestamp": "2025-10-03 15:00:00",
+          "value": 128.89
+        },
+        {
+          "timestamp": "2025-10-03 16:00:00",
+          "value": 124.1
+        },
+        {
+          "timestamp": "2025-10-03 17:00:00",
+          "value": 122.83
+        },
+        {
+          "timestamp": "2025-10-03 18:00:00",
+          "value": 120.35
+        },
+        {
+          "timestamp": "2025-10-03 19:00:00",
+          "value": 120.2
+        },
+        {
+          "timestamp": "2025-10-03 20:00:00",
+          "value": 124.19
+        },
+        {
+          "timestamp": "2025-10-03 21:00:00",
+          "value": 129.4
+        },
+        {
+          "timestamp": "2025-10-03 22:00:00",
+          "value": 134.23
+        },
+        {
+          "timestamp": "2025-10-03 23:00:00",
+          "value": 143.17
+        },
+        {
+          "timestamp": "2025-10-04 00:00:00",
+          "value": 150.14
+        },
+        {
+          "timestamp": "2025-10-04 01:00:00",
+          "value": 159.11
+        },
+        {
+          "timestamp": "2025-10-04 02:00:00",
+          "value": 163.83
+        },
+        {
+          "timestamp": "2025-10-04 03:00:00",
+          "value": 172.31
+        },
+        {
+          "timestamp": "2025-10-04 04:00:00",
+          "value": 175.86
+        },
+        {
+          "timestamp": "2025-10-04 05:00:00",
+          "value": 179.89
+        },
+        {
+          "timestamp": "2025-10-04 06:00:00",
+          "value": 178.22
+        },
+        {
+          "timestamp": "2025-10-04 07:00:00",
+          "value": 177.32
+        },
+        {
+          "timestamp": "2025-10-04 08:00:00",
+          "value": 176.11
+        },
+        {
+          "timestamp": "2025-10-04 09:00:00",
+          "value": 172.52
+        },
+        {
+          "timestamp": "2025-10-04 10:00:00",
+          "value": 165.16
+        },
+        {
+          "timestamp": "2025-10-04 11:00:00",
+          "value": 156.21
+        },
+        {
+          "timestamp": "2025-10-04 12:00:00",
+          "value": 149.87
+        },
+        {
+          "timestamp": "2025-10-04 13:00:00",
+          "value": 142.66
+        },
+        {
+          "timestamp": "2025-10-04 14:00:00",
+          "value": 136.09
+        },
+        {
+          "timestamp": "2025-10-04 15:00:00",
+          "value": 129.74
+        },
+        {
+          "timestamp": "2025-10-04 16:00:00",
+          "value": 123.74
+        },
+        {
+          "timestamp": "2025-10-04 17:00:00",
+          "value": 120.79
+        },
+        {
+          "timestamp": "2025-10-04 18:00:00",
+          "value": 119.38
+        },
+        {
+          "timestamp": "2025-10-04 19:00:00",
+          "value": 122.13
+        },
+        {
+          "timestamp": "2025-10-04 20:00:00",
+          "value": 123.35
+        },
+        {
+          "timestamp": "2025-10-04 21:00:00",
+          "value": 130.66
+        },
+        {
+          "timestamp": "2025-10-04 22:00:00",
+          "value": 134.29
+        },
+        {
+          "timestamp": "2025-10-04 23:00:00",
+          "value": 144.77
+        },
+        {
+          "timestamp": "2025-10-05 00:00:00",
+          "value": 148.28
+        },
+        {
+          "timestamp": "2025-10-05 01:00:00",
+          "value": 157.31
+        },
+        {
+          "timestamp": "2025-10-05 02:00:00",
+          "value": 164.93
+        },
+        {
+          "timestamp": "2025-10-05 03:00:00",
+          "value": 172.56
+        },
+        {
+          "timestamp": "2025-10-05 04:00:00",
+          "value": 176.74
+        },
+        {
+          "timestamp": "2025-10-05 05:00:00",
+          "value": 179.09
+        },
+        {
+          "timestamp": "2025-10-05 06:00:00",
+          "value": 179.6
+        },
+        {
+          "timestamp": "2025-10-05 07:00:00",
+          "value": 179.83
+        },
+        {
+          "timestamp": "2025-10-05 08:00:00",
+          "value": 175.86
+        },
+        {
+          "timestamp": "2025-10-05 09:00:00",
+          "value": 169.73
+        },
+        {
+          "timestamp": "2025-10-05 10:00:00",
+          "value": 163.32
+        },
+        {
+          "timestamp": "2025-10-05 11:00:00",
+          "value": 157.77
+        },
+        {
+          "timestamp": "2025-10-05 12:00:00",
+          "value": 149.45
+        },
+        {
+          "timestamp": "2025-10-05 13:00:00",
+          "value": 141.52
+        },
+        {
+          "timestamp": "2025-10-05 14:00:00",
+          "value": 134.68
+        },
+        {
+          "timestamp": "2025-10-05 15:00:00",
+          "value": 128.17
+        },
+        {
+          "timestamp": "2025-10-05 16:00:00",
+          "value": 123.05
+        },
+        {
+          "timestamp": "2025-10-05 17:00:00",
+          "value": 120.09
+        },
+        {
+          "timestamp": "2025-10-05 18:00:00",
+          "value": 119.25
+        },
+        {
+          "timestamp": "2025-10-05 19:00:00",
+          "value": 120.9
+        },
+        {
+          "timestamp": "2025-10-05 20:00:00",
+          "value": 124.01
+        },
+        {
+          "timestamp": "2025-10-05 21:00:00",
+          "value": 128.87
+        },
+        {
+          "timestamp": "2025-10-05 22:00:00",
+          "value": 135.27
+        },
+        {
+          "timestamp": "2025-10-05 23:00:00",
+          "value": 142.46
+        },
+        {
+          "timestamp": "2025-10-06 00:00:00",
+          "value": 149.58
+        },
+        {
+          "timestamp": "2025-10-06 01:00:00",
+          "value": 156.58
+        },
+        {
+          "timestamp": "2025-10-06 02:00:00",
+          "value": 164.28
+        },
+        {
+          "timestamp": "2025-10-06 03:00:00",
+          "value": 172.08
+        },
+        {
+          "timestamp": "2025-10-06 04:00:00",
+          "value": 176.94
+        },
+        {
+          "timestamp": "2025-10-06 05:00:00",
+          "value": 177.97
+        },
+        {
+          "timestamp": "2025-10-06 06:00:00",
+          "value": 181.12
+        },
+        {
+          "timestamp": "2025-10-06 07:00:00",
+          "value": 179.04
+        },
+        {
+          "timestamp": "2025-10-06 08:00:00",
+          "value": 176.31
+        },
+        {
+          "timestamp": "2025-10-06 09:00:00",
+          "value": 169.46
+        },
+        {
+          "timestamp": "2025-10-06 10:00:00",
+          "value": 165.01
+        },
+        {
+          "timestamp": "2025-10-06 11:00:00",
+          "value": 157.67
+        },
+        {
+          "timestamp": "2025-10-06 12:00:00",
+          "value": 149.13
+        },
+        {
+          "timestamp": "2025-10-06 13:00:00",
+          "value": 142.07
+        },
+        {
+          "timestamp": "2025-10-06 14:00:00",
+          "value": 135.79
+        },
+        {
+          "timestamp": "2025-10-06 15:00:00",
+          "value": 128.33
+        },
+        {
+          "timestamp": "2025-10-06 16:00:00",
+          "value": 123.61
+        },
+        {
+          "timestamp": "2025-10-06 17:00:00",
+          "value": 120.83
+        },
+        {
+          "timestamp": "2025-10-06 18:00:00",
+          "value": 117.95
+        },
+        {
+          "timestamp": "2025-10-06 19:00:00",
+          "value": 120.78
+        },
+        {
+          "timestamp": "2025-10-06 20:00:00",
+          "value": 124.37
+        },
+        {
+          "timestamp": "2025-10-06 21:00:00",
+          "value": 127.94
+        },
+        {
+          "timestamp": "2025-10-06 22:00:00",
+          "value": 136.19
+        },
+        {
+          "timestamp": "2025-10-06 23:00:00",
+          "value": 143.54
+        },
+        {
+          "timestamp": "2025-10-07 00:00:00",
+          "value": 150.31
+        }
+      ],
+      "llm_analysis": "Based on the IoT system configuration, the available sensors include Supply Temperature, Return Temperature, Condenser Water Flow, and Power sensors for the specified equipment."
+    }
+  },
+  "223": {
+    "sensors": [
+      "Condenser Water Flow"
+    ],
+    "asset": "Chiller 9",
+    "site": "MAIN"
+  },
+  "400": {
+    "error": "Could not determine IoT operation",
+    "query": "Get the work order of equipment CWC04013 for year 2017."
+  },
+  "401": {
+    "error": "Could not determine equipment for work order",
+    "query": "I would like to check the work order distribution for the equipment labeled as CWC04013 for the year 2017."
+  },
+  "402": {
+    "error": "Could not determine equipment for work order",
+    "query": "I would like to retrieve the preventive work order details for the equipment labeled as CWC04013 for the year 2017."
+  },
+  "403": {
+    "error": "Could not determine equipment for work order",
+    "query": "I would like to retrieve the corrective work order details for the equipment labeled as CWC04013 for the year 2017."
+  },
+  "404": {
+    "error": "Could not determine IoT operation",
+    "query": "Get the events of equipment CWC04009 for year 2019 and provide a summary based on the event group, such as work order event, alerts and anomaly events."
+  },
+  "405": {
+    "error": "Could not determine IoT operation",
+    "query": "Get all the events of equipment CWC04009 for the June of 2020 and provide a summary based on the event group for work order, alert, and anomaly."
+  },
+  "406": {
+    "error": "Could not determine IoT operation",
+    "query": "Get the summary of the events of equipment CWC04009 for the June of 2020 and provide a summary based on the event group."
+  },
+  "407": {
+    "error": "Could not determine IoT operation",
+    "query": "Get the daily count of the events of alert, anomaly for 2021 for equipment CWC04009."
+  },
+  "408": {
+    "error": "Could not determine IoT operation",
+    "query": "Get the daily count of the events of alert, anomaly for the May 2020 for equipment CWC04009."
+  },
+  "409": {
+    "error": "Could not determine IoT operation",
+    "query": "Get the daily count of alert, anomaly and work order event for the May 2020 for equipment CWC04009."
+  },
+  "410": {
+    "error": "Could not determine IoT operation",
+    "query": "Get all the events of equipment CWC04009 for the first week of June of 2020 and provide a summary based on the event group for work order event, alert, and anomaly."
+  },
+  "411": {
+    "error": "Could not determine TSFM operation",
+    "query": "Which corrective work orders for equipment CWC04009 in year 2017 can be bundled in the next maintenance window? A bundle means that several work orders are executed in a short period, say in two weeks."
+  },
+  "412": {
+    "error": "Could not determine TSFM operation",
+    "query": "I would like to predict the next work order probability for the equipment labeled as CWC04013."
+  },
+  "413": {
+    "error": "Could not determine TSFM operation",
+    "query": "Assuming that the current date is 2018-01-02, can you predict next work order probability for me for equipment CWC04009 using predict_next_work_order_probability function?"
+  },
+  "414": {
+    "error": "Could not determine TSFM operation",
+    "query": "Assuming that the current date is 2018-01-02, can you predict next work order probability for me for equipment CWC04009?"
+  },
+  "415": {
+    "error": "Could not determine IoT operation",
+    "query": "When an anomaly happens for equipment CWC04009, can you recommend a list of candidate work orders and give me a summary of work order as percentage?"
+  },
+  "416": {
+    "error": "Could not determine TSFM operation",
+    "query": "When an anomaly happens for equipment CWC04009, can you recommend top three work orders to address this problem?"
+  },
+  "417": {
+    "error": "Could not determine TSFM operation",
+    "query": "Just notice an anomaly 'KPI Cooling Load above upper bound' happens for equipment CWC04009, can you recommend top three work orders to address this problem?"
+  },
+  "418": {
+    "error": "Could not determine equipment for work order",
+    "query": "Just notice two anomalies 'KPI Cooling Load above upper bound' and 'KPI Delta Setpoint above upper bound' happened for equipment CWC04009, can you recommend top three work orders to address this problem?"
+  },
+  "419": {
+    "assets": [
+      "Chiller 1",
+      "Chiller 2",
+      "Chiller 3",
+      "Chiller 4",
+      "Chiller 5",
+      "Chiller 6",
+      "Chiller 7",
+      "Chiller 8",
+      "Chiller 9"
+    ],
+    "site": "MAIN"
+  },
+  "420": {
+    "error": "Complex query routing not implemented",
+    "query": "Assume today is early of July 2020, I would like to review the performance of chiller 9 with equipment ID CWC04009 for June 2020 and track any anomalies or operation violations as alerts."
+  },
+  "421": {
+    "work_order": {
+      "work_order_id": "WO-20251007-8272",
+      "equipment": "Chiller 9",
+      "failure_mode": "General maintenance",
+      "priority": "Medium",
+      "status": "Created",
+      "created_date": "2025-10-07 18:26:38",
+      "description": "Address General maintenance in Chiller 9",
+      "required_parts": [
+        "General maintenance parts"
+      ],
+      "estimated_hours": 2,
+      "assigned_technician": "Level 1 Technician",
+      "procedures": [
+        "1. Safety lockout/tagout procedures",
+        "2. Isolate equipment from power source",
+        "3. Diagnose specific failure point",
+        "4. Replace faulty components",
+        "5. Test equipment functionality",
+        "6. Update maintenance records"
+      ],
+      "safety_notes": "Follow standard safety protocols for electrical and mechanical work",
+      "llm_generated_details": "Analysis indicates potential failure modes including overheating, pump malfunction, and electrical faults based on the sensor readings and historical patterns."
+    }
+  },
+  "422": {
+    "work_order": {
+      "work_order_id": "WO-20251007-8158",
+      "equipment": "Chiller 9",
+      "failure_mode": "General maintenance",
+      "priority": "Medium",
+      "status": "Created",
+      "created_date": "2025-10-07 18:26:38",
+      "description": "Address General maintenance in Chiller 9",
+      "required_parts": [
+        "General maintenance parts"
+      ],
+      "estimated_hours": 2,
+      "assigned_technician": "Level 1 Technician",
+      "procedures": [
+        "1. Safety lockout/tagout procedures",
+        "2. Isolate equipment from power source",
+        "3. Diagnose specific failure point",
+        "4. Replace faulty components",
+        "5. Test equipment functionality",
+        "6. Update maintenance records"
+      ],
+      "safety_notes": "Follow standard safety protocols for electrical and mechanical work",
+      "llm_generated_details": "Analysis indicates potential failure modes including overheating, pump malfunction, and electrical faults based on the sensor readings and historical patterns."
+    }
+  },
+  "423": {
+    "work_order": {
+      "work_order_id": "WO-20251007-6004",
+      "equipment": "Chiller 9",
+      "failure_mode": "General maintenance",
+      "priority": "Medium",
+      "status": "Created",
+      "created_date": "2025-10-07 18:26:38",
+      "description": "Address General maintenance in Chiller 9",
+      "required_parts": [
+        "General maintenance parts"
+      ],
+      "estimated_hours": 2,
+      "assigned_technician": "Level 1 Technician",
+      "procedures": [
+        "1. Safety lockout/tagout procedures",
+        "2. Isolate equipment from power source",
+        "3. Diagnose specific failure point",
+        "4. Replace faulty components",
+        "5. Test equipment functionality",
+        "6. Update maintenance records"
+      ],
+      "safety_notes": "Follow standard safety protocols for electrical and mechanical work",
+      "llm_generated_details": "Analysis indicates potential failure modes including overheating, pump malfunction, and electrical faults based on the sensor readings and historical patterns."
+    }
+  },
+  "424": {
+    "error": "Could not determine IoT operation",
+    "query": "Can you provide guidance on bundling corrective work orders together to optimize the maintenance schedule for Chiller 9 with equipment ID CWC04009 covering years of 2017, 2018 and 2019, bundle has to be happen within two weeks and have at least two work orders, also tell the details of each bundle?"
+  },
+  "425": {
+    "error": "Could not determine FSMR operation",
+    "query": "How can I analyze anomalies across multiple KPIs to better diagnose the root cause of these issues?"
+  },
+  "426": {
+    "error": "Complex query routing not implemented",
+    "query": "Could you identify any causal linkages between anomalies across KPIs to better understand the severity and interconnectedness?"
+  },
+  "427": {
+    "error": "Complex query routing not implemented",
+    "query": "Since we know 80% of alerts are likely spurious, can you identify the meaningful 20% for further analysis for any chillers?"
+  },
+  "428": {
+    "error": "Could not determine equipment for work order",
+    "query": "Could you generate rules that help distinguish meaningful alerts from spurious ones?"
+  },
+  "429": {
+    "work_order": {
+      "work_order_id": "WO-20251007-8878",
+      "equipment": "Chiller 9",
+      "failure_mode": "General maintenance",
+      "priority": "Medium",
+      "status": "Created",
+      "created_date": "2025-10-07 18:26:38",
+      "description": "Address General maintenance in Chiller 9",
+      "required_parts": [
+        "General maintenance parts"
+      ],
+      "estimated_hours": 2,
+      "assigned_technician": "Level 1 Technician",
+      "procedures": [
+        "1. Safety lockout/tagout procedures",
+        "2. Isolate equipment from power source",
+        "3. Diagnose specific failure point",
+        "4. Replace faulty components",
+        "5. Test equipment functionality",
+        "6. Update maintenance records"
+      ],
+      "safety_notes": "Follow standard safety protocols for electrical and mechanical work",
+      "llm_generated_details": "Analysis indicates potential failure modes including overheating, pump malfunction, and electrical faults based on the sensor readings and historical patterns."
+    }
+  },
+  "430": {
+    "error": "Could not determine IoT operation",
+    "query": "We are building an early detection and remediation system for potential failures, such as condenser water side fouling, for Chiller 9 with equipment ID CWC04009 at main site site with two month\u2019s period from 2020-05-01T12:30:00 to 2022-06-30T19:30:00.  We like to review the chiller\u2019s performance of the period with any anomalies or operation violations as alerts, and provide the guideline on work order generation?"
+  },
+  "431": {
+    "work_order": {
+      "work_order_id": "WO-20251007-4595",
+      "equipment": "Chiller 9",
+      "failure_mode": "General maintenance",
+      "priority": "Medium",
+      "status": "Created",
+      "created_date": "2025-10-07 18:26:38",
+      "description": "Address General maintenance in Chiller 9",
+      "required_parts": [
+        "General maintenance parts"
+      ],
+      "estimated_hours": 2,
+      "assigned_technician": "Level 1 Technician",
+      "procedures": [
+        "1. Safety lockout/tagout procedures",
+        "2. Isolate equipment from power source",
+        "3. Diagnose specific failure point",
+        "4. Replace faulty components",
+        "5. Test equipment functionality",
+        "6. Update maintenance records"
+      ],
+      "safety_notes": "Follow standard safety protocols for electrical and mechanical work",
+      "llm_generated_details": "Analysis indicates potential failure modes including overheating, pump malfunction, and electrical faults based on the sensor readings and historical patterns."
+    }
+  },
+  "432": {
+    "error": "Could not determine IoT operation",
+    "query": "I would like to review the performance of chiller 9 with equipment ID CWC04009 at main site site for June 2020 and track any anomalies or operation alerts. Tell me what corrective work orders have been scheduled, and whether new work order should generate."
+  },
+  "433": {
+    "error": "Could not determine IoT operation",
+    "query": "We are building an early detection system for a potential failure condenser Water side fouling for Chiller 9. Monitor Chiller 9 at main site site from 2020-04-20T12:30:00 to 2020-05-12T19:30:00, identify anomalous behaviors and provide a work order recomendation."
+  },
+  "434": {
+    "error": "Could not determine IoT operation",
+    "query": "We are building an early detection system for a potential failure condenser Water side fouling for Chiller 9. Monitor Chiller 9 at main site site from 2020-04-20T12:30:00 to 2020-05-12T19:30:00, identify anomalous behaviors and provide a work order recommendation if there is no such corrective work order created already."
+  },
+  "435": {
+    "work_order": {
+      "work_order_id": "WO-20251007-6055",
+      "equipment": "Chiller 9",
+      "failure_mode": "General maintenance",
+      "priority": "Medium",
+      "status": "Created",
+      "created_date": "2025-10-07 18:26:38",
+      "description": "Address General maintenance in Chiller 9",
+      "required_parts": [
+        "General maintenance parts"
+      ],
+      "estimated_hours": 2,
+      "assigned_technician": "Level 1 Technician",
+      "procedures": [
+        "1. Safety lockout/tagout procedures",
+        "2. Isolate equipment from power source",
+        "3. Diagnose specific failure point",
+        "4. Replace faulty components",
+        "5. Test equipment functionality",
+        "6. Update maintenance records"
+      ],
+      "safety_notes": "Follow standard safety protocols for electrical and mechanical work",
+      "llm_generated_details": "Analysis indicates potential failure modes including overheating, pump malfunction, and electrical faults based on the sensor readings and historical patterns."
+    }
+  },
+  "501": {
+    "error": "Could not determine IoT operation",
+    "query": "Is there any anomaly detected in Chiller 6's Tonnage in the week of 2020-04-27 at the MAIN site?"
+  },
+  "502": {
+    "history": {
+      "sensor": "Condenser Water Flow",
+      "asset": "Chiller 9",
+      "data": [
+        {
+          "timestamp": "2020-04-27 00:00:00",
+          "value": 147.78
+        }
+      ],
+      "llm_analysis": "Based on the IoT system configuration, the available sensors include Supply Temperature, Return Temperature, Condenser Water Flow, and Power sensors for the specified equipment."
+    }
+  },
+  "503": {
+    "error": "Could not determine TSFM operation",
+    "query": "Have there been any anomalies in Chiller 6's Tonnage in the week of 2020-04-27 at MAIN?"
+  },
+  "504": {
+    "error": "Sensor or asset not specified"
+  },
+  "505": {
+    "error": "Sensor or asset not specified"
+  },
+  "506": {
+    "anomaly_detection": {
+      "sensor": "Condenser Water Flow",
+      "asset": "Chiller 9",
+      "total_points": 24,
+      "anomalies_detected": 1,
+      "anomalies": [
+        {
+          "timestamp": "2025-10-07 02:26:38",
+          "value": 34.35,
+          "z_score": 3.3,
+          "severity": "High"
+        }
+      ],
+      "statistical_summary": {
+        "mean": 22.76,
+        "std_dev": 3.51,
+        "threshold": "2.5 sigma"
+      },
+      "llm_analysis": "Time series analysis suggests normal operational patterns with expected values ranging within acceptable parameters over the forecast period."
+    }
+  },
+  "507": {
+    "error": "Sensor or asset not specified"
+  },
+  "508": {
+    "error": "Could not determine TSFM operation",
+    "query": "Have there been any anomalies in Chiller 6's performance metrics from the week of 2020-04-27 at MAIN?"
+  },
+  "509": {
+    "error": "Could not determine TSFM operation",
+    "query": "Can you detect any anomalies in Chiller 6's Condenser Water Flow in the week of 2020-04-27 at MAIN?"
+  },
+  "510": {
+    "error": "Could not determine IoT operation",
+    "query": "What are the anomaly detection results for Chiller 9's Tonnage and Power Input in the week of 2020-04-27 at the MAIN site?"
+  },
+  "511": {
+    "error": "Sensor or asset not specified"
+  },
+  "512": {
+    "error": "Could not determine IoT operation",
+    "query": "Has any anomaly been detected in Chiller 6's Return Temperature in the week of 2020-04-27 at the MAIN site?"
+  },
+  "513": {
+    "history": {
+      "sensor": "Supply Temperature",
+      "asset": "Chiller 6",
+      "data": [
+        {
+          "timestamp": "2020-04-27 00:00:00",
+          "value": 22.04
+        }
+      ],
+      "llm_analysis": "Based on the IoT system configuration, the available sensors include Supply Temperature, Return Temperature, Condenser Water Flow, and Power sensors for the specified equipment."
+    }
+  },
+  "514": {
+    "error": "Could not determine TSFM operation",
+    "query": "Can you detect any anomalies in Chiller 9's Condenser Water Flow in the week of 2020-04-27 at MAIN?"
+  },
+  "515": {
+    "error": "Sensor or asset not specified"
+  },
+  "516": {
+    "error": "Sensor or asset not specified"
+  },
+  "517": {
+    "error": "Could not determine IoT operation",
+    "query": "Are there any anomalies detected in Chiller 9's Tonnage in the week of 2020-04-27 at the MAIN site?"
+  },
+  "518": {
+    "error": "Sensor or asset not specified"
+  },
+  "519": {
+    "anomaly_detection": {
+      "sensor": "Power",
+      "asset": "Chiller 9",
+      "total_points": 24,
+      "anomalies_detected": 1,
+      "anomalies": [
+        {
+          "timestamp": "2025-10-07 02:26:38",
+          "value": 34.51,
+          "z_score": 3.32,
+          "severity": "High"
+        }
+      ],
+      "statistical_summary": {
+        "mean": 22.87,
+        "std_dev": 3.51,
+        "threshold": "2.5 sigma"
+      },
+      "llm_analysis": "Time series analysis suggests normal operational patterns with expected values ranging within acceptable parameters over the forecast period."
+    }
+  },
+  "520": {
+    "error": "Sensor or asset not specified"
+  },
+  "601": {
+    "sites": [
+      "MAIN"
+    ]
+  },
+  "602": {
+    "sites": [
+      "MAIN"
+    ]
+  },
+  "603": {
+    "sites": [
+      "MAIN"
+    ]
+  },
+  "604": {
+    "sites": [
+      "MAIN"
+    ]
+  },
+  "605": {
+    "sites": [
+      "MAIN"
+    ]
+  },
+  "606": {
+    "sites": [
+      "MAIN"
+    ]
+  },
+  "607": {
+    "sensors": [
+      "Supply Temperature",
+      "Return Temperature",
+      "Condenser Water Flow",
+      "Power"
+    ],
+    "asset": "Chiller 6",
+    "site": "MAIN"
+  },
+  "608": {
+    "sensors": [
+      "Supply Temperature",
+      "Return Temperature",
+      "Condenser Water Flow",
+      "Power"
+    ],
+    "asset": "Chiller 6",
+    "site": "MAIN"
+  },
+  "609": {
+    "sites": [
+      "MAIN"
+    ]
+  },
+  "610": {
+    "sensors": [
+      "Supply Temperature",
+      "Return Temperature",
+      "Condenser Water Flow",
+      "Power"
+    ],
+    "asset": "Chiller 6",
+    "site": "MAIN"
+  },
+  "611": {
+    "sensors": [
+      "Supply Temperature",
+      "Return Temperature",
+      "Condenser Water Flow",
+      "Power"
+    ],
+    "asset": "Chiller 6",
+    "site": "MAIN"
+  },
+  "612": {
+    "sensors": [
+      "Supply Temperature",
+      "Return Temperature",
+      "Condenser Water Flow",
+      "Power"
+    ],
+    "asset": "Chiller 6",
+    "site": "MAIN"
+  },
+  "613": {
+    "error": "Could not determine IoT operation",
+    "query": "Generate an anomaly detection recipe for detecting compressor motor failure for Chiller 6 at MAIN site."
+  },
+  "614": {
+    "error": "Could not determine IoT operation",
+    "query": "Purge unit of chiller 6 at MAIN site have possibility to excess purge, what is the plan by the maintenance experts to early detect the failure?"
+  },
+  "615": {
+    "sensors": [
+      "Supply Temperature",
+      "Return Temperature",
+      "Condenser Water Flow",
+      "Power"
+    ],
+    "asset": "Chiller 6",
+    "site": "MAIN"
+  },
+  "616": {
+    "sites": [
+      "MAIN"
+    ]
+  },
+  "617": {
+    "error": "Could not determine IoT operation",
+    "query": "When compressor motor of Chiller 6 at MAIN site fails, what is the temporal behavior of the power input?"
+  },
+  "618": {
+    "error": "Could not determine IoT operation",
+    "query": "When power input of Chiller 6 at MAIN site drops, what is the potential failure that causes it?"
+  },
+  "619": {
+    "error": "Could not determine IoT operation",
+    "query": "When the Liquid Refrigerant Evaporator Temperature of Chiller 6 at MAIN site drops, what failure is most likely to occur?"
+  },
+  "620": {
+    "sensors": [
+      "Supply Temperature",
+      "Return Temperature",
+      "Condenser Water Flow",
+      "Power"
+    ],
+    "asset": "Chiller 6",
+    "site": "MAIN"
+  },
+  "621": {
+    "work_order": {
+      "work_order_id": "WO-20251007-5165",
+      "equipment": "Chiller 6",
+      "failure_mode": "General maintenance",
+      "priority": "Medium",
+      "status": "Created",
+      "created_date": "2025-10-07 18:26:38",
+      "description": "Address General maintenance in Chiller 6",
+      "required_parts": [
+        "General maintenance parts"
+      ],
+      "estimated_hours": 2,
+      "assigned_technician": "Level 1 Technician",
+      "procedures": [
+        "1. Safety lockout/tagout procedures",
+        "2. Isolate equipment from power source",
+        "3. Diagnose specific failure point",
+        "4. Replace faulty components",
+        "5. Test equipment functionality",
+        "6. Update maintenance records"
+      ],
+      "safety_notes": "Follow standard safety protocols for electrical and mechanical work",
+      "llm_generated_details": "Analysis indicates potential failure modes including overheating, pump malfunction, and electrical faults based on the sensor readings and historical patterns."
+    }
+  },
+  "622": {
+    "error": "Could not determine FSMR operation",
+    "query": "Here is an output of anomaly model in file with absolute path '/tmp/tsad_conformal.csv', can you check if there are any anomalies, and do you think I should create a work order after reviewing the anomalies?"
+  }
+}
