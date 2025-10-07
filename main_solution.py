@@ -119,7 +119,7 @@ class LLMIoTAgent(LLMEnhancedAgent):
         self.sensor_mapping = self._load_sensor_mapping()
     
     def _load_sensor_mapping(self):
-        """Load comprehensive sensor mapping"""
+        """Load comprehensive sensor mapping with extended asset support"""
         return {
             "MAIN": {
                 "Chiller 1": ["Supply Temperature", "Return Temperature", "Condenser Water Flow", "Power"],
@@ -134,8 +134,55 @@ class LLMIoTAgent(LLMEnhancedAgent):
                 "AHU 1": ["Supply Air Temperature", "Return Air Temperature", "Supply Air Flow"],
                 "AHU 2": ["Supply Air Temperature", "Return Air Temperature", "Supply Air Flow"],
                 "Pump 1": ["Flow Rate", "Pressure", "Power", "Vibration"],
-                "Pump 2": ["Flow Rate", "Pressure", "Power", "Vibration"]
+                "Pump 2": ["Flow Rate", "Pressure", "Power", "Vibration"],
+                # Extended asset types for broader coverage
+                "Wind Turbine": ["Wind Speed", "Power Output", "Rotor Speed", "Nacelle Temperature", "Vibration", "Gearbox Temperature"],
+                "Boiler": ["Supply Temperature", "Return Temperature", "Pressure", "Flow Rate", "Gas Flow", "Efficiency"],
+                "Cooling Tower": ["Water Temperature", "Fan Speed", "Water Flow", "Ambient Temperature", "Humidity"],
+                "Motor": ["Current", "Voltage", "Temperature", "Vibration", "Speed", "Power Factor"],
+                "Compressor": ["Suction Pressure", "Discharge Pressure", "Temperature", "Vibration", "Power", "Oil Level"],
+                "Heat Exchanger": ["Inlet Temperature", "Outlet Temperature", "Flow Rate", "Pressure Drop", "Efficiency"]
             }
+        }
+        
+    def _get_generic_asset_info(self, asset_type: str, query: str) -> Dict[str, Any]:
+        """Get generic asset information for unsupported specific assets"""
+        asset_type_lower = asset_type.lower()
+        
+        # Generic asset mappings
+        generic_mappings = {
+            "wind turbine": {
+                "sensors": ["Wind Speed", "Power Output", "Rotor Speed", "Nacelle Temperature", "Vibration", "Gearbox Temperature"],
+                "typical_failure_modes": [
+                    "Gearbox failure", "Generator failure", "Blade damage", 
+                    "Bearing wear", "Control system malfunction", "Power converter failure"
+                ]
+            },
+            "chiller": {
+                "sensors": ["Supply Temperature", "Return Temperature", "Condenser Water Flow", "Power"],
+                "typical_failure_modes": [
+                    "Compressor Overheating", "Evaporator Water side fouling", 
+                    "Condenser Water side fouling", "Refrigerant leak", "Control valve failure"
+                ]
+            },
+            "boiler": {
+                "sensors": ["Supply Temperature", "Return Temperature", "Pressure", "Flow Rate", "Gas Flow"],
+                "typical_failure_modes": [
+                    "Burner failure", "Heat exchanger fouling", "Pump failure", 
+                    "Control system failure", "Pressure vessel issues"
+                ]
+            }
+        }
+        
+        # Find matching asset type
+        for asset_key, asset_info in generic_mappings.items():
+            if asset_key in asset_type_lower:
+                return asset_info
+        
+        # Default fallback
+        return {
+            "sensors": ["Temperature", "Pressure", "Flow", "Power", "Vibration"],
+            "typical_failure_modes": ["Component wear", "Control failure", "Sensor malfunction"]
         }
     
     def get_sites(self, query: str) -> List[str]:
@@ -158,7 +205,7 @@ class LLMIoTAgent(LLMEnhancedAgent):
         return sites
     
     def get_assets(self, site: str, query: str) -> List[str]:
-        """Get assets at a site using LLM reasoning"""
+        """Get assets at a site using LLM reasoning with extended asset support"""
         available_assets = list(self.sensor_mapping.get(site, {}).keys())
         
         prompt = PromptTemplates.iot_agent_prompt(
@@ -169,12 +216,20 @@ class LLMIoTAgent(LLMEnhancedAgent):
         llm_response = self.llm_reasoning(prompt)
         
         # Extract relevant assets based on query and LLM response
-        if query and any(keyword in query.lower() for keyword in ['chiller', 'cooling']):
+        query_lower = query.lower()
+        
+        if any(keyword in query_lower for keyword in ['chiller', 'cooling']):
             assets = [asset for asset in available_assets if 'Chiller' in asset]
-        elif query and any(keyword in query.lower() for keyword in ['ahu', 'air handler']):
+        elif any(keyword in query_lower for keyword in ['ahu', 'air handler']):
             assets = [asset for asset in available_assets if 'AHU' in asset]
-        elif query and any(keyword in query.lower() for keyword in ['pump']):
+        elif any(keyword in query_lower for keyword in ['pump']):
             assets = [asset for asset in available_assets if 'Pump' in asset]
+        elif any(keyword in query_lower for keyword in ['wind turbine', 'turbine']):
+            assets = [asset for asset in available_assets if 'Wind Turbine' in asset]
+        elif any(keyword in query_lower for keyword in ['boiler']):
+            assets = [asset for asset in available_assets if 'Boiler' in asset]
+        elif any(keyword in query_lower for keyword in ['motor']):
+            assets = [asset for asset in available_assets if 'Motor' in asset]
         else:
             assets = available_assets
         
@@ -182,8 +237,13 @@ class LLMIoTAgent(LLMEnhancedAgent):
         return assets
     
     def get_sensors(self, asset: str, site: str, query: str) -> List[str]:
-        """Get sensors for an asset using LLM reasoning"""
+        """Get sensors for an asset using LLM reasoning with extended support"""
         available_sensors = self.sensor_mapping.get(site, {}).get(asset, [])
+        
+        # Handle generic asset types if specific asset not found
+        if not available_sensors and asset:
+            generic_info = self._get_generic_asset_info(asset, query)
+            available_sensors = generic_info.get("sensors", [])
         
         prompt = PromptTemplates.iot_agent_prompt(
             f"List sensors for {asset} at {site}. Query: {query}",
@@ -346,7 +406,9 @@ class LLMFSMRAgent(LLMEnhancedAgent):
         llm_response = self.llm_reasoning(prompt)
         
         # Standard failure modes for different asset types
-        if 'chiller' in asset.lower():
+        asset_lower = asset.lower()
+        
+        if 'chiller' in asset_lower:
             failure_modes = [
                 "Compressor Overheating: Failed due to Normal wear, overheating",
                 "Heat Exchangers: Fans: Degraded motor or worn bearing due to Normal use", 
@@ -355,6 +417,26 @@ class LLMFSMRAgent(LLMEnhancedAgent):
                 "Condenser Improper water side flow rate",
                 "Purge Unit Excessive purge",
                 "Refrigerant Operated Control Valve Failed spring"
+            ]
+        elif 'wind turbine' in asset_lower or 'turbine' in asset_lower:
+            failure_modes = [
+                "Gearbox bearing failure",
+                "Generator electrical failure", 
+                "Blade aerodynamic damage",
+                "Yaw system malfunction",
+                "Power converter failure",
+                "Control system software error",
+                "Pitch system hydraulic failure",
+                "Tower structural fatigue",
+                "Brake system failure"
+            ]
+        elif 'boiler' in asset_lower:
+            failure_modes = [
+                "Burner ignition failure",
+                "Heat exchanger fouling",
+                "Water pump failure", 
+                "Pressure relief valve malfunction",
+                "Control system failure"
             ]
         else:
             failure_modes = [
@@ -365,9 +447,33 @@ class LLMFSMRAgent(LLMEnhancedAgent):
         self.log(f"Retrieved failure modes for {asset}: {len(failure_modes)} modes")
         return failure_modes
     
+    def get_sensors_for_asset(self, asset: str, query: str) -> List[str]:
+        """Get sensors for a generic asset type"""
+        asset_lower = asset.lower()
+        
+        if 'wind turbine' in asset_lower or 'turbine' in asset_lower:
+            sensors = [
+                "Wind Speed", "Power Output", "Rotor Speed", 
+                "Nacelle Temperature", "Vibration", "Gearbox Temperature",
+                "Generator Temperature", "Pitch Angle", "Yaw Angle"
+            ]
+        elif 'chiller' in asset_lower:
+            sensors = ["Supply Temperature", "Return Temperature", "Condenser Water Flow", "Power"]
+        elif 'boiler' in asset_lower:
+            sensors = ["Supply Temperature", "Return Temperature", "Pressure", "Flow Rate", "Gas Flow"]
+        elif 'motor' in asset_lower:
+            sensors = ["Current", "Voltage", "Temperature", "Vibration", "Speed"]
+        else:
+            sensors = ["Temperature", "Pressure", "Flow", "Power", "Vibration"]
+        
+        self.log(f"Retrieved sensors for {asset}: {sensors}")
+        return sensors
+    
     def get_general_failure_modes(self, query: str) -> List[str]:
         """Get general failure modes for equipment type mentioned in query"""
-        if 'chiller' in query.lower():
+        query_lower = query.lower()
+        
+        if 'chiller' in query_lower:
             return [
                 "Compressor Overheating: Failed due to Normal wear, overheating",
                 "Heat Exchangers: Fans: Degraded motor or worn bearing due to Normal use", 
@@ -377,8 +483,36 @@ class LLMFSMRAgent(LLMEnhancedAgent):
                 "Purge Unit Excessive purge",
                 "Refrigerant Operated Control Valve Failed spring"
             ]
+        elif 'wind turbine' in query_lower or 'turbine' in query_lower:
+            return [
+                "Gearbox bearing failure",
+                "Generator electrical failure", 
+                "Blade aerodynamic damage",
+                "Yaw system malfunction",
+                "Power converter failure",
+                "Control system software error",
+                "Pitch system hydraulic failure",
+                "Tower structural fatigue",
+                "Brake system failure"
+            ]
+        elif 'boiler' in query_lower:
+            return [
+                "Burner ignition failure",
+                "Heat exchanger fouling",
+                "Water pump failure", 
+                "Pressure relief valve malfunction",
+                "Control system failure"
+            ]
+        elif 'motor' in query_lower:
+            return [
+                "Bearing failure",
+                "Winding insulation breakdown",
+                "Rotor bar cracking",
+                "Overheating",
+                "Electrical connection failure"
+            ]
         else:
-            return ["Motor failure", "Bearing wear", "Overheating"]
+            return ["Motor failure", "Bearing wear", "Overheating", "Control system failure"]
     
     def get_failure_sensor_mapping(self, asset: str, query: str, failure_mode: str = None, sensor_type: str = None) -> Dict[str, Any]:
         """Enhanced sensor-failure mapping with filtering"""
@@ -878,6 +1012,10 @@ class LLMSupervisorAgent(LLMEnhancedAgent):
         """Determine if query is IoT-related with enhanced keyword detection"""
         query_lower = query.lower()
         
+        # Exclude failure mode queries from IoT routing
+        if 'failure modes' in query_lower:
+            return False
+        
         # Primary IoT indicators
         iot_keywords = [
             'site', 'sites', 'iot sites', 'available',
@@ -908,26 +1046,39 @@ class LLMSupervisorAgent(LLMEnhancedAgent):
         """Determine if query is FSMR-related with enhanced detection"""
         query_lower = query.lower()
         
+        # Highest priority: failure mode queries always go to FSMR
+        if 'failure modes' in query_lower and any(word in query_lower for word in ['asset', 'of']):
+            return True
+        
         fsmr_keywords = [
             'failure', 'fault', 'mode', 'modes', 'failure modes',
             'root cause', 'diagnose', 'analyze', 'detect', 'detected',
             'overheating', 'bearing', 'vibration', 'electrical fault',
             'compressor', 'evaporator', 'condenser', 'purge unit',
             'monitored', 'monitoring', 'relevant', 'sensors that',
-            'machine learning recipe', 'anomaly model', 'temporal behavior'
+            'machine learning recipe', 'anomaly model', 'temporal behavior',
+            'wind turbine', 'provide some sensors', 'early detect'
         ]
         
         matches = sum(1 for keyword in fsmr_keywords if keyword in query_lower)
         
+        # Strong FSMR patterns - prioritize these
+        strong_fsmr_patterns = [
+            'list all failure modes', 'failure modes of', 'provide some sensors of',
+            'detected by', 'can be detected', 'prioritized for monitoring',
+            'most relevant for monitoring', 'temporal behavior of',
+            'potential failure that causes', 'failure is most likely',
+            'wind turbine', 'sensors of asset', 'failure modes of asset'
+        ]
+        
         # FSMR if discussing failure modes or sensor-failure relationships
         if matches >= 2:
             return True
-        if any(pattern in query_lower for pattern in [
-            'list all failure modes', 'failure modes of',
-            'detected by', 'can be detected', 'prioritized for monitoring',
-            'most relevant for monitoring', 'temporal behavior of',
-            'potential failure that causes', 'failure is most likely'
-        ]):
+        if any(pattern in query_lower for pattern in strong_fsmr_patterns):
+            return True
+        
+        # Special case: generic asset queries about unknown equipment types
+        if any(asset in query_lower for asset in ['wind turbine', 'turbine']):
             return True
             
         return False
@@ -1128,12 +1279,19 @@ class LLMSupervisorAgent(LLMEnhancedAgent):
                 return {"error": "Asset not specified"}
         
         else:
-            # Try to determine from context
-            if 'chiller' in query_lower or 'asset' in query_lower:
-                asset = self._extract_asset_from_query(query)
-                if asset:
+            # Try to determine from context with enhanced generic asset support
+            asset = self._extract_asset_from_query(query)
+            if asset:
+                # Handle generic asset types directly
+                if any(keyword in asset.lower() for keyword in ['wind turbine', 'turbine', 'boiler', 'motor']):
+                    return self._get_generic_response_for_unknown_asset(asset, query)
+                else:
                     failure_modes = fsmr_agent.get_failure_modes_for_asset(asset, "MAIN", query)
                     return {"failure_modes": failure_modes, "asset": asset}
+            elif any(keyword in query_lower for keyword in ['wind turbine', 'turbine', 'boiler', 'motor']):
+                # Generic asset mentioned without specific identifier
+                asset_type = 'Wind Turbine' if 'turbine' in query_lower else 'Boiler' if 'boiler' in query_lower else 'Motor'
+                return self._get_generic_response_for_unknown_asset(asset_type, query)
             
             return {"error": "Could not determine FSMR operation", "query": query}
     
@@ -1319,8 +1477,14 @@ class LLMSupervisorAgent(LLMEnhancedAgent):
                 "workflow": "Failure analysis -> Sensor correlation"
             }
         
-        # Default routing with better logic
+        # Default routing with better logic and generic asset support
         else:
+            # Check if this involves an unknown asset type first
+            asset = self._extract_asset_from_query(query)
+            if asset and any(keyword in asset.lower() for keyword in ['wind turbine', 'turbine', 'boiler', 'motor']) and asset not in ['Chiller 6', 'Pump 1', 'AHU 1']:
+                # Handle generic asset queries
+                return self._get_generic_response_for_unknown_asset(asset, query)
+            
             # Prioritize by strongest signal
             scores = {
                 "iot": sum(1 for kw in ['sensor', 'site', 'asset', 'data'] if kw in query_lower),
@@ -1350,7 +1514,7 @@ class LLMSupervisorAgent(LLMEnhancedAgent):
         return None
     
     def _extract_asset_from_query(self, query: str) -> Optional[str]:
-        """Extract asset name from query with enhanced pattern matching"""
+        """Extract asset name from query with enhanced pattern matching and generic support"""
         query_lower = query.lower()
         
         # Look for numbered assets with various formats
@@ -1383,6 +1547,22 @@ class LLMSupervisorAgent(LLMEnhancedAgent):
         pump_match = re.search(r'pump\s*(\d+)', query_lower)
         if pump_match:
             return f"Pump {pump_match.group(1)}"
+        
+        # Generic asset type recognition
+        if 'wind turbine' in query_lower:
+            return "Wind Turbine"
+        elif 'turbine' in query_lower and 'wind' not in query_lower:
+            return "Wind Turbine"  # Assume wind turbine if just "turbine"
+        elif 'boiler' in query_lower:
+            return "Boiler"
+        elif 'cooling tower' in query_lower:
+            return "Cooling Tower"
+        elif 'heat exchanger' in query_lower:
+            return "Heat Exchanger"
+        elif 'compressor' in query_lower and 'chiller' not in query_lower:
+            return "Compressor"
+        elif 'motor' in query_lower and not any(x in query_lower for x in ['chiller', 'pump']):
+            return "Motor"
         
         # Look for general asset types with defaults based on context
         if 'chiller' in query_lower:
@@ -1519,6 +1699,41 @@ class LLMSupervisorAgent(LLMEnhancedAgent):
             return "Low"
         else:
             return "Medium"
+    
+    def _get_generic_response_for_unknown_asset(self, asset: str, query: str) -> Dict[str, Any]:
+        """Generate a generic response for unknown asset types"""
+        asset_lower = asset.lower()
+        
+        # Use FSMR agent to get generic sensor mapping
+        fsmr_agent = self.agents["fsmr"]
+        
+        if 'wind turbine' in asset_lower or 'turbine' in asset_lower:
+            sensors = fsmr_agent.get_sensors_for_asset(asset, query)
+            failure_modes = fsmr_agent.get_failure_modes_for_asset(asset, "Generic Site", query)
+            
+            return {
+                "answer": f"For {asset} systems, typical monitoring includes sensors for {', '.join(sensors[:3])} and potential failure modes include {', '.join(failure_modes[:3])}.",
+                "confidence": 0.7,
+                "agent": "Generic Asset Handler",
+                "data_used": {"sensors": sensors, "failure_modes": failure_modes}
+            }
+        elif any(keyword in asset_lower for keyword in ['boiler', 'motor', 'compressor']):
+            sensors = fsmr_agent.get_sensors_for_asset(asset, query)
+            failure_modes = fsmr_agent.get_failure_modes_for_asset(asset, "Generic Site", query)
+            
+            return {
+                "answer": f"For {asset} equipment, monitoring typically involves {', '.join(sensors[:3])} sensors. Common failure modes include {', '.join(failure_modes[:3])}.",
+                "confidence": 0.6,
+                "agent": "Generic Asset Handler", 
+                "data_used": {"sensors": sensors, "failure_modes": failure_modes}
+            }
+        else:
+            return {
+                "answer": f"I don't have specific information about {asset} in the current system. This may require additional asset configuration.",
+                "confidence": 0.3,
+                "agent": "Generic Asset Handler",
+                "data_used": {"asset": asset}
+            }
     
     def _generate_sample_data(self) -> List[Dict[str, Any]]:
         """Generate sample data for testing"""
