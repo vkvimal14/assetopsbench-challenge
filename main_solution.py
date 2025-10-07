@@ -13,6 +13,7 @@ import numpy as np
 from datetime import datetime, timedelta
 from typing import Dict, List, Any, Optional
 import json
+from difflib import get_close_matches
 import re
 
 # Import our LLM integration
@@ -119,31 +120,30 @@ class LLMIoTAgent(LLMEnhancedAgent):
         self.sensor_mapping = self._load_sensor_mapping()
     
     def _load_sensor_mapping(self):
-        """Load comprehensive sensor mapping with extended asset support"""
-        return {
-            "MAIN": {
-                "Chiller 1": ["Supply Temperature", "Return Temperature", "Condenser Water Flow", "Power"],
-                "Chiller 2": ["Supply Temperature", "Return Temperature", "Condenser Water Flow", "Power"],
-                "Chiller 3": ["Supply Temperature", "Return Temperature", "Condenser Water Flow", "Power"],
-                "Chiller 4": ["Supply Temperature", "Return Temperature", "Condenser Water Flow", "Power"],
-                "Chiller 5": ["Supply Temperature", "Return Temperature", "Condenser Water Flow", "Power"],
-                "Chiller 6": ["Supply Temperature", "Return Temperature", "Condenser Water Flow", "Power"],
-                "Chiller 7": ["Supply Temperature", "Return Temperature", "Condenser Water Flow", "Power"],
-                "Chiller 8": ["Supply Temperature", "Return Temperature", "Condenser Water Flow", "Power"],
-                "Chiller 9": ["Supply Temperature", "Return Temperature", "Condenser Water Flow", "Power"],
-                "AHU 1": ["Supply Air Temperature", "Return Air Temperature", "Supply Air Flow"],
-                "AHU 2": ["Supply Air Temperature", "Return Air Temperature", "Supply Air Flow"],
-                "Pump 1": ["Flow Rate", "Pressure", "Power", "Vibration"],
-                "Pump 2": ["Flow Rate", "Pressure", "Power", "Vibration"],
-                # Extended asset types for broader coverage
-                "Wind Turbine": ["Wind Speed", "Power Output", "Rotor Speed", "Nacelle Temperature", "Vibration", "Gearbox Temperature"],
-                "Boiler": ["Supply Temperature", "Return Temperature", "Pressure", "Flow Rate", "Gas Flow", "Efficiency"],
-                "Cooling Tower": ["Water Temperature", "Fan Speed", "Water Flow", "Ambient Temperature", "Humidity"],
-                "Motor": ["Current", "Voltage", "Temperature", "Vibration", "Speed", "Power Factor"],
-                "Compressor": ["Suction Pressure", "Discharge Pressure", "Temperature", "Vibration", "Power", "Oil Level"],
-                "Heat Exchanger": ["Inlet Temperature", "Outlet Temperature", "Flow Rate", "Pressure Drop", "Efficiency"]
-            }
-        }
+        """Load sensor mapping from external config for data-driven behavior"""
+        config_path = os.path.join(os.path.dirname(__file__), 'configs', 'assets.json')
+        try:
+            with open(config_path, 'r') as f:
+                data = json.load(f)
+            mapping = {}
+            for site, assets in data.get('assets', {}).items():
+                site_map = {}
+                for asset_name, meta in assets.items():
+                    # Normalize to generic sensor names when possible
+                    raw_sensors = meta.get('sensors', [])
+                    normalized = []
+                    for s in raw_sensors:
+                        # Strip asset prefix like "Chiller 6 " to get generic sensor type
+                        if ' ' in s:
+                            normalized.append(s.split(' ', 2)[-1])
+                        else:
+                            normalized.append(s)
+                    site_map[asset_name] = normalized
+                mapping[site] = site_map
+            return mapping
+        except Exception as e:
+            self.log(f"Failed to load assets.json: {e}; using minimal defaults")
+            return {"MAIN": {}}
         
     def _get_generic_asset_info(self, asset_type: str, query: str) -> Dict[str, Any]:
         """Get generic asset information for unsupported specific assets"""
@@ -238,7 +238,19 @@ class LLMIoTAgent(LLMEnhancedAgent):
     
     def get_sensors(self, asset: str, site: str, query: str) -> List[str]:
         """Get sensors for an asset using LLM reasoning with extended support"""
-        available_sensors = self.sensor_mapping.get(site, {}).get(asset, [])
+        # fuzzy match asset within site
+        site_assets = self.sensor_mapping.get(site, {})
+        if asset not in site_assets:
+            candidates = list(site_assets.keys())
+            match = get_close_matches(asset, candidates, n=1, cutoff=0.6)
+            if match:
+                asset_key = match[0]
+            else:
+                asset_key = asset
+        else:
+            asset_key = asset
+
+        available_sensors = site_assets.get(asset_key, [])
         
         # Handle generic asset types if specific asset not found
         if not available_sensors and asset:
@@ -321,28 +333,34 @@ class LLMFSMRAgent(LLMEnhancedAgent):
         self.failure_mappings = self._load_failure_mappings()
     
     def _load_failure_mappings(self):
-        """Load sensor-to-failure mode mappings"""
-        return {
-            "Temperature": {
-                "High": ["Overheating", "Cooling system failure", "Blocked air flow"],
-                "Low": ["Excessive cooling", "Sensor malfunction", "Control system error"],
-                "Unstable": ["Control system instability", "Sensor degradation"]
-            },
-            "Flow": {
-                "Low": ["Pump failure", "Blockage", "Valve malfunction"],
-                "High": ["Valve stuck open", "Control system error"],
-                "Unstable": ["Pump cavitation", "Variable demand"]
-            },
-            "Power": {
-                "High": ["Motor overload", "Bearing friction", "Electrical fault"],
-                "Low": ["Reduced load", "Motor efficiency loss"],
-                "Unstable": ["Variable load", "Electrical supply issues"]
-            },
-            "Vibration": {
-                "High": ["Bearing wear", "Misalignment", "Imbalance"],
-                "Increasing": ["Progressive bearing failure", "Mounting looseness"]
+        """Load failure mappings from external config for data-driven behavior"""
+        config_path = os.path.join(os.path.dirname(__file__), 'configs', 'failure_modes.json')
+        try:
+            with open(config_path, 'r') as f:
+                data = json.load(f)
+            # Derive a sensor->failures index for quick lookups
+            index = {
+                "Temperature": {"High": [], "Low": [], "Unstable": []},
+                "Flow": {"Low": [], "High": [], "Unstable": []},
+                "Power": {"High": [], "Low": [], "Unstable": []},
+                "Vibration": {"High": [], "Increasing": []}
             }
-        }
+            for asset_type, fmodes in data.items():
+                for name, meta in fmodes.items():
+                    sensors = meta.get('sensors', [])
+                    for s in sensors:
+                        st = 'Temperature' if 'temp' in s.lower() else (
+                            'Flow' if 'flow' in s.lower() else (
+                            'Power' if 'power' in s.lower() else (
+                            'Vibration' if 'vibration' in s.lower() else 'General')))
+                        if st in index:
+                            # append to all conditions to keep backwards compatibility
+                            for cond in index[st].keys():
+                                index[st][cond].append(name)
+            return index
+        except Exception as e:
+            self.log(f"Failed to load failure_modes.json: {e}; using minimal defaults")
+            return {"Temperature": {}, "Flow": {}, "Power": {}, "Vibration": {}}
     
     def get_failure_modes(self, sensor: str, query: str) -> List[str]:
         """Get failure modes for a sensor using LLM reasoning"""
@@ -419,25 +437,20 @@ class LLMFSMRAgent(LLMEnhancedAgent):
                 "Refrigerant Operated Control Valve Failed spring"
             ]
         elif 'wind turbine' in asset_lower or 'turbine' in asset_lower:
-            failure_modes = [
-                "Gearbox bearing failure",
-                "Generator electrical failure", 
-                "Blade aerodynamic damage",
-                "Yaw system malfunction",
-                "Power converter failure",
-                "Control system software error",
-                "Pitch system hydraulic failure",
-                "Tower structural fatigue",
-                "Brake system failure"
-            ]
+            # fetch from config
+            try:
+                with open(os.path.join(os.path.dirname(__file__), 'configs', 'failure_modes.json')) as f:
+                    fm = json.load(f).get('Wind Turbine', {})
+                failure_modes = list(fm.keys()) or ["Gearbox bearing failure", "Generator electrical failure", "Blade aerodynamic damage"]
+            except Exception:
+                failure_modes = ["Gearbox bearing failure", "Generator electrical failure", "Blade aerodynamic damage"]
         elif 'boiler' in asset_lower:
-            failure_modes = [
-                "Burner ignition failure",
-                "Heat exchanger fouling",
-                "Water pump failure", 
-                "Pressure relief valve malfunction",
-                "Control system failure"
-            ]
+            try:
+                with open(os.path.join(os.path.dirname(__file__), 'configs', 'failure_modes.json')) as f:
+                    fm = json.load(f).get('Boiler', {})
+                failure_modes = list(fm.keys()) or ["Burner ignition failure", "Heat exchanger fouling"]
+            except Exception:
+                failure_modes = ["Burner ignition failure", "Heat exchanger fouling"]
         else:
             failure_modes = [
                 "Motor failure", "Bearing wear", "Overheating", 

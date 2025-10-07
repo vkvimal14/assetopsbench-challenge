@@ -523,6 +523,11 @@ assetopsbench-challenge/
 │       ├── submission.json             # Canonical submission output
 │       └── submission_llm_enhanced_YYYYMMDD_HHMMSS.json # Timestamped runs
 │
+├── ⚙️ Configs
+│   └── configs/
+│       ├── assets.json                 # Sites, assets, and sensor lists (data-driven)
+│       └── failure_modes.json          # Asset-type failure modes with sensors/temporal patterns
+│
 └── 📋 Docs
     └── README.md
 ```

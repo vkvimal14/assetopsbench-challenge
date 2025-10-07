@@ -1,0 +1,48 @@
+{
+  "Chiller": {
+    "Compressor Overheating": {
+      "sensors": ["Supply Temperature", "Power Input", "Chiller % Loaded"],
+      "causes": ["Normal wear", "Insufficient cooling", "High ambient temperature"],
+      "temporal": "Gradual rise in supply temperature and power consumption"
+    },
+    "Evaporator Water side fouling": {
+      "sensors": ["Supply Temperature", "Return Temperature", "Condenser Water Flow"],
+      "causes": ["Water quality", "Scale deposition"],
+      "temporal": "Slow increase in delta-T and reduced flow"
+    },
+    "Condenser Water side fouling": {
+      "sensors": ["Return Temperature", "Condenser Water Flow", "Power Input"],
+      "causes": ["Fouling", "Blocked heat exchange"],
+      "temporal": "Elevated return temperature with higher power"
+    },
+    "Purge Unit Excessive purge": {
+      "sensors": ["Chiller Efficiency", "Power Input"],
+      "causes": ["Seal leak", "Non-condensables"],
+      "temporal": "Efficiency drops with erratic power"
+    }
+  },
+  "Wind Turbine": {
+    "Gearbox bearing failure": {
+      "sensors": ["Vibration", "Gearbox Temperature"],
+      "causes": ["Lubrication failure", "Misalignment"],
+      "temporal": "Vibration amplitude increases, temperature rises"
+    },
+    "Generator electrical failure": {
+      "sensors": ["Power Output", "Generator Temperature", "Voltage", "Current"],
+      "causes": ["Insulation breakdown", "Overload"],
+      "temporal": "Power fluctuations and temperature spikes"
+    },
+    "Blade aerodynamic damage": {
+      "sensors": ["Power Output", "Rotor Speed", "Pitch Angle"],
+      "causes": ["Erosion", "Lightning strike"],
+      "temporal": "Reduced power at given wind speeds"
+    }
+  },
+  "Boiler": {
+    "Burner ignition failure": {
+      "sensors": ["Gas Flow", "Pressure", "Supply Temperature"],
+      "causes": ["Fuel issue", "Igniter fault"],
+      "temporal": "No temperature rise after start command"
+    }
+  }
+}
