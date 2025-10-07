@@ -239,7 +239,7 @@ class LLMEnhancedAgent:
 
 ## Contact Information  - 💧 **Water Flow**: How fast water moves through pipes  
 
-- **Competition**: CODS 2025 Agentic AI Challenge  - ⚡ **Power**: How much electricity equipment uses
+ 
 
 - **Submission Date**: October 7, 2025  - 📊 **Pressure**: How much force is in the system
 
@@ -251,7 +251,7 @@ class LLMEnhancedAgent:
 
 #### 📈 **Time Series Agent - The Fortune Teller**
 
-**Ready for CODS 2025 Competition Submission** 🏆- **Job**: Predicts what will happen in the future using historical data
+**Agent Role**: Predicts what will happen in the future using historical data
 - **Special Powers**:
   - **Energy Models**: Specialized in predicting energy usage
   - **Context Analysis**: Can look at 96, 512, or 1024 data points to make predictions
@@ -396,10 +396,10 @@ These move fresh air around the building:
 ### 🛠️ **For Building Managers**
 ```bash
 # Get quick status of all equipment
-python improved_solution.py
+python main_solution.py
 
-# Check specific equipment
-python process_improved_solution.py
+# Process all scenarios and produce submission JSON
+python process_all_scenarios.py
 ```
 
 ### 🔧 **For Maintenance Teams**
@@ -441,7 +441,7 @@ python create_sample_data.py
 
 4. **Run the system**
    ```bash
-   python improved_solution.py
+    python main_solution.py
    ```
 
 ## � What This System Can Handle (141 Different Questions)
@@ -481,7 +481,7 @@ python create_sample_data.py
 
 | Metric | Before | After | Improvement |
 |--------|--------|-------|-------------|
-| ✅ **Success Rate** | 7.8% (11/141) | **100%** (141/141) | **12.8x better** |
+| ✅ **Success Rate** | 83.7% (118/141) | **85.1%** (120/141) | **+1.4 pts** |
 | ⚡ **Response Speed** | Variable | **<2 seconds** | **Fast & reliable** |
 | 🎯 **Accuracy** | Basic | **90%+ confident** | **Professional grade** |
 | 🏭 **Equipment Coverage** | 2 chillers | **150+ devices** | **Complete building** |
@@ -505,53 +505,44 @@ python create_sample_data.py
 
 ```
 assetopsbench-challenge/
-├── 🧠 **Core AI System**
-│   ├── 📄 improved_solution.py       # Main smart system (100% success)
-│   ├── 📄 main_solution.py          # Original system (7.8% success)  
-│   ├── 📄 enhanced_solution.py      # Enhanced version
-│   └── 📄 process_improved_solution.py # Process all 141 scenarios
+├── 🧠 Core
+│   ├── main_solution.py                # Core LLM-enhanced multi-agent solution (current)
+│   ├── enhanced_solution.py            # Previous iteration
+│   ├── llm_integration.py              # Watson.ai LLM client utilities
+│   └── process_all_scenarios.py        # Batch process all challenge scenarios
 │
-├── 📊 **Data & Testing**
-│   ├── 📁 data/
-│   │   ├── scenarios.csv            # All 141 test questions
-│   │   └── chiller9_annotated_small_test.csv # Equipment sensor data
-│   ├── 📄 test_setup.py            # System testing
-│   └── 📄 create_sample_data.py    # Generate test data
+├── 📊 Data & Testing
+│   ├── data/
+│   │   ├── scenarios.csv               # All 141 challenge questions
+│   │   └── chiller9_annotated_small_test.csv
+│   ├── test_wind_turbine.py
+│   └── requirements.txt
 │
-├── 🏆 **Competition Submission**
-│   ├── 📁 submissions/
-│   │   ├── submission_improved.json   # Perfect submission (100% success)
-│   │   ├── detailed_results_enhanced.json # Detailed analysis
-│   │   └── summary_report_enhanced.txt   # Performance report
-│   └── 📄 PERFORMANCE_REPORT.md     # Achievement documentation
+├── 🏆 Submissions
+│   └── submissions/
+│       ├── submission.json             # Canonical submission output
+│       └── submission_llm_enhanced_YYYYMMDD_HHMMSS.json # Timestamped runs
 │
-├── ⚙️ **Environment & Config**
-│   ├── 📁 watson311/               # Python environment
-│   ├── 📄 requirements.txt         # Required libraries
-│   └── 📄 .gitignore              # Git configuration
-│
-└── 📋 **Documentation**
-    ├── 📄 README.md               # This file (complete guide)
-    └── 📄 LICENSE                 # MIT License
+└── 📋 Docs
+    └── README.md
 ```
 
 ### 🔑 **Key Files Explained**
 
-#### **🧠 improved_solution.py** - The Smart Brain
-- Contains all 5 AI agents working together
-- Handles all 141 scenarios perfectly 
-- Uses advanced pattern recognition
-- **This is the main file that won the competition!**
+#### **🧠 main_solution.py** - Core Solution
+- Multi-agent orchestration (Supervisor, IoT, FSMR, TSFM, Work Orders)
+- LLM-enhanced reasoning via Watson.ai with robust fallbacks
+- Achieves 85.1% success rate (120/141 scenarios) on AssetOpsBench
 
 #### **📊 scenarios.csv** - The Test Questions
 - Contains all 141 questions the system must answer
 - Categories: IoT, Knowledge, Time Series, Work Orders
 - Real-world building management scenarios
 
-#### **🏆 submission_improved.json** - The Winning Answer
-- Perfect answers to all 141 questions
-- Competition-ready format
-- **100% success rate achieved!**
+#### **🏆 submissions/submission.json** - Final Submission
+- Answers for all 141 scenarios in required format
+- Reflects current best run performance
+- 85.1% success rate (120/141 scenarios)
 
 ## 🛠️ Technical Details (For Developers)
 
@@ -616,13 +607,7 @@ Python 3.8+ with:
 
 ## 🏆 Competition & Recognition
 
-### 🥇 **CODS 2025 Achievement**
-- **Category**: AssetOpsBench Challenge
-- **Result**: **100% Success Rate** (141/141 scenarios)
-- **Performance**: **12.8x improvement** over baseline
-- **Status**: **Ready for competition submission**
-
-### 📊 **Technical Benchmarks**
+### 🏁 Challenge Status
 ```
 Baseline System:     7.8% success (11/141 scenarios)
 Our System:        100.0% success (141/141 scenarios)
@@ -641,15 +626,11 @@ Confidence Level:   90%+ for most scenarios
 
 ### 🔧 **For Developers**
 ```bash
-# 1. Fork the repository on GitHub
-# 2. Clone your fork
-git clone https://github.com/YOUR-USERNAME/assetopsbench-challenge.git
-
 # 3. Create a feature branch  
 git checkout -b feature/awesome-improvement
 
 # 4. Make your changes and test
-python improved_solution.py
+python main_solution.py
 
 # 5. Commit and push
 git commit -m "Add awesome improvement"
@@ -953,10 +934,7 @@ assetopsbench-challenge/
 
 🎯 **Impact**: Demonstrates the potential for AI-driven industrial operations optimization
 
-🏆 **Achievement**: Ready for CODS 2025 AssetOpsBench Challenge submission with strong performance
-
-### Key Innovation Highlights
-
+**⭐ Star this repository if you find it helpful!**
 - **LLM-Enhanced Reasoning**: Real AI understanding through Watson.ai integration
 - **Multi-Agent Architecture**: Specialized agents for IoT, FSMR, TSFM, and Work Order domains  
 - **Generic Asset Support**: Extended beyond HVAC to handle diverse industrial equipment
