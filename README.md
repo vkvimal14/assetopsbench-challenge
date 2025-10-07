@@ -65,7 +65,7 @@ AssetOpsBench is an advanced AI-powered system designed to manage industrial equ
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/vkvimal14/assetopsbench-challenge.git
    cd assetopsbench-challenge
    ```
 
@@ -248,9 +248,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact & Support
 
-- **Issues**: [GitHub Issues](../../issues)
-- **Discussions**: [GitHub Discussions](../../discussions)
-- **Email**: [Your email for support]
+- **Issues**: [GitHub Issues](https://github.com/vkvimal14/assetopsbench-challenge/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/vkvimal14/assetopsbench-challenge/discussions)
+- **Email**: vkvimal14@gmail.com
 
 ---
 
