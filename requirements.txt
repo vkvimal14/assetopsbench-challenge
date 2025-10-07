@@ -1,0 +1,33 @@
+# Core packages
+pandas>=2.0.0
+numpy>=1.24.0
+scikit-learn>=1.3.0
+datasets>=2.14.0
+
+# Time series and forecasting
+statsmodels>=0.14.0
+prophet>=1.1.4
+pmdarima>=2.0.3
+
+# Deep learning (optional)
+torch>=2.0.0
+tensorflow>=2.13.0
+
+# API and web
+requests>=2.31.0
+python-dotenv>=1.0.0
+aiohttp>=3.8.5
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.17.0
+
+# LLM integration
+huggingface-hub>=0.17.0
+transformers>=4.33.0
+
+# Utilities
+tqdm>=4.66.0
+python-dateutil>=2.8.2
+pytz>=2023.3
