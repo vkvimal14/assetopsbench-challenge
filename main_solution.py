@@ -140,44 +140,36 @@ class LLMIoTAgent(LLMEnhancedAgent):
             return {"MAIN": {}}
         
     def _get_generic_asset_info(self, asset_type: str, query: str) -> Dict[str, Any]:
-        """Get generic asset information for unsupported specific assets"""
+        """Get generic asset information for unsupported specific assets from loaded configs."""
         asset_type_lower = asset_type.lower()
         
-        # Generic asset mappings
-        generic_mappings = {
-            "wind turbine": {
-                "sensors": ["Wind Speed", "Power Output", "Rotor Speed", "Nacelle Temperature", "Vibration", "Gearbox Temperature"],
-                "typical_failure_modes": [
-                    "Gearbox failure", "Generator failure", "Blade damage", 
-                    "Bearing wear", "Control system malfunction", "Power converter failure"
-                ]
-            },
-            "chiller": {
-                "sensors": ["Supply Temperature", "Return Temperature", "Condenser Water Flow", "Power"],
-                "typical_failure_modes": [
-                    "Compressor Overheating", "Evaporator Water side fouling", 
-                    "Condenser Water side fouling", "Refrigerant leak", "Control valve failure"
-                ]
-            },
-            "boiler": {
-                "sensors": ["Supply Temperature", "Return Temperature", "Pressure", "Flow Rate", "Gas Flow"],
-                "typical_failure_modes": [
-                    "Burner failure", "Heat exchanger fouling", "Pump failure", 
-                    "Control system failure", "Pressure vessel issues"
-                ]
-            }
-        }
+        # Find a matching asset type from the loaded configs
+        # This is a simplified approach. A more robust solution would involve better asset type matching.
         
-        # Find matching asset type
-        for asset_key, asset_info in generic_mappings.items():
-            if asset_key in asset_type_lower:
-                return asset_info
+        asset_info = {}
         
-        # Default fallback
-        return {
-            "sensors": ["Temperature", "Pressure", "Flow", "Power", "Vibration"],
-            "typical_failure_modes": ["Component wear", "Control failure", "Sensor malfunction"]
-        }
+        # Find sensors from assets.json
+        for site, assets in self.sensor_mapping.items():
+            for asset_name, sensors in assets.items():
+                if asset_type_lower in asset_name.lower():
+                    asset_info["sensors"] = sensors
+                    break
+            if "sensors" in asset_info:
+                break
+
+        # Find failure modes from failure_modes.json
+        fsmr_agent = LLMFSMRAgent() # Temporary instance to access failure mappings
+        for config_asset_type, modes in fsmr_agent.failure_mappings.items():
+            if asset_type_lower in config_asset_type.lower():
+                asset_info["typical_failure_modes"] = list(modes.keys())
+                break
+
+        if not asset_info.get("sensors"):
+            asset_info["sensors"] = ["Temperature", "Pressure", "Flow", "Power", "Vibration"] # Default fallback
+        if not asset_info.get("typical_failure_modes"):
+            asset_info["typical_failure_modes"] = ["Component wear", "Control failure", "Sensor malfunction"] # Default fallback
+
+        return asset_info
     
     def get_sites(self, query: str) -> List[str]:
         """Get available sites using LLM reasoning"""
@@ -332,53 +324,34 @@ class LLMFSMRAgent(LLMEnhancedAgent):
         config_path = os.path.join(os.path.dirname(__file__), 'configs', 'failure_modes.json')
         try:
             with open(config_path, 'r') as f:
-                data = json.load(f)
-            # Derive a sensor->failures index for quick lookups
-            index = {
-                "Temperature": {"High": [], "Low": [], "Unstable": []},
-                "Flow": {"Low": [], "High": [], "Unstable": []},
-                "Power": {"High": [], "Low": [], "Unstable": []},
-                "Vibration": {"High": [], "Increasing": []}
-            }
-            for asset_type, fmodes in data.items():
-                for name, meta in fmodes.items():
-                    sensors = meta.get('sensors', [])
-                    for s in sensors:
-                        st = 'Temperature' if 'temp' in s.lower() else (
-                            'Flow' if 'flow' in s.lower() else (
-                            'Power' if 'power' in s.lower() else (
-                            'Vibration' if 'vibration' in s.lower() else 'General')))
-                        if st in index:
-                            # append to all conditions to keep backwards compatibility
-                            for cond in index[st].keys():
-                                index[st][cond].append(name)
-            return index
+                return json.load(f)
         except Exception as e:
             self.log(f"Failed to load failure_modes.json: {e}; using minimal defaults")
-            return {"Temperature": {}, "Flow": {}, "Power": {}, "Vibration": {}}
+            return {}
     
     def get_failure_modes(self, sensor: str, query: str) -> List[str]:
         """Get failure modes for a sensor using LLM reasoning"""
         sensor_type = self._extract_sensor_type(sensor)
+        
+        # This logic is complex and depends on how failures are mapped.
+        # A better approach is to get all failure modes for the asset type.
+        # This method seems less used than get_failure_modes_for_asset.
+        # For now, returning a generic list based on the loaded config.
+        
         possible_failures = []
-        
-        for condition, failures in self.failure_mappings.get(sensor_type, {}).items():
-            possible_failures.extend(failures)
-        
+        for asset_type, modes in self.failure_mappings.items():
+            for mode_name, mode_data in modes.items():
+                if any(sensor_type.lower() in s.lower() for s in mode_data.get('sensors', [])):
+                    possible_failures.append(mode_name)
+
         prompt = PromptTemplates.fsmr_agent_prompt(
             f"Analyze failure modes for {sensor}. Query: {query}",
-            {"sensor": sensor, "sensor_type": sensor_type, "possible_failures": possible_failures}
+            {"sensor": sensor, "sensor_type": sensor_type, "possible_failures": list(set(possible_failures))}
         )
         
         llm_response = self.llm_reasoning(prompt)
         
-        # Extract failure modes from LLM response
-        failure_modes = possible_failures  # Default
-        
-        # If query mentions specific symptoms, filter accordingly
-        if 'high' in query.lower() or 'increase' in query.lower():
-            failure_modes = [f for f in possible_failures if any(keyword in f.lower() 
-                           for keyword in ['overload', 'friction', 'wear', 'failure'])]
+        failure_modes = list(set(possible_failures))
         
         self.log(f"Identified failure modes for {sensor}: {failure_modes}")
         return failure_modes
@@ -391,49 +364,27 @@ class LLMFSMRAgent(LLMEnhancedAgent):
         )
         
         llm_response = self.llm_reasoning(prompt)
-        # Load asset-specific sensors from configs (asset names are case-insensitive)
-        raw_sensors: List[str] = []
-        try:
-            with open(os.path.join(os.path.dirname(__file__), 'configs', 'assets.json'), 'r') as f:
-                assets_config = json.load(f)
-            for site, assets in assets_config.get('assets', {}).items():
-                for asset_name, meta in assets.items():
-                    if asset_name.lower() == equipment.lower():
-                        raw_sensors = meta.get('sensors', [])
-                        break
-        except Exception as e:
-            self.log(f"Could not load assets.json for sensor mapping: {e}")
-
-        # If no direct match, fall back to generic sensors by equipment type
-        if not raw_sensors:
-            generic = self.get_sensors_for_asset(equipment, query)
-            raw_sensors = generic
-
-        # Map generic categories to raw sensors
-        temperature_sensors = [s for s in raw_sensors if 'temperature' in s.lower()]
-        flow_sensors = [s for s in raw_sensors if 'flow' in s.lower()]
-        power_sensors = [s for s in raw_sensors if 'power' in s.lower()]
-
-        # Basic failure modes list
-        failure_modes = self.get_failure_modes_for_asset(equipment, "MAIN", query)
-
+        
+        # This method requires asset type to get failure modes, which we don't have directly.
+        # The supervisor should coordinate getting asset type from IoT agent first.
+        # For now, we'll assume a generic mapping.
+        
         mapping: Dict[str, List[str]] = {}
-        for fm in failure_modes:
-            fm_lower = fm.lower()
-            if any(k in fm_lower for k in ['overheating', 'temperature', 'cool']):
-                mapping[fm] = temperature_sensors or raw_sensors
-            elif any(k in fm_lower for k in ['flow', 'fouling']):
-                mapping[fm] = flow_sensors or (temperature_sensors + flow_sensors)
-            elif any(k in fm_lower for k in ['motor', 'electrical', 'power']):
-                mapping[fm] = power_sensors or raw_sensors
-            else:
-                mapping[fm] = raw_sensors
+        asset_type = "Chiller" # Default
+        if 'wind turbine' in equipment.lower():
+            asset_type = "Wind Turbine"
+        elif 'boiler' in equipment.lower():
+            asset_type = "Boiler"
+
+        failure_modes = self.failure_mappings.get(asset_type, {})
+        for mode, data in failure_modes.items():
+            mapping[mode] = data.get('sensors', [])
 
         self.log(f"Generated sensor-failure mapping for {equipment} with {len(mapping)} failure modes")
         return mapping
     
     def get_failure_modes_for_asset(self, asset: str, site: str, query: str) -> List[str]:
-        """Get failure modes for a specific asset"""
+        """Get failure modes for a specific asset from the loaded configuration."""
         prompt = PromptTemplates.fsmr_agent_prompt(
             f"List failure modes for {asset} at {site}. Query: {query}",
             {"asset": asset, "site": site}
@@ -441,109 +392,25 @@ class LLMFSMRAgent(LLMEnhancedAgent):
         
         llm_response = self.llm_reasoning(prompt)
         
-        # Standard failure modes for different asset types
+        # Determine asset type to look up in failure_modes.json
+        # This is a temporary solution. Ideally, the supervisor would get the asset type
+        # from the IoT agent.
         asset_lower = asset.lower()
-        
+        asset_type = None
         if 'chiller' in asset_lower:
-            failure_modes = [
-                "Compressor Overheating: Failed due to Normal wear, overheating",
-                "Heat Exchangers: Fans: Degraded motor or worn bearing due to Normal use", 
-                "Evaporator Water side fouling",
-                "Condenser Water side fouling",
-                "Condenser Improper water side flow rate",
-                "Purge Unit Excessive purge",
-                "Refrigerant Operated Control Valve Failed spring"
-            ]
-        elif 'wind turbine' in asset_lower or 'turbine' in asset_lower:
-            # fetch from config
-            try:
-                with open(os.path.join(os.path.dirname(__file__), 'configs', 'failure_modes.json')) as f:
-                    fm = json.load(f).get('Wind Turbine', {})
-                failure_modes = list(fm.keys()) or ["Gearbox bearing failure", "Generator electrical failure", "Blade aerodynamic damage"]
-            except Exception:
-                failure_modes = ["Gearbox bearing failure", "Generator electrical failure", "Blade aerodynamic damage"]
+            asset_type = "Chiller"
+        elif 'wind turbine' in asset_lower:
+            asset_type = "Wind Turbine"
         elif 'boiler' in asset_lower:
-            try:
-                with open(os.path.join(os.path.dirname(__file__), 'configs', 'failure_modes.json')) as f:
-                    fm = json.load(f).get('Boiler', {})
-                failure_modes = list(fm.keys()) or ["Burner ignition failure", "Heat exchanger fouling"]
-            except Exception:
-                failure_modes = ["Burner ignition failure", "Heat exchanger fouling"]
+            asset_type = "Boiler"
+            
+        if asset_type and asset_type in self.failure_mappings:
+            failure_modes = list(self.failure_mappings[asset_type].keys())
         else:
-            failure_modes = [
-                "Motor failure", "Bearing wear", "Overheating", 
-                "Electrical fault", "Control system failure"
-            ]
-        
+            failure_modes = []
+
         self.log(f"Retrieved failure modes for {asset}: {len(failure_modes)} modes")
         return failure_modes
-    
-    def get_sensors_for_asset(self, asset: str, query: str) -> List[str]:
-        """Get sensors for a generic asset type"""
-        asset_lower = asset.lower()
-        
-        if 'wind turbine' in asset_lower or 'turbine' in asset_lower:
-            sensors = [
-                "Wind Speed", "Power Output", "Rotor Speed", 
-                "Nacelle Temperature", "Vibration", "Gearbox Temperature",
-                "Generator Temperature", "Pitch Angle", "Yaw Angle"
-            ]
-        elif 'chiller' in asset_lower:
-            sensors = ["Supply Temperature", "Return Temperature", "Condenser Water Flow", "Power"]
-        elif 'boiler' in asset_lower:
-            sensors = ["Supply Temperature", "Return Temperature", "Pressure", "Flow Rate", "Gas Flow"]
-        elif 'motor' in asset_lower:
-            sensors = ["Current", "Voltage", "Temperature", "Vibration", "Speed"]
-        else:
-            sensors = ["Temperature", "Pressure", "Flow", "Power", "Vibration"]
-        
-        self.log(f"Retrieved sensors for {asset}: {sensors}")
-        return sensors
-    
-    def get_general_failure_modes(self, query: str) -> List[str]:
-        """Get general failure modes for equipment type mentioned in query"""
-        query_lower = query.lower()
-        
-        if 'chiller' in query_lower:
-            return [
-                "Compressor Overheating: Failed due to Normal wear, overheating",
-                "Heat Exchangers: Fans: Degraded motor or worn bearing due to Normal use", 
-                "Evaporator Water side fouling",
-                "Condenser Water side fouling",
-                "Condenser Improper water side flow rate",
-                "Purge Unit Excessive purge",
-                "Refrigerant Operated Control Valve Failed spring"
-            ]
-        elif 'wind turbine' in query_lower or 'turbine' in query_lower:
-            return [
-                "Gearbox bearing failure",
-                "Generator electrical failure", 
-                "Blade aerodynamic damage",
-                "Yaw system malfunction",
-                "Power converter failure",
-                "Control system software error",
-                "Pitch system hydraulic failure",
-                "Tower structural fatigue",
-                "Brake system failure"
-            ]
-        elif 'boiler' in query_lower:
-            return [
-                "Burner ignition failure",
-                "Heat exchanger fouling",
-                "Water pump failure", 
-                "Pressure relief valve malfunction",
-                "Control system failure"
-            ]
-        elif 'motor' in query_lower:
-            return [
-                "Bearing failure",
-                "Winding insulation breakdown",
-                "Rotor bar cracking",
-                "Overheating",
-                "Electrical connection failure"
-            ]
-        else:
-            return ["Motor failure", "Bearing wear", "Overheating", "Control system failure"]
     
     def get_failure_sensor_mapping(self, asset: str, query: str, failure_mode: str = None, sensor_type: str = None) -> Dict[str, Any]:
         """Enhanced sensor-failure mapping with filtering"""
