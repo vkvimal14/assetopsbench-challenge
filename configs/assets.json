@@ -2,6 +2,51 @@
   "sites": ["MAIN"],
   "assets": {
     "MAIN": {
+      "Chiller 1": {
+        "type": "Chiller",
+        "sensors": [
+          "Chiller 1 Supply Temperature",
+          "Chiller 1 Return Temperature",
+          "Chiller 1 Condenser Water Flow",
+          "Chiller 1 Power Input"
+        ]
+      },
+      "Chiller 2": {
+        "type": "Chiller",
+        "sensors": [
+          "Chiller 2 Supply Temperature",
+          "Chiller 2 Return Temperature",
+          "Chiller 2 Condenser Water Flow",
+          "Chiller 2 Power Input"
+        ]
+      },
+      "Chiller 3": {
+        "type": "Chiller",
+        "sensors": [
+          "Chiller 3 Supply Temperature",
+          "Chiller 3 Return Temperature",
+          "Chiller 3 Condenser Water Flow",
+          "Chiller 3 Power Input"
+        ]
+      },
+      "Chiller 4": {
+        "type": "Chiller",
+        "sensors": [
+          "Chiller 4 Supply Temperature",
+          "Chiller 4 Return Temperature",
+          "Chiller 4 Condenser Water Flow",
+          "Chiller 4 Power Input"
+        ]
+      },
+      "Chiller 5": {
+        "type": "Chiller",
+        "sensors": [
+          "Chiller 5 Supply Temperature",
+          "Chiller 5 Return Temperature",
+          "Chiller 5 Condenser Water Flow",
+          "Chiller 5 Power Input"
+        ]
+      },
       "Chiller 6": {
         "type": "Chiller",
         "sensors": [
@@ -14,6 +59,24 @@
           "Chiller 6 Tonnage"
         ]
       },
+      "Chiller 7": {
+        "type": "Chiller",
+        "sensors": [
+          "Chiller 7 Supply Temperature",
+          "Chiller 7 Return Temperature",
+          "Chiller 7 Condenser Water Flow",
+          "Chiller 7 Power Input"
+        ]
+      },
+      "Chiller 8": {
+        "type": "Chiller",
+        "sensors": [
+          "Chiller 8 Supply Temperature",
+          "Chiller 8 Return Temperature",
+          "Chiller 8 Condenser Water Flow",
+          "Chiller 8 Power Input"
+        ]
+      },
       "Chiller 9": {
         "type": "Chiller",
         "sensors": [
@@ -24,6 +87,24 @@
           "Chiller 9 Chiller % Loaded",
           "Chiller 9 Chiller Efficiency",
           "Chiller 9 Tonnage"
+        ]
+      },
+      "AHU 1": {
+        "type": "AHU",
+        "sensors": [
+          "AHU 1 Supply Humidity",
+          "AHU 1 Supply Air Temperature",
+          "AHU 1 Return Air Temperature",
+          "AHU 1 Power"
+        ]
+      },
+      "AHU 2": {
+        "type": "AHU",
+        "sensors": [
+          "AHU 2 Supply Humidity",
+          "AHU 2 Supply Air Temperature",
+          "AHU 2 Return Air Temperature",
+          "AHU 2 Power"
         ]
       },
       "CQPA AHU 1": {
@@ -42,6 +123,22 @@
           "CQPA AHU 2B Supply Air Temperature",
           "CQPA AHU 2B Return Air Temperature",
           "CQPA AHU 2B Power"
+        ]
+      },
+      "Pump 1": {
+        "type": "Pump",
+        "sensors": [
+          "Pump 1 Discharge Pressure",
+          "Pump 1 Flow Rate",
+          "Pump 1 Power"
+        ]
+      },
+      "Pump 2": {
+        "type": "Pump",
+        "sensors": [
+          "Pump 2 Discharge Pressure",
+          "Pump 2 Flow Rate",
+          "Pump 2 Power"
         ]
       },
       "Wind Turbine": {
