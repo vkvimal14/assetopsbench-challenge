@@ -1,0 +1,8 @@
+{
+    "task_type": "predictive_maintenance",
+    "framework": "custom_multi_agent_llm",
+    "model": "meta-llama/llama-3-70b-instruct",
+    "description": "A multi-agent system that uses both rule-based logic and LLM reasoning to address predictive maintenance scenarios. The system is designed to be robust and fall back to deterministic rules when LLM responses are unavailable or fail. All code and configurations are bundled into a single Python file for submission compliance.",
+    "author": "GitHub Copilot",
+    "license": "MIT"
+}
