@@ -1,0 +1,15 @@
+{
+    "task_type": "task_planning",
+    "track": "track1",
+    "framework": "agent_hive_multi_agent",
+    "model": "meta-llama/llama-3-70b-instruct",
+    "description": "Enhanced planning workflow with improved agent description formatting and comprehensive prompt engineering for better task decomposition and agent selection.",
+    "modifications": [
+        "Enhanced agent description formatting with emojis and structured metadata",
+        "Improved prompt template with clearer instructions and examples",
+        "Added planning tips for better agent coordination",
+        "Structured output format guidance for consistent plan generation"
+    ],
+    "author": "Competition Participant",
+    "submission_date": "2025-10-19"
+}
