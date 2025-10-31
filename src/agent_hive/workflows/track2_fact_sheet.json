@@ -1,6 +1,7 @@
 {
     "task_type": "dynamic_execution",
     "track": "track2",
+    "Track": "Track 2",
     "framework": "agent_hive_dynamic_workflow",
     "model": "meta-llama/llama-3-70b-instruct",
     "description": "Enhanced dynamic workflow with intelligent task revision, fallback strategies, and improved agent coordination for robust multi-agent execution.",
